@@ -1,5 +1,8 @@
 ## Minecraft Server Menu
+
 by Ramires Oliv
+
+> Do you want an easy, fast and organized method to create a Minecraft Server? come and meet Minecraft Server Menu a .Batch file, very fast managing Backups, Server, Client, Moderation, Mods and Plugins!
 <details>
 <summary>Click Here</summary>
  
@@ -33,3 +36,6 @@ PROGRAMAS.
 
 
 ## Instalation:
+
+<p>Download using <a href="../../Downloads/Installers/Minecraft_Server_Menu_Installer.bat">Batch Installer</a> -- update and remove system</p>
+		<p>Download using <a href="../../Downloads/Minecraft_Java_Server.bat">Direct Download</a></p>
