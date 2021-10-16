@@ -2,7 +2,7 @@
 <--- <a href="https://gabrielramires.github.io/MinecraftServerMenu">Back</a>
 
 ## Sumario:
-1. <a href="">TYPES OF ERRORS</a>
+1. <a href="#types-of-errors">TYPES OF ERRORS</a>
 2. Comming soon :)
 
 ## TYPES OF ERRORS:
