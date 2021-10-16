@@ -27,7 +27,7 @@ oque pode ter cido:
 ### EULA, You need to agree to the EULA in order to run the server. Go to elua.txt for more info.
 > Este error é muito comum ele aparecera quando a EULA estiver desativada para ativala vá até o arquivo EULA.txt e troque a terceira linh por "eula=true"
 
-<h1 class="FATALERROR"> FATAL ERROR, o arquivo de instalação não esta funcionando! </h1>
+<h1 id="FATALERROR"> FATAL ERROR, o arquivo de instalação não esta funcionando! </h1>
 > vamos supor que o nome de sua pasta é: "jorge caudio server" tente mudala para:
 
 1. JorgeCaudioServer
