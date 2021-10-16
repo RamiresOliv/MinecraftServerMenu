@@ -5,7 +5,7 @@
 1. <a href="#types-of-errors">TYPES OF ERRORS:</a>\
   <a href="#606-fatal-error-ocorreu-um-erro-ao-instalar-a-filename-tente-novamente-mais-tarde">606</a>,\
   <a href="#eula-you-need-to-agree-to-the-eula-in-order-to-run-the-server-go-to-eluatxt-for-more-info">EULA</a>,\
-  *(pergunta)* <a href="#fatal-error-o-arquivo-de-instalação-não-esta-funcionando">Bat Intaller not Installing the files.</a>
+  *(pergunta)* <a onclick="Doc_FATALERROR(FATALERROR)" href="#fatal-error-o-arquivo-de-instalação-não-esta-funcionando">Bat Intaller not Installing the files</a>
 
 3. Comming soon :)
 
@@ -27,7 +27,7 @@ oque pode ter cido:
 ### EULA, You need to agree to the EULA in order to run the server. Go to elua.txt for more info.
 > Este error é muito comum ele aparecera quando a EULA estiver desativada para ativala vá até o arquivo EULA.txt e troque a terceira linh por "eula=true"
 
-### FATAL ERROR, o arquivo de instalação não esta funcionando!
+<h1 class="FATALERROR"> FATAL ERROR, o arquivo de instalação não esta funcionando! </h1>
 > vamos supor que o nome de sua pasta é: "jorge caudio server" tente mudala para:
 
 1. JorgeCaudioServer
@@ -38,3 +38,7 @@ oque pode ter cido:
 
 > esse erro ocorre ao tentar criar a file e acontece um erro ao tentar procurar o Diretorio Mãe
 #### tentando não deixar espaços para que não ocorra mais erros.
+
+
+<!-- Calling JS file: -->
+<script src="WebSiteStorage/JavaScript/Docs.js"></script>
