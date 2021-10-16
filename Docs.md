@@ -3,14 +3,13 @@
 
 ## Summary:
 1. <a href="#types-of-errors">TYPES OF ERRORS:</a>\
-  <a href="#types-of-errors">606</a>,\
-  <a href="#types-of-errors">EULA</a>,\
-  <a href="#fatal-errorf">FATAL ERROR</a>
+  <a href="#606-fatal-error-ocorreu-um-erro-ao-instalar-a-filename-tente-novamente-mais-tarde">606</a>,\
+  <a href="#eula-you-need-to-agree-to-the-eula-in-order-to-run-the-server-go-to-eluatxt-for-more-info">EULA</a>,\
+  *(pergunta)* <a href="#fatal-error-o-arquivo-de-instalação-não-esta-funcionando"> Bat Intaller not Installing the files.</a>
+<br></br>
 3. Comming soon :)
 
 ## TYPES OF ERRORS:
-
-<h1 style="display=none;">606</h1>
 
 ### 606 [FATAL ERROR]: Ocorreu um erro ao instalar a [filename] tente novamente mais tarde!
 > Este error é comum ele aparecera quando não for possivel instalar tal arquivo do nosso site
