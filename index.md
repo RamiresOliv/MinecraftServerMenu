@@ -26,7 +26,10 @@
 
 <h1> Pages: </h1>
 
-<a href="Download">Download Page</a>\
-<a href="Docs">Docs Page</a>\
-<a href="https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> *-wiki page*
 </div>
+
+<p align="center">
+<a href="Download">Download Page</a>
+<a href="Docs">Docs Page</a>
+<a href="https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> *-wiki page*
+</p>
