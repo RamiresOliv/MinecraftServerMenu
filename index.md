@@ -8,9 +8,7 @@ by Ramires Oliv
 
 ---
 
-
-
-## Instalation:
+## Pages:
 
 <a href="Downloads">Download Page</a>
 
