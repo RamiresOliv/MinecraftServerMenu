@@ -1,6 +1,10 @@
 # Minecraft Server Menu Docs:
 <--- <a href="https://gabrielramires.github.io/MinecraftServerMenu">Back</a>
 
+## Sumario:
+1. <a href="">TYPES OF ERRORS</a>
+2. Comming soon :)
+
 ## TYPES OF ERRORS:
 
 ### 606, [FATAL ERROR]: Ocorreu um erro ao instalar a [filename] tente novamente mais tarde!
