@@ -2,8 +2,11 @@
 <--- <a href="https://gabrielramires.github.io/MinecraftServerMenu">Back</a>
 
 ## Summary:
-1. <a href="#types-of-errors">TYPES OF ERRORS</a>
-2. Comming soon :)
+1. <a href="#types-of-errors">TYPES OF ERRORS:</a>\
+  <a href="#types-of-errors">606</a>,\
+  <a href="#types-of-errors">EULA</a>,\
+  <a href="#fatal-errorf">FATAL ERROR</a>
+3. Comming soon :)
 
 ## TYPES OF ERRORS:
 
@@ -32,4 +35,5 @@ oque pode ter cido:
 
 3. jorge_caudio_server
 
+> esse erro ocorre ao tentar criar a file e acontece um erro ao tentar procurar o Diretorio Mãe
 #### tentando não deixar espaços para que não ocorra mais erros.
