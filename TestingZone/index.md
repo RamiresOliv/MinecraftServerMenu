@@ -11,6 +11,8 @@ function inputstart() {
 
 > Here have tests exemples:
 
-<p id="hahahaha">Type anything here and see the magic...<p>\
-<input id="Douglas">\
+<p id="hahahaha">Type anything here and see the magic...<p>
+
+<input id="Douglas">
+
 <button onclick="inputstart()">Send</button>
