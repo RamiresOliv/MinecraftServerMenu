@@ -28,6 +28,7 @@ echo Minecraft Server Menu Instaler instalado
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.bat tente novamente mais tarde! 
 )
+
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de LICENSE
 bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath:~0,-1%\LICENSE > nul
@@ -49,6 +50,7 @@ echo pacote de versoes instalado
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! 
 )
+
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Server.bat
 bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/WebSiteStorage/Downloads/Minecraft_Java_Server.bat %mypath:~0,-1%\Server.bat > nul
