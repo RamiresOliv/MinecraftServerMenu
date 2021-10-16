@@ -5,7 +5,7 @@
 1. <a href="#types-of-errors">TYPES OF ERRORS:</a>\
   <a href="#606-fatal-error-ocorreu-um-erro-ao-instalar-a-filename-tente-novamente-mais-tarde">606</a>,\
   <a href="#eula-you-need-to-agree-to-the-eula-in-order-to-run-the-server-go-to-eluatxt-for-more-info">EULA</a>,\
-  *(pergunta)* <a onclick="Doc_FATALERROR(FATALERROR)" href="#fatal-error-o-arquivo-de-instalação-não-esta-funcionando">Bat Intaller not Installing the files</a>
+  *(pergunta)* <a onclick="Doc_FATALERROR('FATALERROR')" href="#fatal-error-o-arquivo-de-instalação-não-esta-funcionando">Bat Intaller not Installing the files</a>
 
 3. Comming soon :)
 
