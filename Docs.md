@@ -10,8 +10,8 @@
 
 ## TYPES OF ERRORS:
 
-<h1 display="none">606</h1>
-# 606
+<h1 style="display=none;">606</h1>
+
 ### 606 [FATAL ERROR]: Ocorreu um erro ao instalar a [filename] tente novamente mais tarde!
 > Este error é comum ele aparecera quando não for possivel instalar tal arquivo do nosso site
 
