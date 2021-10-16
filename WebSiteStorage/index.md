@@ -2,8 +2,7 @@
 
 > Here have Itens exemple: Images, Downloads and more.
 
-## Explorer
-
+## Explorer:
 <a href="Downloads">Downloads</a> [FOLDER] \
 <a href="JavaScript">JavaScript</a> [FOLDER] \
 <a href="Images">Images</a> [FOLDER] \
