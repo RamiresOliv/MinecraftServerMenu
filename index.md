@@ -1,6 +1,6 @@
 ## Minecraft Server Menu
 
-<script src="Main.js"></script>
+<script src="Main.js"></script> 
 
 <a href="" onclick="sla('só um teste viu kk')">sla me aperta '-'</a>
 
