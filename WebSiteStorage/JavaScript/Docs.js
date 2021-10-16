@@ -8,7 +8,8 @@ function sleep(milliseconds) {
 }
 
 function Doc_FATALERROR(Part) {
-  Part.style.backgroundColor = "red";
+  const Element = getElementById(Part)
+  Element.style.backgroundColor = "red";
   sleep(3000)
-  Part.style.backgroundColor = 'transparent'
+  Element.style.backgroundColor = 'transparent'
 }
