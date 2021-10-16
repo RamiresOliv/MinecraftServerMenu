@@ -39,3 +39,5 @@ PROGRAMAS.
 ## Instalation:
 
 <a href="Downloads">Download Page</a>
+
+<a href="Docs.md">Docs Page</a>
