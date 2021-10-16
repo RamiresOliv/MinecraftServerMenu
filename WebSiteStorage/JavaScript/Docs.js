@@ -8,7 +8,7 @@ function sleep(milliseconds) {
 }
 
 function Doc_FATALERROR(Part) {
-  const Element = getElementById(Part)
+  const Element = document.getElementsByClassName(Part)
   Element.style.backgroundColor = "red";
   sleep(3000)
   Element.style.backgroundColor = 'transparent'
