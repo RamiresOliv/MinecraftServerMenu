@@ -5,6 +5,7 @@
 ## Explorer
 
 <a href="Downloads">Downloads</a> [FOLDER] \
-<a href="Images">Downloads</a> [FOLDER] \
+<a href="JavaScript">JavaScript</a> [FOLDER] \
+<a href="Images">Images</a> [FOLDER] \
 <a href="https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/WebSiteStorage/temp">temp </a> [FILE] \
 <a href="..">Back</a> [Main Page]
