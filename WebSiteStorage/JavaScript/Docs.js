@@ -8,7 +8,7 @@ function sleep(milliseconds) {
 }
 
 function Doc_FATALERROR(Part) {
-  document.getElementsByClassName("FATALERROR").style.backgroundColor = "red";
+  document.getElementById("FATALERROR").style.background = "red";
   sleep(3000)
-  document.getElementsByClassName("FATALERROR").style.backgroundColor = 'transparent'
+  document.getElementById("FATALERROR").style.background = "transparent";
 }
