@@ -20,7 +20,7 @@ call :colorEcho 03 "[LOGS]"
 echo :
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Minecraft Server Menu Instaler...
-bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://serverminecraftmenu.ramiresoliv.repl.co/Downloads/Installers/Minecraft_Server_Menu_Installer.bat %mypath:~0,-1%\Minecraft_Server_Menu_Installer.bat > nul
+bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Installers/Minecraft_Server_Menu_Installer.bat %mypath:~0,-1%\Minecraft_Server_Menu_Installer.bat > nul
 if exist Minecraft_Server_Menu_Installer.bat (
 call :colorEcho 0a "[DONE] "
 echo Minecraft Server Menu Instaler instalado
@@ -30,7 +30,7 @@ echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.bat tente n
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de LICENSE
-bitsadmin.exe /transfer "LICENSE" https://serverminecraftmenu.ramiresoliv.repl.co/LICENSE.txt %mypath:~0,-1%\LICENSE > nul
+bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath:~0,-1%\LICENSE > nul
 if exist LICENSE (
 call :colorEcho 0a "[DONE] "
 echo LICENSE instalado
@@ -40,7 +40,7 @@ echo : Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde!
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de pacote de versoes...
-bitsadmin.exe /transfer "Menu id" https://serverminecraftmenu.ramiresoliv.repl.co/version.txt %mypath:~0,-1%\versionidlocal.txt > nul
+bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath:~0,-1%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
 call :colorEcho 0a "[DONE] "
@@ -51,7 +51,7 @@ echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tar
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Server.bat
-bitsadmin.exe /transfer "Server.bat" https://serverminecraftmenu.ramiresoliv.repl.co/Downloads/Minecraft_Java_Server.bat %mypath:~0,-1%\Server.bat > nul
+bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Minecraft_Java_Server.bat %mypath:~0,-1%\Server.bat > nul
 if exist Server.bat (
 call :colorEcho 0a "[DONE] "
 echo Server.bat instalado
