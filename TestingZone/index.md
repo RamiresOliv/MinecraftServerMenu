@@ -6,6 +6,11 @@ function inputstart() {
   console.log("cu")
 }
 </script>
-<h1 id="hahahaha"></h1>\
+
+<h1>TestingZone</h1>
+
+> Here have tests exemples:
+
+<p id="hahahaha">Type anything here and see the magic...<p>\
 <input id="Douglas"></input>\
 <button onclick="inputstart()">Send</button>
