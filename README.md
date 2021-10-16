@@ -1,2 +1,2 @@
 # MinecraftServerMenu
-## SCRIPT AREA
+## Stop try rob me '-'
