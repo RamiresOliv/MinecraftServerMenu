@@ -1,5 +1,4 @@
 <head>
-<script></script>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="gabrielramires.github.io/MinecraftServerMenu"/>
 <meta property="og:title" content="Minecraft Server Menu"/>
@@ -14,6 +13,8 @@
 <meta content="#ffffff" data-react-helmet="true" name="theme-color"/>
 <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
+<script></script>
+
 <!-- visible part: -->
 
 <div align="center">
