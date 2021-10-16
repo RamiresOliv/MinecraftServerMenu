@@ -1,4 +1,2 @@
-Ok,
-
-To get started you need to start the Patch with the name Minecraft_Server_Menu_Installer.bat
-inside it will have several options to remove, update and download
+GOTO WEBSITE FROM GET THE INSTALLER FILE THE OLD SITE HAS BEEN REMOVED AND MOVED TO GITHUB
+New WebSite: gabrielramires.github.io/MinecraftServerMenu
