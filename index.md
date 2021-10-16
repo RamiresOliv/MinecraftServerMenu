@@ -14,8 +14,8 @@ by Ramires Oliv
 
 <a href="Docs">Docs Page</a>
 
-<script src="Main.js"></script>
 <head>
+		<script src="Main.js"></script>
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="minecraftservermenu.ramiresoliv.repl.co">
 		<meta property="og:title" content="Minecraft Server Menu">
@@ -24,5 +24,4 @@ by Ramires Oliv
     <meta content="#ffffff" data-react-helmet="true" name="theme-color"/>
 		<link rel="stylesheet" href="visible/Style/Style.css">
 		<link rel="icon" href="https://minecraftservermenu.ramiresoliv.repl.co/visible/image/icon.png">
-	<title>Minecraft Server Menu / Home</title>
 </head>
