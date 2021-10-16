@@ -27,5 +27,5 @@
 
 <a href="Download">Download Page</a>\
 <a href="Docs">Docs Page</a>\
-<a href="wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> *-wiki page*
+<a href="https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> *-wiki page*
 </div>
