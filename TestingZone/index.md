@@ -11,6 +11,8 @@ function inputstart() {
 
 > Here have tests exemples:
 
+<a href="Notes_lol.txt">Pls ReadMe</a>
+
 <p id="hahahaha">Type anything here and see the magic...<p>
 
 <input id="Douglas">
