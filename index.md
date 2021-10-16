@@ -12,7 +12,7 @@ by Ramires Oliv
 
 ## Pages:
 
-<a href="Downloads">Download Page</a>
+<a href="../Files/Downloads/index">Download Page</a>
 
 <a href="Docs">Docs Page</a>
 
