@@ -1,4 +1,4 @@
-# MinecraftServerMenu Versions Logs
+<h1 align="center"> MinecraftServerMenu Versions Logs </h1>
 > (c) Ramires Oliv
 
 :)
