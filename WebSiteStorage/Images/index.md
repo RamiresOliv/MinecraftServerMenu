@@ -1,4 +1,4 @@
-# WEBSITESTORAGE/DOWNLOADS
+# WEBSITESTORAGE/IMAGES
 
 > Here have Itens exemple: Images, Downloads and more.
 
