@@ -9,6 +9,7 @@ by Ramires Oliv
  
  MIT License
 ```markdown
+
 Copyright (c) 2021 Gabriel Ramires de Oliveira
 
 A permissão é concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia
