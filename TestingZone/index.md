@@ -6,6 +6,6 @@ function inputstart() {
   console.log("cu")
 }
 </script>
-<h1 id="hahahaha"></h1>
-<input id="Douglas"></input>
+<h1 id="hahahaha"></h1>\
+<input id="Douglas"></input>\
 <button onclick="inputstart()">Send</button>
