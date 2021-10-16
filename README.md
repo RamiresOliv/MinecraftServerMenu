@@ -1,5 +1,5 @@
 # MinecraftServerMenu
-sup and welcome to Minecraft Server Menu
+Hey stop try rob me '-'
 
 ---
 Website: [Visit](https://gabrielramires.github.io/MinecraftServerMenu) (WORKING)
