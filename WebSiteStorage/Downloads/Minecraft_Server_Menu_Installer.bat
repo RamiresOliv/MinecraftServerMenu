@@ -30,7 +30,7 @@ if %opcao% equ n goto notready
 if %opcao% equ s goto ready
 if %opcao% equ A goto atualizacao
 if %opcao% equ a goto atualizacao
-if %opcao% equ N goto notready
+if %opcao% equ N goto notready 
 if %opcao% equ S goto ready
 if %opcao% GEQ 0 goto menu
 
