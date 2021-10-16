@@ -38,4 +38,4 @@ PROGRAMAS.
 
 ## Instalation:
 
-<a href="Downloads">ownload Page</a>
+<a href="Downloads">Download Page</a>
