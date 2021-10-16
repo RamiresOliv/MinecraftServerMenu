@@ -40,4 +40,4 @@ PROGRAMAS.
 
 <a href="Downloads">Download Page</a>
 
-<a href="Docs.md">Docs Page</a>
+<a href="Docs">Docs Page</a>
