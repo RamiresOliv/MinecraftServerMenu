@@ -6,6 +6,6 @@
 ### Summary:
 - <a href="">How I Get Started</a>
 - <a href="">Get Started</a>
-- <a href="Updates.md">Uptades</a>
+- <a href="Updates.md#updates">Uptades</a>
 ##### Versions:
 - <a href="Versions.md#01">0.1</a>
