@@ -3,7 +3,7 @@
 by Ramires Oliv
 
 > Do you want an easy, fast and organized method to create a Minecraft Server? come and meet Minecraft Server Menu a .Batch file, very fast managing Backups, Server, Client, Moderation, Mods and Plugins!
-<details>
+
 <a href="License_Page">MIT License</a>
 
 ---
