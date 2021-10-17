@@ -31,6 +31,6 @@
 
 <a href="Docs">Docs Page</a>
 
-<a href="https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> _-wiki page_
+<a href="https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> _wiki page_
 
 </div>
