@@ -14,8 +14,8 @@
 <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
 <script>
- var elem = document.getElementsByClassName('fork');
- elem.remove();
+ var myobj = document.getElementByClassName("fork");
+  myobj.remove();
 </script>
 
 <!-- visible part: -->
