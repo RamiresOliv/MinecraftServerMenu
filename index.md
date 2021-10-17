@@ -15,7 +15,7 @@
 </head>
 <script>
  var elem = document.getElementsByClassName('fork');
- elem.parentNode.removeChild(elem);
+ elem.remove();
 </script>
 
 <!-- visible part: -->
