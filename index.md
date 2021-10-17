@@ -14,8 +14,6 @@
 <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
 <script>
-var header = document.getElementById("header");
-header.nav.ul.li.remove()
 </script>
 
 <!-- visible part: -->
