@@ -19,7 +19,6 @@
 <!-- visible part: -->
 
 <div align="center">
-<h1>sus</h1>
 <h1>Welcome!</h1>
 
 <p><i>this is the best batch you will ever see! does not contain viruses or anything that will advance beyond System32, Windowns and others.</i></p>
