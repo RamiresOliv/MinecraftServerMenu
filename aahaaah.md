@@ -13,8 +13,6 @@
 <meta content="#ffffff" data-react-helmet="true" name="theme-color"/>
 <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
-<script>
-</script>
 
 <!-- visible part: -->
 
