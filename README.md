@@ -4,4 +4,4 @@
 
 Any way go way :>
 
-you need make download? ok. [Press here for goto the Download Page](https://gabrielramires.github.io/MinecraftServerMenu/Download)
+you need make download? ok. <a href="https://gabrielramires.github.io/MinecraftServerMenu/Download">Press here for goto the Download Page</a>
