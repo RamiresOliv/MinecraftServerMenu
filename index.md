@@ -18,7 +18,7 @@
 
 <!-- visible part: -->
 
-<div align="center">
+<!-- <div align="center"> -->
 <h1>Welcome!</h1>
 
 <p><i>this is the best batch you will ever see! does not contain viruses or anything that will advance beyond System32, Windowns and others.</i></p>
@@ -33,4 +33,4 @@
 
 <a href="https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> _wiki page_
 
-</div>
+<!-- </div> -->
