@@ -11,7 +11,7 @@ if exist ".git" (
     title %CD% - cmd
     cls
     echo Success!
-    echo Result: added, commited and pushed. to local Branch
+    echo Result: added, commited and pushed to local Branch.
 ) else (
     title %CD% - cmd
     cls
