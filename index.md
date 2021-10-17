@@ -14,7 +14,8 @@
 <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
 <script>
-document.body.removeChild(document.getElementsByClassName('fork'))
+var header = document.getElementById("header");
+header.nav.ul.li.remove()
 </script>
 
 <!-- visible part: -->
