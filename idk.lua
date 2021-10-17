@@ -1,1 +1,1 @@
-print("ffffffffaff")
+print("fffff    ffffaff")
