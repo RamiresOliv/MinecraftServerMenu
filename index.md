@@ -13,7 +13,10 @@
 <meta content="#ffffff" data-react-helmet="true" name="theme-color"/>
 <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
-<script></script>
+<script>
+ var elem = document.getElementsByClassName('fork');
+ elem.parentNode.removeChild(elem);
+</script>
 
 <!-- visible part: -->
 
