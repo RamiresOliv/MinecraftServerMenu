@@ -1,9 +1,9 @@
 <script>
     function StartRedirect() {
-        const urlParams = new URLSearchParams(window.location.search);
-            const myParam = urlParams.get('url');
+       // const urlParams = new URLSearchParams(window.location.search);
+            var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
 
-            window.location = MyParam
+            window.location = request
     }
 </script>
 
