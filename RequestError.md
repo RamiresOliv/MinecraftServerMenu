@@ -13,5 +13,5 @@
 <script>
     var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
 
-    document.getElementById("text")[requested_text][text].innerHTML = request;
+    document.getElementById("text")[requested_text].[text].innerHTML = request;
 </script>
