@@ -1,3 +1,7 @@
+:: call me using in PowerShell: ./publish
+:: call me using in Command Prompt/cmd: publish
+:: Batch file by Ramires Oliv
+
 @echo off
 if exist ".git" (
     title add
