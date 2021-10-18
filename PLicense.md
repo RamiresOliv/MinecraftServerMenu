@@ -4,7 +4,8 @@
 
 ## _NOT BY MOJANG-©!_
 
-Copyright (c) 2021 Gabriel Ramires Oliv
+_MIT License_\
+**Copyright (c) 2021 Gabriel Ramires Oliv**
 
 ```markdown
 Permission is hereby granted, free of charge, to any person obtaining a copy
