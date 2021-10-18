@@ -18,13 +18,13 @@ if exist ".git" (
     cls
     title %CD% - cmd
     cls
-    echo © Copyright Ramires Oliv
+    echo [Copyright Ramires Oliv]
     echo Success!
     echo Result: added, commited and pushed to local Branch.
 ) else (
     title %CD% - cmd
     cls
-    echo © Copyright Ramires Oliv
+    echo [Copyright Ramires Oliv]
     echo Not Success.
     echo Result: Error in try use git. pls verify if "git init" was used.
 )
