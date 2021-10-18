@@ -1,5 +1,5 @@
 <script>
-    if(awindow.location.href.includes('?') < -1) {
+    if(window.location.href.includes('?') < -1) {
        window.location.href = "404"
     }
 
