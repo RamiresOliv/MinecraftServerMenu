@@ -11,7 +11,7 @@
     // document.getElementById("message").innerHTML = request;
 
     function Return() {
-        window.location.href = ".."
+        window.location.href = "."
     }
 
     function StartRedirect() {
