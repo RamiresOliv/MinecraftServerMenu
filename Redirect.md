@@ -21,7 +21,7 @@
 
     function StartRedirect() {
         if (page != null) {
-        window.location.href = page;
+            window.location.href = page;
         } else {
             alert("page not found calling null")
             console.log("page not found calling null")
@@ -32,6 +32,7 @@
 
 # Redirection iminent!
 
-<p>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</p>\
+<h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
+
 <button onclick="StartRedirect()">Yes and Continue</button>\
 <button onclick="Return()">No and Back</button>
