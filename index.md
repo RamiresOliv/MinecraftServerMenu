@@ -26,6 +26,6 @@
 
 <a href="Download">Download Page</a>\
 <a href="Docs">Docs Page</a>\
-<a href="Redirect?page=https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3Ffrom=.">This menu can give me virus?</a> <i>-wiki page</i>
+<a href="Redirect?page=https://github.com/gabrielramires/MinecraftServerMenu/wiki/This-menu-can-give-me-virus%3F">This menu can give me virus?</a> <i>-wiki page</i>
 
 <!-- </div> -->
