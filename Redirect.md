@@ -2,7 +2,7 @@
 
     console.log(window.location.href.includes('?'));
 
-    if(window.location.href.includes('?') == false) { window.location.href = "RequestError?404" }
+    if(window.location.href.includes('?') == false) { window.location.href = "RequestError?code=404&from=" + window.location.href }
 
     var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
 

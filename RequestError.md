@@ -2,16 +2,26 @@
 
 <p id="text">
     Error Type:
-    <div id="requested_text"><p id="text"></p></div>
+    <div id="requested_text"><p id="code"></p></div>
 </p>
-<p id="request"></p></li>
+<p id="request"></p>
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
 
 <-- <a href=".">Back</a>
 
 <script>
-    var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
+    if(window.location.href.includes('?') == false) { 
+        if(window.location.href.includes('from=') == true) {
+        window.location.href = window.location.href.slice(window.location.href.indexOf('from=') + 1)
+        } else {
+            alert("unexpected error :/ returning to home page...")
+            window.location.href = "."
+        }
+    }
 
-    document.getElementById("text")[requested_text].innerHTML = request;
+    var request = window.location.href.slice(window.location.href.indexOf('code=') + 1);
+    var requestedpage = window.location.href.slice(window.location.href.indexOf('from=') + 1);
+
+    document.getElementById("text")[requested_text][code].innerHTML = request;
 </script>
