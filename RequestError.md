@@ -23,5 +23,7 @@
 
     if (from !=  null) {
         back_button.href = from;
+    } else {
+        back_button.href = ".";
     };
 </script>
