@@ -1,6 +1,6 @@
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
     console.log(window.location.href.includes('?'));
 
