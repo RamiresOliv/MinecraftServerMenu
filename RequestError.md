@@ -21,6 +21,11 @@
     document.getElementById("code").innerHTML = code;
     document.getElementById("from").innerHTML = from;
 
+    if (code == null) {
+        alert("error: Code calling null value")
+        window.location.href = "."
+    }
+
     if (from !=  null) {
         back_button.href = from;
     } else {
