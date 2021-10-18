@@ -20,7 +20,7 @@
 
 <p><i>this is the best batch you will ever see! does not contain viruses or anything that will advance beyond System32, Windowns and others.</i></p>
 	
-<a href="License">MIT License</a>
+<a href="PLicense">MIT License</a>
 
 <h2>Pages:</h2>
 
