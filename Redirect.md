@@ -2,7 +2,7 @@
     function StartRedirect() {
        // const urlParams = new URLSearchParams(window.location.search);
             var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
-
+            
             window.location.replace = request
     }
 </script>
