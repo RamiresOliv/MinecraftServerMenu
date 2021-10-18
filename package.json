@@ -4,7 +4,8 @@
   "description": "<h1 align=\"center\"> MinecraftServerMenu/Website </h1>",
   "main": "index.js",
   "dependencies": {
-    "discord-webhook-node": "^1.1.8"
+    "discord-webhook-node": "^1.1.8",
+    "requirejs": "^2.3.6"
   },
   "devDependencies": {},
   "scripts": {
