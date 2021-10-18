@@ -1,4 +1,6 @@
-# NOT BY MOJANG©!
+# License
+
+## _NOT BY MOJANG-©!_
 
 > MINECRAFT SERVER MENU LICENSE
 
@@ -24,6 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-> the MinecrafServerMenu not afiliad of Mojang©
+> the MinecrafServerMenu not afiliad of Mojang-©
 
 <--- <a href="https://gabrielramires.github.io/MinecraftServerMenu">Back</a>
