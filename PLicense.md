@@ -2,9 +2,9 @@
 
 > MINECRAFT SERVER MENU LICENSE
 
-<i><b>NOT BY © MOJANG!</b></i>\
-<i><b>MIT License</b></i>\
-<i><b>Copyright (c) 2021 Gabriel Ramires Oliv</b></i>\
+_NOT BY © MOJANG!_\
+_MIT License_\
+**Copyright (c) 2021 Gabriel Ramires Oliv**
 
 ```markdown
 Permission is hereby granted, free of charge, to any person obtaining a copy
