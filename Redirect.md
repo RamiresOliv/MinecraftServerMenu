@@ -1,6 +1,6 @@
 <script>
-    document.getElementById("error").style.visibility='visible';
-    document.getElementById("show_error").style.visibility='hidden';
+    document.getElementById("show_error").style.visibility='visible';
+    document.getElementById("show").style.visibility='hidden';
 
     console.log(window.location.href.includes('?'));
 
