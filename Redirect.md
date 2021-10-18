@@ -13,7 +13,7 @@
         if (from != null) {
             window.location.href = from;
         } else {
-            ndow.location.href = "."
+            window.location.href = "."
         };
     }
 
