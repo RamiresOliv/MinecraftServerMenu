@@ -3,11 +3,13 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
 
-    const redirectionurl = urlParams.get('page')
+    const page = urlParams.get('page')
     const from = urlParams.get('from')
 
     console.log("Url for Redirect:")
-    console.log(redirectionurl)
+    console.log(page)
+
+    if (page == null) { window.location.href = "RequestError?code=page_for_redirect_not_found"}
 
     function Return() {
         if (from != null) {
@@ -18,11 +20,12 @@
     }
 
     function StartRedirect() {
-        if (redirectionurl != null) {
-        window.location.href = redirectionurl;
+        if (page != null) {
+        window.location.href = page;
         } else {
-            window.location.href = "RequestError?code=404&from=" + window.location.href
-        };
+            alert("page not found calling null")
+            console.log("page not found calling null")
+        }
     }
 
 </script>
