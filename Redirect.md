@@ -1,20 +1,28 @@
 <script>
 
-    console.log(window.location.href.includes('?'));
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
 
-    if(window.location.href.includes('?') == false) { window.location.href = "RequestError?code=404&from=" + window.location.href }
+    const redirectionurl = urlParams.get('redirectionurl')
+    const from = urlParams.get('from')
 
-    var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
-
-    console.log("Url for Redirec:")
-    console.log(request)
+    console.log("Url for Redirect:")
+    console.log(redirectionurl)
 
     function Return() {
-        window.location.href = "."
+        if (from != null) {
+            window.location.href = from;
+        } else {
+            ndow.location.href = "."
+        };
     }
 
     function StartRedirect() {
-        window.location.href = request;
+        if (redirectionurl != null) {
+        window.location.href = redirectionurl;
+        } else {
+            window.location.href = "RequestError?code=404&from=" + window.location.href
+        };
     }
 
 </script>
