@@ -1,7 +1,7 @@
 :: call me using in PowerShell: ./publish
 :: call me using in Command Prompt/cmd: publish
 :: Batch file by Ramires Oliv
-:: this batch used to publish all files in github directory
+:: this batch used to publish changed, created, removed files in github directory
 
 @echo off
 if exist ".git" (
