@@ -3,16 +3,16 @@
 
     console.log(request)
 
-    document.getElementById("message").innerHTML = request
+    document.getElementById("message").innerHTML = request;
 
     function StartRedirect() {
-        window.location.href = request
+        window.location.href = request;
     }
 </script>
 
 # Redirection iminent!
 
-you are leaving our website you are accessing another site do you want to continue and goto the<p id="message"></p>?
+you are leaving our website you are accessing another site do you want to continue and goto the <p id="message"></p> s?
 <br />
 
 <button onclick="StartRedirect()">Yes and Continue</button>\
