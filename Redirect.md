@@ -15,7 +15,7 @@
 # Redirection iminent!
 
 <h3 id="message"></h3>
-
-<button onclick="StartRedirect()">Yes and Continue</button>
 <br />
-<button href=".">No and Back</button>
+
+<button onclick="StartRedirect()">Yes and Continue</button>\
+<button href="..">No and Back</button>
