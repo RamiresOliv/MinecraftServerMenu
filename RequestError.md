@@ -1,7 +1,7 @@
 # Request Error
 
-<p>Error Type:</p>\
-<p id="request"></p>
+<li><p>Error Type:</p>
+<p id="request"></p></li>
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
 
