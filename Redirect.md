@@ -14,8 +14,6 @@
     console.log("Url for Redirec:")
     console.log(request)
 
-    // document.getElementById("message").innerHTML = request;
-
     function Return() {
         window.location.href = "."
     }
