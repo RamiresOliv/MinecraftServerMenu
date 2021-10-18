@@ -10,6 +10,10 @@
 
     // document.getElementById("message").innerHTML = request;
 
+    function Return() {
+        window.location.href = ".."
+    }
+
     function StartRedirect() {
         window.location.href = request;
     }
@@ -19,4 +23,4 @@
 
 <p>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</p>\
 <button onclick="StartRedirect()">Yes and Continue</button>\
-<button href="..">No and Back</button>
+<button onclick="Return()">No and Back</button>
