@@ -2,7 +2,7 @@
 
 <p id="text">
     Error Type:
-    <div id="requested_text"><p id="code"></p></div>
+    <p id="code"></p>
 </p>
 <p id="request"></p>
 
