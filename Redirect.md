@@ -7,7 +7,7 @@
     }
 </script>
 
-# Redirection iminent
+# Redirection iminent!
 
 ## you are leaving our website you are accessing another site do you want to continue?
 
