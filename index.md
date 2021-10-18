@@ -24,7 +24,7 @@
 	
 <a href="License">MIT License</a>
 
-<h1> Pages:</h1>
+<h1>Pages:</h1>
 
 <a href="Download">Download Page</a>\
 <a href="Docs">Docs Page</a>\
