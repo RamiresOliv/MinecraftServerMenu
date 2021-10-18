@@ -2,10 +2,8 @@
     console.log(window.location.href.includes('?'));
 
     if(window.location.href.includes('?') == false) {
-        document.getElementById("show").style.opacity=0.0;
-        document.getElementById("show").style.visibility= 'hidden';
+        document.getElementById("show").style.visibility = "hidden"; 
     } else {
-        document.getElementById("show_error").style.opacity=0.0;
         document.getElementById("show_error").style.visibility= 'hidden';
     }
 
