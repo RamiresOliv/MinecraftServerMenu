@@ -12,6 +12,11 @@
 
 <script>
     if(window.location.href.includes('?') == false) { 
+        alert("unexpected error :/ returning to home page...")
+        window.location.href = "." 
+    }
+    
+    if(window.location.href.includes('code=') == false) { 
         if(window.location.href.includes('from=') == true) {
         window.location.href = window.location.href.slice(window.location.href.indexOf('from=') + 1)
         } else {
