@@ -1,12 +1,12 @@
 <script>
     document.getElementById("error").style.visibility='visible';
-    document.getElementById("show").style.visibility='hidden';
+    document.getElementById("show_error").style.visibility='hidden';
 
     console.log(window.location.href.includes('?'));
 
     if(window.location.href.includes('?') == true) {
         document.getElementById("show").style.visibility='visible';
-        document.getElementById("error").style.visibility='hidden';
+        document.getElementById("show_error").style.visibility='hidden';
     }
 
     var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
@@ -25,9 +25,9 @@
 
 # Redirection iminent!
 
-<div id="error">
-    <h1>Error in try get Redirect URL</h1>
-    <p>Error in try redirect try again later.</p>
+<div id="show_error">
+    <h1>Error in try get Redirect URL</h1>\
+    <p>Error in try redirect try again later.</p>\
     <-- <a href=".">Back</a>
 </div>
 
