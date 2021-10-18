@@ -1,4 +1,4 @@
-<script data-main = "main" src = "libs/require.js"></script>
+<script data-main = "main" src = "main.js"></script>
 
 <h2 id="WarnMessage"></h2>
 
