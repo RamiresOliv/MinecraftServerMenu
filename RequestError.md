@@ -3,6 +3,8 @@
 <p id="text">
     Error Type:
     <p id="code"></p>
+    Requested From:
+    <p id="from"></p>
 </p>
 <p id="request"></p>
 
@@ -20,8 +22,9 @@
         }
     }
 
-    var request = window.location.href.slice(window.location.href.indexOf('code=') + 1);
+    var errorcode = window.location.href.slice(window.location.href.indexOf('code=') + 1);
     var requestedpage = window.location.href.slice(window.location.href.indexOf('from=') + 1);
 
-    document.getElementById("text")[requested_text][code].innerHTML = request;
+    document.getElementById("text")[code].innerHTML = errorcode;
+    document.getElementById("text")[from].innerHTML = requestedpage;
 </script>
