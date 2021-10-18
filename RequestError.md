@@ -24,6 +24,7 @@
     if (from !=  null) {
         back_button.href = from;
     } else {
+        document.getElementById("from").innerHTML = "N/A";
         back_button.href = ".";
     };
 </script>
