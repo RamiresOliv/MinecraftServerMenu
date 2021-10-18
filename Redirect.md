@@ -2,11 +2,7 @@
 
     console.log(window.location.href.includes('?'));
 
-    if(window.location.href.includes('?') == false) {
-        document.getElementById("Show_Success").style.visibility = "hidden";
-    } else {
-        document.getElementById("Show_Error").style.visibility= 'hidden';
-    }
+    if(window.location.href.includes('?') == false) { window.location.href = "RequestError?404" }
 
     var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
 
