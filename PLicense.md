@@ -2,8 +2,7 @@
 
 > MINECRAFT SERVER MENU LICENSE
 
-## _NOT BY MOJANG-©!_
-
+_NOT BY © MOJANG !_\
 _MIT License_\
 **Copyright (c) 2021 Gabriel Ramires Oliv**
 
@@ -27,6 +26,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-> the MinecrafServerMenu not afiliad of Mojang-©
+> the MinecrafServerMenu not afiliad of © Mojang
 
 <--- <a href="https://gabrielramires.github.io/MinecraftServerMenu">Back</a>
