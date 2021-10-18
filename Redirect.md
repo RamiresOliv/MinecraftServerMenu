@@ -1,12 +1,12 @@
 <script>
-    console.log(window.location.href.includes('?'))
+    document.getElementById("error").style.visibility='visible';
+    document.getElementById("show").style.visibility='hidden';
 
-    if(window.location.href.includes('?') == false) {
-       document.getElementById("error").style.visibility='visible';
-       document.getElementById("show").style.visibility='hidden';
-    } else {
-       document.getElementById("show").style.visibility='visible';
-       document.getElementById("error").style.visibility='hidden';
+    console.log(window.location.href.includes('?'));
+
+    if(window.location.href.includes('?') == true) {
+        document.getElementById("show").style.visibility='visible';
+        document.getElementById("error").style.visibility='hidden';
     }
 
     var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
