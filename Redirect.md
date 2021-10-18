@@ -1,8 +1,11 @@
-<script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script type="text/javascript">
+
     console.log(window.location.href.includes('?'));
 
     if(window.location.href.includes('?') == false) {
-        document.getElementById("show").style.visibility = "hidden"; 
+        document.getElementById("show").style.visibility = "hidden";
     } else {
         document.getElementById("show_error").style.visibility= 'hidden';
     }
@@ -19,6 +22,7 @@
     function StartRedirect() {
         window.location.href = request;
     }
+
 </script>
 
 # Redirection iminent!
