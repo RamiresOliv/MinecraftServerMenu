@@ -3,7 +3,7 @@
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
 
-    const redirectionurl = urlParams.get('redirectionurl')
+    const redirectionurl = urlParams.get('page')
     const from = urlParams.get('from')
 
     console.log("Url for Redirect:")
