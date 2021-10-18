@@ -8,26 +8,20 @@
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
 
-<-- <a href=".">Back</a>
+<-- <a id="back_button" href=".">Back</a>
 
 <script>
-    if(window.location.href.includes('?') == false) { 
-        alert("unexpected error :/ returning to home page...")
-        window.location.href = "." 
-    }
-    
-    if(window.location.href.includes('code=') == false) { 
-        if(window.location.href.includes('from=') == true) {
-        window.location.href = window.location.href.slice(window.location.href.indexOf('from=') + 1)
-        } else {
-            alert("unexpected error :/ returning to home page...")
-            window.location.href = "."
-        }
-    }
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const back_button = document.getElementById("back_button")
 
-    var errorcode = window.location.href.slice(window.location.href.indexOf('code=') + 1);
-    var requestedpage = window.location.href.slice(window.location.href.indexOf('from=') + 1);
+    const code = urlParams.get('code')
+    const from = urlParams.get('from')
 
-    document.getElementById("code").innerHTML = errorcode;
-    document.getElementById("from").innerHTML = requestedpage;
+    document.getElementById("code").innerHTML = code;
+    document.getElementById("from").innerHTML = from;
+
+    if (from !=  null) {
+        back_button.href = from;
+    };
 </script>
