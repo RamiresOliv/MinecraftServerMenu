@@ -1,8 +1,8 @@
 # License
 
-## _NOT BY MOJANG-©!_
-
 > MINECRAFT SERVER MENU LICENSE
+
+## _NOT BY MOJANG-©!_
 
 Copyright (c) 2021 Gabriel Ramires Oliv
 
