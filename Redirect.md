@@ -3,18 +3,16 @@
 
     console.log(request)
 
-    document.getElementById("message").innerHTML = `you are leaving our website you are accessing another site do you want to continue and goto the ${request}?`
+    document.getElementById("message").innerHTML = request
 
     function StartRedirect() {
-        // const urlParams = new URLSearchParams(window.location.search);
-        
         window.location.href = request
     }
 </script>
 
 # Redirection iminent!
 
-<h3 id="message"></h3>
+you are leaving our website you are accessing another site do you want to continue and goto the<p id="message"></p>?
 <br />
 
 <button onclick="StartRedirect()">Yes and Continue</button>\
