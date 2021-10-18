@@ -1,12 +1,10 @@
 # Request Error
 
-<p id="text">
-    Error Type:
-    <p id="code"></p>
-    Requested From:
-    <p id="from"></p>
-</p>
-<p id="request"></p>
+<p>Error Type:</p>
+<p id="code"></p>
+
+<p>Requested From:</p>
+<p id="from"></p>
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
 
@@ -25,6 +23,6 @@
     var errorcode = window.location.href.slice(window.location.href.indexOf('code=') + 1);
     var requestedpage = window.location.href.slice(window.location.href.indexOf('from=') + 1);
 
-    document.getElementById("text")[code].innerHTML = errorcode;
-    document.getElementById("text")[from].innerHTML = requestedpage;
+    document.getElementById("code").innerHTML = errorcode;
+    document.getElementById("from").innerHTML = requestedpage;
 </script>
