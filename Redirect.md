@@ -1,4 +1,6 @@
 <script>
+    console.log(window.location.href.includes('?'))
+    
     if(window.location.href.includes('?') < -1) {
        window.location.href = "404"
     }
