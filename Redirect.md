@@ -25,10 +25,12 @@
 
 # Redirection iminent!
 
-<div id="Show_Error" style="visibility=hidden;">
-    <h1>Error in try get Redirect URL</h1>\
-    <p>Error in try redirect try again later.</p>\
-    <-- <a href=".">Back</a>
+<div id="Show_Error" style="visibility='hidden';">
+
+<h1>Error in try get Redirect URL</h1>\
+<p>Error in try redirect try again later.</p>\
+<-- <a href=".">Back</a>
+
 </div>
 
 <div id="Show_Success">
