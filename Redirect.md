@@ -25,7 +25,7 @@
 
 # Redirection iminent!
 
-<div id="Show_Error">
+<div id="Show_Error" style="visibility=hidden;">
     <h1>Error in try get Redirect URL</h1>\
     <p>Error in try redirect try again later.</p>\
     <-- <a href=".">Back</a>
