@@ -3,7 +3,7 @@
 
     console.log(request)
 
-    document.getElementById("message").innerHTML = "you are leaving our website you are accessing another site do you want to continue and goto the " + request + "?"
+    //document.getElementById("message").innerHTML = "you are leaving our website you are accessing another site do you want to continue and goto the " + request + "?"
 
     function StartRedirect() {
         // const urlParams = new URLSearchParams(window.location.search);
