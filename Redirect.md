@@ -8,7 +8,7 @@
     function StartRedirect() {
         // const urlParams = new URLSearchParams(window.location.search);
         
-        window.location.replace = `https://${request}`
+        window.location.href = request
     }
 </script>
 
