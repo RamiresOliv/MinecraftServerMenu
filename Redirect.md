@@ -1,4 +1,8 @@
 <script>
+    if(window.location.href.indexOf("?") > -1) {
+       window.location.href = "404"
+    }
+
     var request = window.location.href.slice(window.location.href.indexOf('?') + 1);
 
     console.log("Url for Redirec:")
