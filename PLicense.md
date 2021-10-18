@@ -1,6 +1,6 @@
 # NOT BY MOJANG©!
 
-> MINECRAFT SERVER MENU LICENSE!
+> MINECRAFT SERVER MENU LICENSE
 
 Copyright (c) 2021 Gabriel Ramires Oliv
 
@@ -23,5 +23,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
+
+> the MinecrafServerMenu not afiliad of Mojang©
 
 <--- <a href="https://gabrielramires.github.io/MinecraftServerMenu">Back</a>
