@@ -6,9 +6,9 @@
 
 ## any way thx so mutch for use the MinecraftServerMenu
 
-sad end no?\
+sad end no?
 
-<p style="color = red;"><i>(YOU HAS BEEN BANNED FROM IP)</i></p>
+<p><i style="color = red;">(YOU HAS BEEN BANNED FROM IP)</i></p>
 
 <script>
     var Bans = {
