@@ -1,12 +1,11 @@
 <script>
-    var Bans = {
-        "189.114.246.165": "Banned_User"
-    }
-
+    import { VerifyBanned, VerifyNotBanned } from './Modules/JavaScript/banned_module.mjs';
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const page = urlParams.get('page')
     const from = urlParams.get('from')
+
+    VerifyBanned(".")
 
     console.log("Url for Redirect: ", page)
 
@@ -27,19 +26,8 @@
     }
 
     function StartRedirect() {
-        $(function() {
-            $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-                function(json) {
-                    console.log("Meu IP público é: ", json.ip);
-                
-                    console.log(Bans[json.ip]);
 
-                    if (Bans[json.ip] == "Banned_User") {
-                        window.location.href = "banned"
-                    }
-                }
-            );
-        });
+        VerifyBanned(".")
 
         console.warn("Bye!! :D")
         if (page != null) {
