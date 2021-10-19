@@ -13,8 +13,7 @@
     const page = urlParams.get('page')
     const from = urlParams.get('from')
 
-    console.log("Url for Redirect:")
-    console.log(page)
+    console.log("Url for Redirect: ", page)
 
     if (page == null) {
         window.location.href = "RequestError?code=page for redirect not found"
