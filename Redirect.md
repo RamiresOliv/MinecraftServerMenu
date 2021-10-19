@@ -9,6 +9,7 @@
     console.log(page)
 
     console.log(document.getElementById("announce"))
+        document.getElementByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from 
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
@@ -39,7 +40,7 @@
 
 # Redirection iminent!
 
-<p id="announce"></p>
+<p class="announce"></p>
 
 <h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
 
