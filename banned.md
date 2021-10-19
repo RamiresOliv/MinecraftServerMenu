@@ -1,4 +1,9 @@
 # you have been banned from the website i sorry :(
 
-sad end no?
+## any way thx so mutch for use the MinecraftServerMenu
+
+oops do you think you were unfairly banned? or unintentionally and want to discuss?\
+our server on Discord is not ready yet when it is ready we will put it here as soon as possible
+
+sad end no?\
 _(YOU HAS BEEN BANNED FROM IP)_
