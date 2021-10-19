@@ -3,20 +3,6 @@
         "189.114.246.165": "Banned_User"
     }
 
-    $(function() {
-        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-            function(json) {
-                console.log("Meu IP público é: ", json.ip);
-                
-               console.log(Bans[json.ip]);
-
-               if (Bans[json.ip] == "Banned_User") {
-                   window.location.href = "banned"
-               }
-            }
-        );
-    });
-
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const page = urlParams.get('page')
