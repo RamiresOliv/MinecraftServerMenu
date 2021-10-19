@@ -17,7 +17,8 @@
 
     let verifyBannedValue = VerifyBanned()
     if (verifyBannedValue == true) {
-        window.location.href = "banned"
+        console.log(verifyBannedValue)
+        // window.location.href = "banned"
     }
 </script>
 
