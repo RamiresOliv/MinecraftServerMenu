@@ -1,4 +1,4 @@
-<script>
+<script type="module">
     import { VerifyBanned, VerifyNotBanned } from '../banned_module.mjs';
 
     let verifyBannedValue = VerifyBanned()
