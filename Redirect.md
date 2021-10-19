@@ -41,7 +41,7 @@
 
 <h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
 
-<p id="verifymessage">f</p>
+<h3 id="verifymessage"></h3>
 
 <button onclick="StartRedirect()">Yes and Continue</button>\
 <button onclick="Return()">No and Back</button>
