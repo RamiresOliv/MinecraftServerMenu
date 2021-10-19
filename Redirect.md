@@ -2,7 +2,7 @@
 
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const compatible = document.getElementById("compatible")
+    const compatible = document.getElementById("compatible");
 
     const page = urlParams.get('page')
     const from = urlParams.get('from')
@@ -12,7 +12,9 @@
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
-    if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { compatible.innerHTML = "wiki page _confiabled_ - in github and from gabrielramires." }
+    if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { 
+        compatible.innerHTML = "wiki page _confiabled_ - in github and from gabrielramires."
+    }
 
     function Return() {
         if (from != null) {
