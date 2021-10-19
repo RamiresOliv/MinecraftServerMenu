@@ -12,14 +12,14 @@
     <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
 
-<script>
+<script type="module">
     import { VerifyBanned, VerifyNotBanned } from './banned_module.mjs';
 
-    let verifyBannedValue = VerifyBanned()
-    if (verifyBannedValue == true) {
-        console.log(verifyBannedValue)
-        // window.location.href = "banned"
-    }
+    VerifyBanned(".")
+</script>
+
+<script>
+    console.log("amogus")
 </script>
 
 <!-- visible part: -->

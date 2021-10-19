@@ -7,22 +7,11 @@ Download using <a href="WebSiteStorage/Downloads/Minecraft_Server_Menu_Installer
 
 <p><-- <a href=".">Back</a></p>
 
+<script type="module">
+    import { VerifyBanned, VerifyNotBanned } from './banned_module.mjs';
+
+    VerifyBanned(".")
+</script>
+
 <script>
-    var Bans = {
-        "189.114.246.165": "Banned_User"
-    }
-
-    $(function() {
-        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-            function(json) {
-                console.log("Meu IP público é: ", json.ip);
-                
-               console.log(Bans[json.ip]);
-
-               if (Bans[json.ip] == "Banned_User") {
-                   window.location.href = "banned"
-               }
-            }
-        );
-    });
 </script>

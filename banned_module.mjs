@@ -2,7 +2,7 @@ var Bans = {
     "189.114.246.165": "Banned_User"
 }
 
-export function VerifyBanned() {
+export function VerifyBanned(WebsiteParent) {
     $(function () {
         $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
             function (json) {
@@ -10,18 +10,16 @@ export function VerifyBanned() {
                 console.log(Bans[json.ip]);
 
                 if (Bans[json.ip] == "Banned_User") {
-                    console.log("true")
-                    return true
+                    window.location.href = WebsiteParent + "banned"
                 } else {
-                    console.log("false")
-                    return false
+                    window.location.href = WebsiteParent
                 }
             }
         );
     });
 }
 
-export function VerifyNotBanned() {
+export function VerifyNotBanned(WebsiteParent) {
     $(function () {
         $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
             function (json) {
@@ -29,9 +27,9 @@ export function VerifyNotBanned() {
                 console.log(Bans[json.ip]);
 
                 if (Bans[json.ip] != "Banned_User") {
-                    return false
+                    window.location.href = WebsiteParent
                 } else {
-                    return true
+                    window.location.href = WebsiteParent + "banned"
                 }
             }
         );

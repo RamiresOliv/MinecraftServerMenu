@@ -1,7 +1,5 @@
 <script type="module">
-    import { VerifyBanned, VerifyNotBanned } from '../banned_module_.mjs';
+    import { VerifyBanned, VerifyNotBanned } from '../banned_module.mjs';
 
-    let verifyBannedValue = VerifyBanned()
-    
-    console.log(verifyBannedValue)
+    VerifyBanned("..")
 </script>
