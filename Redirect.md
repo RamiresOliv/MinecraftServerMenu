@@ -1,10 +1,6 @@
 <script type="module">
     import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
     VerifyBanned(".")
-
-    function StartRedirect() {
-        VerifyBanned(".")
-    }
 </script>
 
 <script>
