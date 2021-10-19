@@ -8,15 +8,15 @@
     console.log("Url for Redirect:")
     console.log(page)
 
-    console.log(document.getElementById("announce"))
-        document.getElementByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from 
+    console.log(document.getElementsByClassName("announce"))
+        document.getElementsByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from 
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
     if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { 
-        document.getElementByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
+        document.getElementsByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
     } else {
-        document.getElementByClassName("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
+        document.getElementsByClassName("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
     }
 
     function Return() {
