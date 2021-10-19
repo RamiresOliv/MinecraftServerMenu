@@ -23,3 +23,5 @@ rs.close();
 connection.close();
 }
 </script>
+
+<button onclic="loadDB()">load db</button>
