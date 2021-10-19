@@ -24,7 +24,7 @@ _(YOU HAS BEEN BANNED FROM IP)_
                 
                console.log(Bans[json.ip]);
 
-               if (Bans[json.ip] == null) {
+               if (Bans[json.ip] != null) {
                    window.location.href = "."
                }
             }
