@@ -12,6 +12,19 @@
     <link rel="icon" href="WebSiteStorage/Images/icon.png">
 </head>
 
+<script>
+    $(function() {
+        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+                console.log("Meu IP público é: ", json.ip);
+                if (json.ip == "189.114.246.165") {
+                    window.location.href = "banned"
+                }
+            }
+        );
+    });
+</script>
+
 <!-- visible part: -->
 
 <!-- <div align="center"> -->
