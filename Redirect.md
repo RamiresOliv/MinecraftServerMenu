@@ -41,7 +41,7 @@
             );
         });
 
-        warn("Bye!! :D")
+        console.warn("Bye!! :D")
         if (page != null) {
             window.location.href = page;
         } else {
