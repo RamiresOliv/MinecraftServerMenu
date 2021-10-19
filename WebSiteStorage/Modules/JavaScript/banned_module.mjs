@@ -1,5 +1,5 @@
 var Bans = {
-    "189.114.246.165_": "Banned_User"
+    "189.114.246.165": "Banned_User"
 }
 
 var banned_page_name = "banned"
