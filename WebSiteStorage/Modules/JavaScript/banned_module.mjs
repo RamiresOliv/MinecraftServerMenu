@@ -27,9 +27,9 @@ export function VerifyNotBanned(WebsiteParent) {
                 console.log(Bans[json.ip]);
 
                 if (Bans[json.ip] != "Banned_User") {
-                    window.location.href = WebsiteParent
+                    window.location.href = WebsiteParent;
                 } else {
-                    window.location.href = WebsiteParent + "/banned"
+                    window.location.href = WebsiteParent + "/" + "banned";
                 }
             }
         );
