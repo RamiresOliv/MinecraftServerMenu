@@ -10,8 +10,10 @@ export function VerifyBanned() {
                 console.log(Bans[json.ip]);
 
                 if (Bans[json.ip] == "Banned_User") {
+                    console.log("true")
                     return true
                 } else {
+                    console.log("false")
                     return false
                 }
             }
