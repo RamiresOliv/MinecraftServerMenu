@@ -21,6 +21,19 @@ export function VerifyBanned(WebsiteParent) {
     });
 }
 
-export function Debug() {
-    console.log("not working.")
+export function VerifyNotBanned(WebsiteParent) {
+    $(function () {
+        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function (json) {
+
+                console.log(Bans[json.ip]);
+
+                if (Bans[json.ip] != "Banned_User") {
+                    window.location.href = WebsiteParent;
+                } else {
+                    window.location.href = WebsiteParent + "/" + banned_page_name;
+                }
+            }
+        );
+    });
 }
