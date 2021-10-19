@@ -1,15 +1,12 @@
 <script>
     function createFaction() {
-        var name = document.getElementById('factionName'),
-        factionName = input.value;
+        submitedvalue = docment.getElementById("submitedvalue").value;
 
-        document.getElementById('test1').innerHTML = name;
+        document.getElementById('test1').innerHTML = submitedvalue;
     }
 </script>
 
 <p id="test1"></p>
 
-<form method="get">
-    </br><button type="submit" onclick="createFaction()">create faction.</button>
-    <input placeholder="name" id="factionName" name="factionName"></input>
-</form>
+<button type="submit" onclick="createFaction()">create faction.</button>\
+<input placeholder="name" id="submitedvalue" name="factionName"></input>
