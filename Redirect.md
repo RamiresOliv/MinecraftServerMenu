@@ -9,6 +9,7 @@
     console.log(page)
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
+    if (page == "") { window.location.href = "RequestError?code=page for redirect not found"}
 
     function Return() {
         if (from != null) {
