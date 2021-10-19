@@ -1,4 +1,4 @@
-<script>
+<script type="module">
     import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
