@@ -14,9 +14,9 @@
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
     if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { 
-        document.getElementById("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
+        document.getElementByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
     } else {
-        document.getElementById("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
+        document.getElementByClassName("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
     }
 
     function Return() {
