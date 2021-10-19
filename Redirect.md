@@ -1,11 +1,17 @@
 <script type="module">
     import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
+    VerifyBanned(".")
+
+    function StartRedirect() {
+        VerifyBanned(".")
+    }
+</script>
+
+<script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const page = urlParams.get('page')
     const from = urlParams.get('from')
-
-    VerifyBanned(".")
 
     console.log("Url for Redirect: ", page)
 
