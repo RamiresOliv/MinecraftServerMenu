@@ -8,9 +8,13 @@
     console.log("Url for Redirect:")
     console.log(page)
 
-    if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
-    if (page == "") { window.location.href = "RequestError?code=page params no have success"}
-    if (page == "lol") { window.location.href = "RequestError?code=lol xd"}
+    if (page == null) {
+        window.location.href = "RequestError?code=page for redirect not found"
+    } else if (page == "") {
+        window.location.href = "RequestError?code=The param 'page' no have success"
+    } else if (page == "lol") {
+        window.location.href = "RequestError?code=lol xd"
+    }
 
     function Return() {
         if (from != null) {
