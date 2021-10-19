@@ -13,5 +13,5 @@ sad end no?
 <script type="module">
     import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
 
-    VerifyBanned(".")
+    VerifyNotBanned(".")
 </script>

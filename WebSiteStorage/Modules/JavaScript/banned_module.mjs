@@ -30,8 +30,6 @@ export function VerifyNotBanned(WebsiteParent) {
 
                 if (Bans[json.ip] != "Banned_User") {
                     window.location.href = WebsiteParent;
-                } else {
-                    window.location.href = WebsiteParent + "/" + banned_page_name;
                 }
             }
         );
