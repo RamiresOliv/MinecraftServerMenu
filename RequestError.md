@@ -24,8 +24,11 @@
     if (code == null) {
         alert("error: Code calling null value")
         window.location.href = "."
+    } else if (code == "") {
+        alert("error: The param 'code' no have success")
+        window.location.href = "."
     }
-
+    
     if (from !=  null) {
         back_button.href = from;
     } else {
