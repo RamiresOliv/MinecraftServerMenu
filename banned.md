@@ -7,4 +7,7 @@
 ## any way thx so mutch for use the MinecraftServerMenu
 
 sad end no?\
+
+<div style="color = red;">
 _(YOU HAS BEEN BANNED FROM IP)_
+</div>
