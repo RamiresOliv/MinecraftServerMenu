@@ -25,6 +25,7 @@
     }
 
     function StartRedirect() {
+        warn("Bye!! :D")
         if (page != null) {
             window.location.href = page;
         } else {
