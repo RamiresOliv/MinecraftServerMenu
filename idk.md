@@ -1,6 +1,6 @@
 <script>
     function createFaction() {
-        submitedvalue = docment.getElementById("submitedvalue").value;
+        submitedvalue = document.getElementById("submitedvalue").value;
 
         document.getElementById('test1').innerHTML = submitedvalue;
     }
