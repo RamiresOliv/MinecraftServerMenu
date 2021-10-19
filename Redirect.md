@@ -12,7 +12,7 @@
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
-    if page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki" { compatible.innerHTML = "wiki page _confiabled_ - in github and from gabrielramires." }
+    if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { compatible.innerHTML = "wiki page _confiabled_ - in github and from gabrielramires." }
 
     function Return() {
         if (from != null) {
