@@ -1,4 +1,4 @@
-# you have been banned.
+# you has been banned.
 
 > from the website i sorry :(
 
