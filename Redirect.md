@@ -1,5 +1,5 @@
 <script>
-    import { VerifyBanned, VerifyNotBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
+    import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const page = urlParams.get('page')
