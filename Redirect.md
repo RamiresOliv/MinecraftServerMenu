@@ -7,8 +7,7 @@
 
     console.log("Url for Redirect:")
     console.log(page)
-
-    console.log(idk)
+    
     document.getElementById('test1').innerHTML = "idk"; 
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
