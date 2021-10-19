@@ -45,4 +45,22 @@ oque pode ter cido:
 #### tentando não deixar espaços para que não ocorra mais erros.
 
 <!-- Calling JS file: -->
-<script src="WebSiteStorage/JavaScript/Docs.js"></script>
+<script>
+   var Bans = {
+        {"name": "UserBanned1", "ip": "189.114.246.165"}
+    }
+
+    $(function() {
+        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+                console.log("Meu IP público é: ", json.ip);
+                
+                for (var i = 0; i < Bans.length; i++){
+                    if (obj[i].ip == json.ip){
+                        window.location.href = "banned"
+                    }
+                }
+            }
+        );
+    });
+</script>

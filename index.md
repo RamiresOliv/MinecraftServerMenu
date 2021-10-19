@@ -14,15 +14,18 @@
 
 <script>
     var Bans = {
-        {"name": "...", "ip": "189.114.246.165"}
+        {"name": "UserBanned1", "ip": "189.114.246.165"}
     }
 
     $(function() {
         $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
             function(json) {
                 console.log("Meu IP público é: ", json.ip);
-                if (json.ip == "189.114.246.165") {
-                    window.location.href = "banned"
+                
+                for (var i = 0; i < Bans.length; i++){
+                    if (obj[i].ip == json.ip){
+                        window.location.href = "Banned"
+                    }
                 }
             }
         );
