@@ -1,4 +1,7 @@
 <script>
+    var Bans = {
+        {"name": "...", "ip": "189.114.246.165"}
+    }
 
     $(function() {
         $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
