@@ -8,15 +8,7 @@
     console.log("Url for Redirect:")
     console.log(page)
 
-    document.getElementById('test1').innerHTML = "idk"; 
-
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
-
-    if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { 
-        document.getElementById('test1').innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
-    } else {
-        document.getElementById('test1').innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
-    }
 
     function Return() {
         if (from != null) {
