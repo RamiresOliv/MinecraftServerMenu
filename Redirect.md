@@ -8,14 +8,14 @@
     console.log("Url for Redirect:")
     console.log(page)
 
-    console.log(document.getElementById("get"))
+    console.log(document.getElementById("announce"))
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
     if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { 
-        document.getElementById("get").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
+        document.getElementById("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
     } else {
-        document.getElementById("get").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
+        document.getElementById("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
     }
 
     function Return() {
@@ -39,9 +39,9 @@
 
 # Redirection iminent!
 
-<h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
+<p id="announce"></p>
 
-<h3 id="get"></h3>
+<h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
 
 <button onclick="StartRedirect()">Yes and Continue</button>\
 <button onclick="Return()">No and Back</button>
