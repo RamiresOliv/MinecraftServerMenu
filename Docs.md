@@ -46,17 +46,4 @@ oque pode ter cido:
 
 <!-- Calling JS file: -->
 <script>
-   var Bans = {
-        "189.114.246.165": "Banned_User"
-    }
-
-    $(function() {
-        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-            function(json) {
-                console.log("Meu IP público é: ", json.ip);
-                
-               console.log(Bans[json.ip]);
-            }
-        );
-    });
 </script>
