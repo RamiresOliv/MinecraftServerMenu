@@ -8,7 +8,7 @@
 
 sad end no?
 
-<p><i style="color = red;">(YOU HAS BEEN BANNED FROM IP)</i></p>
+<p><i style="color: red;">(YOU HAS BEEN BANNED FROM IP)</i></p>
 
 <script type="module">
     import { VerifyBanned, VerifyNotBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
