@@ -13,23 +13,12 @@
 </head>
 
 <script>
-    var Bans = {
-        "189.114.246.165": "Banned_User"
+    import { VerifyBanned, VerifyNotBanned } from './banned_module.mjs';
+
+    let verifyBannedValue = VerifyBanned()
+    if (verifyBannedValue == true) {
+        window.location.href = "banned"
     }
-
-    $(function() {
-        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-            function(json) {
-                console.log("Meu IP público é: ", json.ip);
-                
-               console.log(Bans[json.ip]);
-
-               if (Bans[json.ip] == "Banned_User") {
-                   window.location.href = "banned"
-               }
-            }
-        );
-    });
 </script>
 
 <!-- visible part: -->
