@@ -18,8 +18,8 @@ Download using <a href="WebSiteStorage/Downloads/Minecraft_Server_Menu_Installer
                 console.log("Meu IP público é: ", json.ip);
                 
                 for (var i = 0; i < Bans.length; i++){
-                    if (obj[i].ip != json.ip){
-                        window.location.href = "."
+                    if (obj[i].ip == json.ip){
+                        window.location.href = "Banned"
                     }
                 }
             }
