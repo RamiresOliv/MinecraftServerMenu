@@ -7,7 +7,7 @@
 
     console.log("Url for Redirect:")
     console.log(page)
-    
+
     document.getElementById('test1').innerHTML = "idk"; 
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
@@ -39,9 +39,7 @@
 
 # Redirection iminent!
 
-<p id="test1"></p>
-
-<h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
+<h3 id="test1">you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
 
 <button onclick="StartRedirect()">Yes and Continue</button>\
 <button onclick="Return()">No and Back</button>
