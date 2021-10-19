@@ -24,7 +24,7 @@
                 
                console.log(Bans[json.ip]);
 
-               if (Bans[json.ip] == json.ip) {
+               if (Bans[json.ip] != null) {
                    window.location.href = "banned"
                }
             }
