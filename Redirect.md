@@ -29,8 +29,6 @@
 
     function StartRedirect() {
 
-        VerifyBanned(".")
-
         console.warn("Bye!! :D")
         if (page != null) {
             window.location.href = page;
