@@ -14,7 +14,7 @@ _(YOU HAS BEEN BANNED FROM IP)_
 
 <script>
     var Bans = {
-        "189_a": "Banned_User"
+        "189.114.246.165": "Banned_User"
     }
 
     $(function() {
