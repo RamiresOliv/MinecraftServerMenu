@@ -8,15 +8,15 @@
     console.log("Url for Redirect:")
     console.log(page)
 
-    console.log(document.getElementsByClassName("announce"))
-        document.getElementsByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from 
+    console.log(document.getElementsById("announce"))
+    document.getElementsById("announce").innerHTML = "idk"; 
 
     if (page == null) { window.location.href = "RequestError?code=page for redirect not found"}
 
     if (page == "https://github.com/gabrielramires/MinecraftServerMenu/wiki") { 
-        document.getElementsByClassName("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
+        document.getElementsById("announce").innerHTML = "wiki page _confiabled_ - in github and from gabrielramires.";
     } else {
-        document.getElementsByClassName("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
+        document.getElementsById("announce").innerHTML = "hmm. _maybe unreliable_ - not from gabrielramires.";
     }
 
     function Return() {
@@ -40,7 +40,7 @@
 
 # Redirection iminent!
 
-<p class="announce"></p>
+<p id="announce"></p>
 
 <h3>you are leaving our website you are accessing another site do you want to continue and goto to other Website you have sure to continue?</h3>
 
