@@ -1,5 +1,13 @@
 <script>
 
+    $(function() {
+        $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+            function(json) {
+                console.log("Meu IP público é: ", json.ip);
+            }
+        );
+    });
+
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const page = urlParams.get('page')
