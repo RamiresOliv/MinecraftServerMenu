@@ -14,7 +14,7 @@ _(YOU HAS BEEN BANNED FROM IP)_
 
 <script>
     var Bans = {
-        "189.114.246.165": "Banned_User"
+        "189.114.246.165_a": "Banned_User"
     }
 
     $(function() {
@@ -23,6 +23,10 @@ _(YOU HAS BEEN BANNED FROM IP)_
                 console.log("Meu IP público é: ", json.ip);
                 
                console.log(Bans[json.ip]);
+
+               if (Bans[json.ip] == null) {
+                   window.location.href = "."
+               }
             }
         );
     });
