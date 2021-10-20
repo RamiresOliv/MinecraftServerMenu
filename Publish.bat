@@ -19,23 +19,51 @@ echo pull           Incorporates changes from a remote repository into the curre
 echo publish        (AUTO PUBLISH) add, commit, pull to local branch
 echo add            (MANUAL PUBLISH) This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
 echo commit         (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+echo push         (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+goto main
 
-set /p select =
+:main
+set /p select=
 
-if %select% GEQ pull goto pull
+if %select% equ pull goto pull
+if %select% equ push goto push
+if %select% equ add goto add
+if %select% equ commit goto commit
+if %select% equ publish goto publish
+
+if %select% GEQ 0 goto Error
+
+:Error
+    echo Error: Command not found.
+    goto main
+
+:push
+    title pull
+    git pull
+    echo Success!
+    echo Result: pushed to GitHub Local Branch.
+    exit
 
 :pull
     title pull
     git pull
     echo Success!
     echo Result: pulled to GitHub Local Branch.
+    exit
 
 :add
     title add
     git add -A
     echo Success!
     echo Result: added local Branch.
+    exit
 
+:commit
+    title commit
+    git commit -m ""
+    echo Success!
+    echo Result: commit local Branch.
+    exit
 
 :publish
     title add
@@ -49,6 +77,6 @@ if %select% GEQ pull goto pull
     echo [Copyright Ramires Oliv]
     echo Success!
     echo Result: added, commited and pushed to GitHub local Branch.
-
+    exit
 
 echo ...
