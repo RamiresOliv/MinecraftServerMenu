@@ -1,4 +1,4 @@
-# The Auto_Publish_Batch
+# The Git_Helper
 
 > This a simple batch file for add, commit _the message its **"Cool Commit"**_, push from you local Branchs.\
 > Note: Only work for the Github
