@@ -51,15 +51,16 @@ echo.
 echo 1. pull        (PULL) Incorporates changes from a remote repository into the current branch. In its default mode
 echo 2. publish     (AUTO PUBLISH) add, commit, pull to local branch
 echo 3. add         (MANUAL PUBLISH) This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
-echo 4. commit      (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+echo 4. commit      (MANUAL PUBLISH) Create a new commit containing the current contents of the index and the given log message describing the changes.
 echo 5. push        (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+echo 5. checkout [<branch>]        Updates files in the working tree to match the version in the index or the specified tree. If no pathspec was given, git checkout will also update HEAD to set the specified branch as the current branch.
 echo 6. leave/exit  (HELPER COMMAND) Leave of the Git Helper
 echo 7. help        (HELPER COMMAND) get help commands
 goto main
 
 :main
 echo.
-title %CD% / running git helper by RamiresOliv
+title %CD% / Git Helper by RamiresOliv
 echo ---------------
 set /p select= Run git?: 
 
@@ -138,6 +139,20 @@ goto main
     echo Success!
     echo Result: pulled to GitHub Local Branch.
     goto main
+
+:checkout
+    title %CD% / running git checkout...
+    echo.
+    echo type the Branch name for change.
+    set /p BranchName = Branch?: 
+    title %CD% / running git checkout %BranchName%...
+    git checkout %BranchName% > nul
+    if errorlevel 1 (
+        echo error: could not find a branch %BranchName%.
+    ) else (
+        echo success!
+        echo Result: changed to %BranchName% Branch.
+    )
 
 :leave
     title %CD% - cmd
