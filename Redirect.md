@@ -1,6 +1,6 @@
 <script type="module">
     // Verify if user banned:
-    import { VerifyBanned } from './WebsiteStorage/Modules/JavaScript/banned_module.mjs';
+    import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
     VerifyBanned(".")
 </script>
 
