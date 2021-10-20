@@ -11,7 +11,7 @@ sad end no?
 <p><i style="color: red;">(YOU HAS BEEN BANNED FROM IP)</i></p>
 
 <script type="module">
-    import { VerifyBanned, VerifyNotBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
+    import { VerifyBanned, VerifyNotBanned } from './WebsiteStorage/Modules/JavaScript/banned_module.mjs';
 
     VerifyNotBanned(".")
 </script>

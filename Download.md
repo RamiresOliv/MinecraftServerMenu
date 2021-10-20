@@ -8,7 +8,7 @@ Download using <a href="WebSiteStorage/Downloads/Minecraft_Server_Menu_Installer
 <p><-- <a href=".">Back</a></p>
 
 <script type="module">
-    import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
+    import { VerifyBanned } from './WebsiteStorage/Modules/JavaScript/banned_module.mjs';
 
     VerifyBanned(".")
 </script>
