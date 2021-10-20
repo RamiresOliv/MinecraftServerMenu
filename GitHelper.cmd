@@ -1,6 +1,6 @@
 
 
-
+:: Welcome to GitHelper.cmd
 
 :: call me using PowerShell: ./GitHelper
 :: call me using Command Prompt/cmd: GitHelper
@@ -59,10 +59,9 @@ goto main
 
 :main
 echo.
-title %CD% running git helper by RamiresOliv
-echo ---------------------
-echo type "help" for help
-set /p select= Run: 
+title %CD% / running git helper by RamiresOliv
+echo ---------------
+set /p select= Run git?: 
 
 
 if %select% equ pl goto pull
@@ -85,8 +84,9 @@ if %select% equ clear goto clear
 if %select% GEQ 0 goto Error
 
 :Error
-    title %CD% Error...
+    title %CD% / Error...
     echo Error: The Command "%select%" not exist.
+    echo try use "help" for see commands list
     goto main
 
 :clear
@@ -94,42 +94,44 @@ cls
 goto main
 
 :add
-    title %CD% running git add -A...
+    title %CD% / running git add -A...
     git add -A
     echo Success!
     echo Result: added local Branch.
     goto main
 
 :commit
-    title %CD% running git commit -m "Cool Commit"...
+    title %CD% / running git commit -m "Cool Commit"...
     git commit -m "Cool Commit"
     echo Success!
     echo Result: commit local Branch.
     goto main
 
 :push
-    title %CD% running git push...
+    title %CD% / running git push...
     git pull
     echo Success!
     echo Result: pushed to GitHub Local Branch.
     goto main
 
 :publish
-    title %CD% running git add -A...
+    title %CD% / running git add -A...
     git add -A
-    title %CD% running git commit -m "Cool Commit"...
+    echo.
+    title %CD% / running git commit -m "Cool Commit"...
     :: change here the commit name the normal name its "Cool Commit"
     git commit -m "Cool Commit"
-    title %CD% running git push...
+    echo.
+    title %CD% / running git push...
     git push
-    title %CD% - cmd
+    echo.
     echo [Copyright Ramires Oliv]
     echo Success!
     echo Result: added, commited and pushed to GitHub local Branch.
     goto main
 
 :pull
-    title %CD% running git pull...
+    title %CD% / running git pull...
     title pull
     git pull
     echo Success!
