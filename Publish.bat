@@ -7,22 +7,24 @@
 
 @echo off
 
+echo.
 echo [Copyright Ramires Oliv]
 
-if exist ".git" ( echo ... ) else (
+if exist ".git" ( goto commands ) else (
     echo Not Success.
     echo Result: Error in try use git. pls verify if "git init" was used.
     exit
 )
 
 :commands
-echo pull       Incorporates changes from a remote repository into the current branch. In its default mode
-echo publish    (AUTO PUBLISH) add, commit, pull to local branch
-echo add        (MANUAL PUBLISH) This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
-echo commit     (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
-echo push       (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
-echo leave/exit (HELPER COMMAND) Leave of the Git Helper
-echo help (HELPER COMMAND) get help commands
+echo.
+echo 1. pull        (PULL) Incorporates changes from a remote repository into the current branch. In its default mode
+echo 2. publish     (AUTO PUBLISH) add, commit, pull to local branch
+echo 3. add         (MANUAL PUBLISH) This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
+echo 4. commit      (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+echo 5. push        (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
+echo 6. leave/exit  (HELPER COMMAND) Leave of the Git Helper
+echo 7. help        (HELPER COMMAND) get help commands
 goto main
 
 :main
@@ -32,20 +34,34 @@ echo ---------------------
 echo type "help" for help
 set /p select= Run: 
 
+
+if %select% equ pl goto pull
+if %select% equ ph goto push
+if %select% equ a goto add
+if %select% equ ct goto commit
+if %select% equ ph goto publish
+if %select% equ cls goto clear
+
 if %select% equ pull goto pull
 if %select% equ push goto push
 if %select% equ add goto add
 if %select% equ commit goto commit
 if %select% equ publish goto publish
 if %select% equ leave goto leave
+if %select% equ exit goto leave
 if %select% equ help goto commands
+if %select% equ clear goto clear
 
 if %select% GEQ 0 goto Error
 
 :Error
     title %CD% Error...
-    echo Error: Command not found.
+    echo Error: The Command "%select%" not exist.
     goto main
+
+:clear
+cls
+goto main
 
 :push
     title %CD% running git push...
@@ -91,7 +107,6 @@ if %select% GEQ 0 goto Error
     goto main
 
 :leave
-echo.
 title %CD% - cmd
 echo.
 @echo on
