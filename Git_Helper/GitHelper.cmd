@@ -146,7 +146,7 @@ goto main
     echo.
     echo -----------------------------
     echo type the Branch name for change.
-    set /p BranchName = Branch?: 
+    set /p BranchName= Branch?: 
     title %CD% / running git checkout %BranchName%...
     git checkout %BranchName%
     if errorlevel 1 (
