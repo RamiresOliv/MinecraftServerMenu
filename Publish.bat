@@ -23,6 +23,8 @@ echo push         (MANUAL PUBLISH) Updates remote refs using local refs, while s
 goto main
 
 :main
+title %CD% running git helper by RamiresOliv :D
+
 set /p select=
 
 if %select% equ pull goto pull
@@ -34,17 +36,19 @@ if %select% equ publish goto publish
 if %select% GEQ 0 goto Error
 
 :Error
+    title %CD% Error...
     echo Error: Command not found.
     goto main
 
 :push
-    title pull
+    title %CD% running git push...
     git pull
     echo Success!
     echo Result: pushed to GitHub Local Branch.
     exit
 
 :pull
+    title %CD% running git pull...
     title pull
     git pull
     echo Success!
@@ -52,21 +56,21 @@ if %select% GEQ 0 goto Error
     exit
 
 :add
-    title add
+    title %CD% running git add -A...
     git add -A
     echo Success!
     echo Result: added local Branch.
     exit
 
 :commit
-    title commit
-    git commit -m ""
+    title %CD% running git commit -m "Cool Commit"...
+    git commit -m "Cool Commit"
     echo Success!
     echo Result: commit local Branch.
     exit
 
 :publish
-    title add
+    title %CD% running git add -A...
     git add -A
     title commit
     :: change here the commit name the normal name its "Cool Commit"
