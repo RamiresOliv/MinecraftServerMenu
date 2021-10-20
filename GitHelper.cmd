@@ -64,11 +64,12 @@ echo ---------------
 set /p select= Run git?: 
 
 
-if %select% equ pl goto pull
-if %select% equ ph goto push
-if %select% equ a goto add
-if %select% equ ct goto commit
-if %select% equ ps goto publish
+:: if %select% equ pl goto pull
+:: if %select% equ ph goto push
+:: if %select% equ a goto add
+:: if %select% equ ct goto commit
+
+if %select% equ ph goto publish
 if %select% equ cls goto clear
 
 if %select% equ pull goto pull
