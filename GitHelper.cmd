@@ -1,9 +1,39 @@
-:: call me using in PowerShell: ./publish
-:: call me using in Command Prompt/cmd: publish
+
+
+
+
+:: call me using PowerShell: ./GitHelper
+:: call me using Command Prompt/cmd: GitHelper
 :: Batch file by Ramires Oliv
 :: this batch used to publish changed, created, removed files in github directory
 :: NEED THE GIT INSTALLED
 :: NEED USE "git init" BEFORE USE THE BATCH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @echo off
 
@@ -39,7 +69,7 @@ if %select% equ pl goto pull
 if %select% equ ph goto push
 if %select% equ a goto add
 if %select% equ ct goto commit
-if %select% equ ph goto publish
+if %select% equ ps goto publish
 if %select% equ cls goto clear
 
 if %select% equ pull goto pull
@@ -63,21 +93,6 @@ if %select% GEQ 0 goto Error
 cls
 goto main
 
-:push
-    title %CD% running git push...
-    git pull
-    echo Success!
-    echo Result: pushed to GitHub Local Branch.
-    goto main
-
-:pull
-    title %CD% running git pull...
-    title pull
-    git pull
-    echo Success!
-    echo Result: pulled to GitHub Local Branch.
-    goto main
-
 :add
     title %CD% running git add -A...
     git add -A
@@ -92,13 +107,20 @@ goto main
     echo Result: commit local Branch.
     goto main
 
+:push
+    title %CD% running git push...
+    git pull
+    echo Success!
+    echo Result: pushed to GitHub Local Branch.
+    goto main
+
 :publish
     title %CD% running git add -A...
     git add -A
-    title commit
+    title %CD% running git commit -m "Cool Commit"...
     :: change here the commit name the normal name its "Cool Commit"
     git commit -m "Cool Commit"
-    title push
+    title %CD% running git push...
     git push
     title %CD% - cmd
     echo [Copyright Ramires Oliv]
@@ -106,7 +128,16 @@ goto main
     echo Result: added, commited and pushed to GitHub local Branch.
     goto main
 
+:pull
+    title %CD% running git pull...
+    title pull
+    git pull
+    echo Success!
+    echo Result: pulled to GitHub Local Branch.
+    goto main
+
 :leave
-title %CD% - cmd
-echo.
-@echo on
+    title %CD% - cmd
+    echo.
+    @echo on
+    :: Good Bye!
