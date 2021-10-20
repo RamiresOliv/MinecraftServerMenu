@@ -15,19 +15,22 @@ if exist ".git" ( echo ... ) else (
     exit
 )
 
+:commands
 echo pull       Incorporates changes from a remote repository into the current branch. In its default mode
 echo publish    (AUTO PUBLISH) add, commit, pull to local branch
 echo add        (MANUAL PUBLISH) This command updates the index using the current content found in the working tree, to prepare the content staged for the next commit.
 echo commit     (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
 echo push       (MANUAL PUBLISH) Updates remote refs using local refs, while sending objects necessary to complete the given refs.
 echo leave/exit (HELPER COMMAND) Leave of the Git Helper
+echo help (HELPER COMMAND) get help commands
 goto main
 
 :main
 echo.
-title %CD% running git helper by RamiresOliv :D
-
-set /p select=
+title %CD% running git helper by RamiresOliv
+echo ---------------------
+echo type "help" for help
+set /p select= Run: 
 
 if %select% equ pull goto pull
 if %select% equ push goto push
@@ -35,6 +38,7 @@ if %select% equ add goto add
 if %select% equ commit goto commit
 if %select% equ publish goto publish
 if %select% equ leave goto leave
+if %select% equ help goto commands
 
 if %select% GEQ 0 goto Error
 
@@ -89,6 +93,5 @@ if %select% GEQ 0 goto Error
 :leave
 echo.
 title %CD% - cmd
-echo ...
 echo.
 @echo on
