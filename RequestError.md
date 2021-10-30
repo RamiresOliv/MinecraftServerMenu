@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /RequestError
 ---
 
 <h1>Request Error ;(<h1>
