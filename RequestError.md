@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /RequestError.md
+permalink: /RequestError
 ---
 
 <h1>Request Error ;(<h1>
@@ -8,10 +8,10 @@ permalink: /RequestError.md
 
 <br><br>
 
-<p>Error Type:</p>
+<p>Error Type: </p>\
 <p id="code"></p>
 
-<p>Requested From:</p>
+<p>Requested From: </p>\
 <p id="from"></p>
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
