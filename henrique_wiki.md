@@ -83,8 +83,7 @@ sera que é o fim???
 oh no
 
 <audio id="idAudio">
-        <source src= "" type="audio/ogg">
-        <source src= "https://media.geeksforgeeks.org/wp-content/uploads/20190625153922/frog.ogg" type="audio/mpeg">
+        <source src= "https://gabrielramires.github.io/MinecraftServerMenu/Theme.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
 </audio>
 
