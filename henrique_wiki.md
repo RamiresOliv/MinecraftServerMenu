@@ -1,3 +1,8 @@
+---
+layout: page
+permalink: /Henrique_Wiki
+---
+
 <style>
     a {
         color: orange;
