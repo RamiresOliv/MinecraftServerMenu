@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 ---
 
 <h1>Request Error ;(<h1>
-
-> Posible error in try get informations from a page or to the Home page Sorrrryyy :()
+<i><strong>Posible error in try get informations from a page or to the Home page Sorrrryyy :()</strong></i>
 
 <p>Error Type:</p>
 <p id="code"></p>
