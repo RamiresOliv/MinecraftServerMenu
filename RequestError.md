@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Request Error
+<h1><strong>Request Error</strong><h1>
 
 <p>Error Type:</p>
 <p id="code"></p>
