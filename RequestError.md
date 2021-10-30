@@ -3,6 +3,7 @@ layout: default
 ---
 
 <h1>Request Error ;(<h1>
+
 > Posible error in try get informations from a page or to the Home page Sorrrryyy :()
 
 <p>Error Type:</p>
