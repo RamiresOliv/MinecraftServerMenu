@@ -1,6 +1,6 @@
 ---
 layout: default
-menu: toto
+permalink: /Redirect
 ---
 
 <script>

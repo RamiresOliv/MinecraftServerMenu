@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: default
+permalink: /RequestError.md
 ---
 
 <h1>Request Error ;(<h1>
-<i><strong>Posible error in try get informations from a page or to the Home page Sorrrryyy :()</strong></i>
+<i>Posible error in try get informations from a page or to the Home page Sorrrryyy :()</i>
 
 <br><br>
 
