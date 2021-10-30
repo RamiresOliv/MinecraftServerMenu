@@ -3,14 +3,14 @@ layout: default
 ---
 
 <h1>Request Error ;(<h1>
-<i>Posible error in try get informations from a page or to the Home page Sorrrryyy :()</i>
+<i>Posible error in try get informations from a page or to the Home page Sorrrryyy.</i>
 
 <br><br>
 
-<p>Error Type: </p>\
+<p>Error Type: </p>
 <p id="code"></p>
 
-<p>Requested From: </p>\
+<p>Requested From: </p>
 <p id="from"></p>
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
