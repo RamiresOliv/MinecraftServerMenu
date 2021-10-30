@@ -83,7 +83,7 @@ sera que é o fim???
 oh no
 
 <audio id="themesoung">
-        <source src= "https://gabrielramires.github.io/MinecraftServerMenu/Theme.mp3" type="audio/mpeg">
+        <source src= "https://gabrielramires.github.io/MinecraftServerMenu/Theme.mp3" type="audio/ogg">
       Your browser does not support the audio element.
 </audio>
 
