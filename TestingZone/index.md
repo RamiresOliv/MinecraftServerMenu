@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <script>
 function inputstart() {
   var input = document.getElementById("Douglas");
@@ -7,7 +11,7 @@ function inputstart() {
 }
 </script>
 
-<h1>TestingZone</h1>
+<h1>Testing zone \o/</h1>
 
 > Here have tests exemples:
 

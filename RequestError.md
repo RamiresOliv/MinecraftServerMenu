@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Request Error
 
 <p>Error Type:</p>
@@ -8,7 +12,7 @@
 
 <p>an unexpected error occurred while trying to access the page please try again later :/</p>
 
-<-- <a id="back_button" href=".">Back</a>
+<h4><a id="back_button" href=".">Back</a></h4>
 
 <script>
     const queryString = window.location.search;

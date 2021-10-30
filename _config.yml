@@ -1,4 +1,17 @@
-theme: jekyll-theme-midnight
----
-permalink: /404.html
----
+title: Minecraft Server Menu
+description: >-
+  Do you want an easy, fast and organized method to create a Minecraft Server? 
+  come and meet Minecraft Server Menu a .Batch file, very fast managing Backups, Server, Client, Moderation, Mods and Plugins! 
+  <3 thx for support!
+
+# url system:
+baseurl: 'MinecraftServerMenu'
+url: ''
+
+# others:
+github_username: gabrielramires
+
+# Theme:
+theme: minima
+plugins:
+  - jekyll-feed

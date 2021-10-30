@@ -1,5 +1,5 @@
-<script type="module">
-    import { VerifyBanned, VerifyNotBanned } from '../WebSiteStorage/Modules/JavaScript/banned_module.mjs';
+---
+layout: default
+---
 
-    VerifyBanned("..")
-</script>
+<h1>Testing zone \o/</h1>

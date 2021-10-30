@@ -1,2 +1,6 @@
-Notes
-gh.cmd
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+ph.bat

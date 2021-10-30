@@ -1,8 +1,6 @@
-<script type="module">
-    // Verify if user banned:
-    import { VerifyBanned } from './WebSiteStorage/Modules/JavaScript/banned_module.mjs';
-    VerifyBanned(".")
-</script>
+---
+layout: default
+---
 
 <script>
     const queryString = window.location.search;
