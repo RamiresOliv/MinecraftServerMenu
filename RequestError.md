@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<h1><strong>Request Error</strong><h1>
+<h1>Request Error ;(<h1>
+> Posible error in try get informations from a page or to the Home page Sorrrryyy :()
 
 <p>Error Type:</p>
 <p id="code"></p>
