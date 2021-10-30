@@ -9,6 +9,6 @@ title: Home
 
 <h2>Pages:</h2>
 
-<a href="Download">Download Page</a>\
-<a href="Docs">Docs Page</a>\
+<a href="Download">Download</a>\
+<a href="Docs">Docs</a>\
 <a href="Redirect?page=https://github.com/gabrielramires/MinecraftServerMenu/wiki">This menu can give me virus?</a> <i>-wiki page</i>
