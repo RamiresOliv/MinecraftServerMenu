@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>Request Error ;(<h1>
+<h1><b>Request Error ;(</b><h1>
 <i>Posible error in try get informations from a page or to the Home page Sorrrryyy.</i>
 
 <br><br>
