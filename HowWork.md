@@ -1,6 +1,6 @@
 ---
 layout: default
-menu: toto
+exclude: true
 permalink: /HowWork
 ---
 
