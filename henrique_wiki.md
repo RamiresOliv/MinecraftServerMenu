@@ -3,6 +3,12 @@ layout: page
 permalink: /Henrique_Wiki
 ---
 
+<script>
+    var theme = document.getElementById("themesoung");
+    
+    theme.play()
+</script>
+
 <style>
     a {
         color: orange;
@@ -75,6 +81,12 @@ permalink: /Henrique_Wiki
 sera que é o fim???
 
 oh no
+
+<audio id="idAudio">
+        <source src= "" type="audio/ogg">
+        <source src= "https://media.geeksforgeeks.org/wp-content/uploads/20190625153922/frog.ogg" type="audio/mpeg">
+      Your browser does not support the audio element.
+</audio>
 
 <p id="rainbow">henrique bezos</p>
 <p id="rainbow">henrique bezos</p>
