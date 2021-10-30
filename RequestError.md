@@ -5,6 +5,8 @@ layout: page
 <h1>Request Error ;(<h1>
 <i><strong>Posible error in try get informations from a page or to the Home page Sorrrryyy :()</strong></i>
 
+<br><br>
+
 <p>Error Type:</p>
 <p id="code"></p>
 
