@@ -148,58 +148,5 @@ script.Parent.ProximityPrompt.Triggered:Connect(function(LocalPlayer)
 **StartAnimations**(LocalPlayer)
 **LoadHitItens**(LocalPlayer)
 end)
---[[
-LocalPlayer.Character.Animate.Disabled = true
-
-LocalPlayer.Character.Animate.idle.Animation2:Remove()
-LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "rbxassetid://7607147846"
-LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "rbxassetid://7612277377"
-wait(.1)
-LocalPlayer.Character.Animate.Disabled = false
-print(LocalPlayer.Character.Animate.run.RunAnim.AnimationId)
-]]
--- :GetChildren()[1]
-
---[[
-local IdleAnim = Instance.new("Animation")
-local RunAnim = Instance.new("Animation")
-local Folder = Instance.new("Folder")
-RunAnim.Name = "Run"
-IdleAnim.Name = "Idle"
-RunAnim.AnimationId = "rbxassetid://7612277377"
-IdleAnim.AnimationId = "rbxassetid://7607147846"
-RunAnim.Parent = Folder
-IdleAnim.Parent = Folder
-Folder.Parent = game:GetService("ReplicatedStorage")
-Folder.Name = "Pan_Animations"
-local Idle = LocalPlayer.Character.Humanoid:LoadAnimation(game:GetService("ReplicatedStorage"):FindFirstChild("Pan_Animations").Idle)
-local Run = LocalPlayer.Character.Humanoid:LoadAnimation(game:GetService("ReplicatedStorage"):FindFirstChild("Pan_Animations").Run)
-Idle:Play()
-Run:Stop()
-
-]]
-
---[[local __StartUserInputService__ = function(LocalPlayer)
-	local LocalScript = InsertService:LoadAsset(7616032388).Keycode_Pan
-	local RemoteEvent = Instance.new("RemoteEvent")
-	
-	LocalScript.Parent = LocalPlayer.Character
-	
-	RemoteEvent.Parent = game:GetService("ReplicatedStorage")
-	RemoteEvent.Name = "Pan_Inputs"
-	LocalPlayer.CharacterAdded:Connect(function()
-		local UserInputService = game:GetService("ReplicatedFirst"):FindFirstChild("Keycode_Pan")
-		if UserInputService ~= nil then
-			UserInputService:Destroy()
-		end
-		
-		local RemoteEventExist = LocalPlayer.Character:FindFirstChild("Pan_Inputs")
-		if RemoteEventExist ~= nil then
-			RemoteEvent:Destroy()
-		end
-	end)
-	
-	return RemoteEvent
-end]]
 
 {% endhighlight %}
