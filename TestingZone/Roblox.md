@@ -5,7 +5,7 @@ permalink: /MyCodesFromRoblox
 
 hmmmm system not working?:
 
-<strong><p style="color: red;">ONLY WORK IN ROBLOX SERVER SCRIPT! [lua]</p></strong>
+<p style="color: red;"><strong>ONLY WORK IN ROBLOX SERVER SCRIPT! [lua]</strong></p>
 
 ```lua
 
