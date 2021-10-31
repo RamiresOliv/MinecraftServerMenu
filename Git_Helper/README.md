@@ -9,6 +9,6 @@
   - Batch file by Ramires Oliv
   - this batch used to publish changed, created, removed files in github directory
   - **NEED THE GIT INSTALLED**
-  - **NEED USE "git init" BEFORE USE THE BATCH**
+  - _**NEED USE "git init" BEFORE USE THE BATCH**_
 
 ***<3***
