@@ -20,7 +20,7 @@ call :colorEcho 03 "[LOGS]"
 echo :
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Minecraft Server Menu Instaler...
-bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/WebSiteStorage/Downloads/Minecraft_Server_Menu_Installer.bat %mypath:~0,-1%\Minecraft_Server_Menu_Installer.bat > nul
+bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %mypath:~0,-1%\Minecraft_Server_Menu_Installer.bat > nul
 if exist Minecraft_Server_Menu_Installer.bat (
 call :colorEcho 0a "[DONE] "
 echo Minecraft Server Menu Instaler instalado
