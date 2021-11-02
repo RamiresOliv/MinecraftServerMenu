@@ -8,22 +8,21 @@ permalink: /Thanks
     const urlParams = new URLSearchParams(queryString);
     const type = urlParams.get('tp')
     const text = document.getElementById("text")
-    const messageni = document.getElementById("ifbatnotinstalled")
 
     if (type == null) {
-        messageni.innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install"
+        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install"
 
-        text.innerHTML = "Thank you for installing our Installer!"
+        document.getElementById("msgibni").innerHTML = "Thank you for installing our Installer!"
     } else if (type == "") {
-        messageni.innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install";
+        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install";
 
         text.innerHTML = "Thank you for installing our Installer!"
     } else if (type == "bii") {
-        messageni.innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install";
+        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install";
 
         text.innerHTML = "Thank you for installing our Installer!"
     } else if (type == "bini") {
-        messageni.innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install";
+        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install";
         
         text.innerHTML = "Hm... Sorry but you used Direct Download. For you get more opitions exemple install, update, remove and more. Click <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to download"
     }
@@ -31,6 +30,6 @@ permalink: /Thanks
 
 <h1>Thanks!</h1>
 
-<p id="ifbatnotinstalled"></p>
+<p id="msgibni"></p>
 
 <p id="text"></p>
