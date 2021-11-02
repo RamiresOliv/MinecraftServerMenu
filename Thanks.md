@@ -7,7 +7,7 @@ permalink: /Thanks
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const type = urlParams.get('tp')
-    const text = document.getElementById("text")
+    const texts = document.getElementById("texts")
 
     if (type == null) {
         texts.innerHTML = `<p>Thank you for installing our Installer!</p>
@@ -36,6 +36,4 @@ permalink: /Thanks
 <h1>Thanks!</h1>
 
 <div id="texts">
-    <p id="text"></p>
-    <p id="msgibni"></p>
 </div>
