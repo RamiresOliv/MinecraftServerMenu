@@ -83,7 +83,7 @@ echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tar
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Server.bat
-bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/WebSiteStorage/Downloads/Minecraft_Java_Server.bat %mypath:~0,-1%\Server.bat > nul
+bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Java_Server.bat %mypath:~0,-1%\Server.bat > nul
 if exist Server.bat (
 call :colorEcho 0a "[DONE] "
 echo Server.bat instalado
