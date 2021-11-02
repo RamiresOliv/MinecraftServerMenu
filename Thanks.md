@@ -43,5 +43,5 @@ permalink: /Thanks
     document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(e);
 </script>
 <br>
-<p><strong><a href=".">Home</a></strong></p>\
+<p><strong><a href=".">Home</a></strong></p>n\
 <p><strong><a href="./download">Download</a></strong></p>
