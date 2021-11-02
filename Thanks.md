@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: Thanks/
+permalink: /Thanks
 ---
 
 <script>
