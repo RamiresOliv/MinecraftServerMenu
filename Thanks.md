@@ -37,5 +37,5 @@ permalink: /Thanks
 
 <h1>Thanks!</h1>
 
-<div id="txts-parts">
+<div class="txts-parts">
 </div>
