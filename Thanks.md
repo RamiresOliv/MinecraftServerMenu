@@ -44,4 +44,4 @@ permalink: /Thanks
 </script>
 <br>
 <p><strong><a href=".">Home</a></strong></p>n\
-<p><strong><a href="./download">Download</a></strong></p>
+<p><strong><a href="./Download">Download</a></strong></p>
