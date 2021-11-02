@@ -37,6 +37,6 @@ permalink: /Thanks
 
 <h1>Thanks!</h1>
 
-<eeeeeea>
+<div id="eeeeeea">
 
-</eeeeeea>
+</div>
