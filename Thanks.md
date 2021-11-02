@@ -27,7 +27,7 @@ permalink: /Thanks
         
         text.innerHTML = "Hm... Sorry but you used Direct Download. For you get more opitions exemple install, update, remove and more. Click <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to download"
     }
-<script>
+</script>
 
 <h1>Thanks!</h1>
 
