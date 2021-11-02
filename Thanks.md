@@ -8,7 +8,7 @@ permalink: /Thanks
     const urlParams = new URLSearchParams(queryString);
     const type = urlParams.get('tp')
     const text = document.getElementById("text")
-    const messageni = document.getElementById("notinstalled")
+    const messageni = document.getElementById("ifbatnotinstalled")
 
     if (type == null) {
         messageni.innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install"
@@ -31,6 +31,6 @@ permalink: /Thanks
 
 <h1>Thanks!</h1>
 
-<p id="notinstalled"></p>
+<p id="ifbatnotinstalled"></p>
 
 <p id="text"></p>
