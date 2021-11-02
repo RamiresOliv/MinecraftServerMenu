@@ -40,6 +40,5 @@ permalink: /Thanks
     title.innerHTML = "Thanks!"
     document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(title);
     
-    e.Id = "Texts"
     document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(e);
 </script>
