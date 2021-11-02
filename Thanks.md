@@ -35,12 +35,10 @@ permalink: /Thanks
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install</p>
         `
     }
+    e.Id = "Texts"
     document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(e);
+
+    const title = document.createElement('h1');
+    title.innerHTML = "Thanks!"
+    document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(title);
 </script>
-
-<h1>Thanks!</h1>
-
-<div id="eeeeeea">
-    <div class="minecraft">
-    </div>
-</div>
