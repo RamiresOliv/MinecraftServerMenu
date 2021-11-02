@@ -7,7 +7,7 @@ permalink: /Thanks
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const type = urlParams.get('tp')
-    const e = document.getElementById("eeeeeea").getElementsByClassName("minecraft")
+    const e = document.getElementById("eeeeeea").getElementsByClassName("minecraft")[0]
     // const e = document.createElement('div');
 
     if (type == null) {
