@@ -8,6 +8,7 @@ permalink: /Thanks
     const urlParams = new URLSearchParams(queryString);
     const type = urlParams.get('tp')
     // const e = document.getElementById("eeeeeea").getElementsByClassName("minecraft")[0]
+    const title = document.createElement('h1');
     const e = document.createElement('div');
 
     if (type == null) {
@@ -35,10 +36,10 @@ permalink: /Thanks
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install</p>
         `
     }
-    e.Id = "Texts"
-    document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(e);
 
-    const title = document.createElement('h1');
     title.innerHTML = "Thanks!"
     document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(title);
+    
+    e.Id = "Texts"
+    document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(e);
 </script>
