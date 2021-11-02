@@ -7,32 +7,34 @@ permalink: /Thanks
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const type = urlParams.get('tp')
+    const e = document.createElement('div');
 
     if (type == null) {
-        document.getElementById("eeeeeea").innerHTML = `
+        e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
 
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
         `
     } else if (type == "") {
-        document.getElementById("eeeeeea").innerHTML = `
+        e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
 
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
         `
     } else if (type == "bii") {
-        document.getElementById("eeeeeea").innerHTML = `
+        e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
 
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
         `
     } else if (type == "bini") {
-        document.getElementById("eeeeeea").innerHTML = `
+        e.innerHTML = `
         <p>Hm... Sorry but you used Direct Download. For you get more opitions exemple install, update, remove and more. Click <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to download</p>
 
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install</p>
         `
     }
+    document.body.appendChild(e);
 </script>
 
 <h1>Thanks!</h1>
