@@ -10,26 +10,32 @@ permalink: /Thanks
     const text = document.getElementById("text")
 
     if (type == null) {
-        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install"
+        texts.innerHTML = `<p>Thank you for installing our Installer!</p>
 
-        document.getElementById("msgibni").innerHTML = "Thank you for installing our Installer!"
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
+        `
     } else if (type == "") {
-        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install";
+        texts.innerHTML = `<p>Thank you for installing our Installer!</p>
 
-        text.innerHTML = "Thank you for installing our Installer!"
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
+        `
     } else if (type == "bii") {
-        document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install";
+        texts.innerHTML = `<p>Thank you for installing our Installer!</p>
 
-        text.innerHTML = "Thank you for installing our Installer!"
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
+        `
     } else if (type == "bini") {
+        texts.innerHTML = `<p>Hm... Sorry but you used Direct Download. For you get more opitions exemple install, update, remove and more. Click <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to download</p>
+
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install</p>
+        `
         document.getElementById("msgibni").innerHTML = "Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install";
-        
-        text.innerHTML = "Hm... Sorry but you used Direct Download. For you get more opitions exemple install, update, remove and more. Click <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to download"
     }
 </script>
 
 <h1>Thanks!</h1>
 
-<p id="msgibni"></p>
-
-<p id="text"></p>
+<div id="texts">
+    <p id="text"></p>
+    <p id="msgibni"></p>
+</div>
