@@ -13,7 +13,7 @@ timeout /t 2 /nobreak > nul
 attrib -H versionidlocal.txt
 del "versionidlocal.txt"
 del "Server.bat"
-del "Minecraft_Server_Menu_Installer.exe"
+del "Minecraft_Server_Menu_Installer.bat"
 del "Main.bat"
 del "LICENSE"
 cls
@@ -21,13 +21,13 @@ call :colorEcho 03 "[LOGS]"
 echo :
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Minecraft Server Menu Instaler...
-bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.exe %cd%\Minecraft_Server_Menu_Installer.exe > nul
-if exist Minecraft_Server_Menu_Installer.exe (
+bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %cd%\Minecraft_Server_Menu_Installer.bat > nul
+if exist Minecraft_Server_Menu_Installer.bat (
 call :colorEcho 0a "[DONE] "
 echo Minecraft Server Menu Instaler instalado
 ) else (
 call :colorEcho 04 "[FATAL ERROR] "
-echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.exe tente novamente mais tarde! 
+echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.bat tente novamente mais tarde! 
 )
 
 call :colorEcho 0e "[EM FILA] "
@@ -71,7 +71,7 @@ call :colorEcho 0a "[ENDED] "
 echo : Ended.
 pause > nul
 cls
-start Minecraft_Server_Menu_Installer.exe
+start Minecraft_Server_Menu_Installer.bat
 exit
 
 :colorEcho
