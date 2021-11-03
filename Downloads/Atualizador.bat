@@ -25,7 +25,7 @@ echo : iniciando download de Minecraft Server Menu Instaler...
 bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %cd%\Minecraft_Server_Menu_Installer.bat > nul
 if exist Minecraft_Server_Menu_Installer.bat (
 call :colorEcho 0a "[DONE] "
-echo Minecraft Server Menu Instaler instalado
+echo : Minecraft Server Menu Instaler instalado
 ) else (
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.bat tente novamente mais tarde! 
@@ -36,7 +36,7 @@ echo : iniciando download de LICENSE
 bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath%\LICENSE > nul
 if exist LICENSE (
 call :colorEcho 0a "[DONE] "
-echo LICENSE instalado
+echo : LICENSE instalado
 ) else (
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! 
@@ -47,7 +47,7 @@ bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramir
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
 call :colorEcho 0a "[DONE] "
-echo pacote de versoes instalado
+echo : pacote de versoes instalado
 ) else (
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! 
@@ -58,7 +58,7 @@ echo : iniciando download de Server.bat
 bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %mypath%\Server.bat > nul
 if exist Server.bat (
 call :colorEcho 0a "[DONE] "
-echo Server.bat instalado
+echo : Server.bat instalado
 ) else ( 
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! 
