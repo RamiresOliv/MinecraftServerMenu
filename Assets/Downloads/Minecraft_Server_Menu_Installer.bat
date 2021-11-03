@@ -158,12 +158,8 @@ if %opcao% GEQ 0 goto pendente
 :comecaratualizacao
 title Minecraft Server Menu Instaler / Update Verify / Updating...
 cls
-echo porfavor espere estamos fazendo download da atualizacao...
-echo estamos configurando algums Bats para iniciar o download da atualizacao.
+echo porfavor espere estamos fazendo preparando a atualizacao...
 echo (seja paciente pode demorar)
-echo quando iniciar a atualização ira aparecer em outra tela
-echo qundo a atualização terminar
-echo voce sera redirecionado para a pagina normalmente.
 bitsadmin.exe /transfer "Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Atualizador.bat %mypath%\Atualizador_TEMP_FILE.bat > nul
 start Atualizador_TEMP_FILE.bat
 exit
