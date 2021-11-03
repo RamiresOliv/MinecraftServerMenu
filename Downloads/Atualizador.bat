@@ -13,25 +13,25 @@ timeout /t 2 /nobreak > nul
 attrib -H versionidlocal.txt
 del "versionidlocal.txt"
 del "Server.bat"
-del "Minecraft_Server_Menu_Installer.bat"
+del "Minecraft_Server_Menu_Installer.exe"
 del "LICENSE"
 cls
 call :colorEcho 03 "[LOGS]"
 echo :
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Minecraft Server Menu Instaler...
-bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %mypath:~0,-1%\Minecraft_Server_Menu_Installer.bat > nul
-if exist Minecraft_Server_Menu_Installer.bat (
+bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.exe %cd%\Minecraft_Server_Menu_Installer.exe > nul
+if exist Minecraft_Server_Menu_Installer.exe (
 call :colorEcho 0a "[DONE] "
 echo Minecraft Server Menu Instaler instalado
 ) else (
 call :colorEcho 04 "[FATAL ERROR] "
-echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.bat tente novamente mais tarde! 
+echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.exe tente novamente mais tarde! 
 )
 
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de LICENSE
-bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath:~0,-1%\LICENSE > nul
+bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %cd%\LICENSE > nul
 if exist LICENSE (
 call :colorEcho 0a "[DONE] "
 echo LICENSE instalado
@@ -41,7 +41,7 @@ echo : Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde!
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de pacote de versoes...
-bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath:~0,-1%\versionidlocal.txt > nul
+bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %cd%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
 call :colorEcho 0a "[DONE] "
@@ -53,7 +53,7 @@ echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tar
 
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Server.bat
-bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/WebSiteStorage/Downloads/Minecraft_Java_Server.bat %mypath:~0,-1%\Server.bat > nul
+bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/WebSiteStorage/Downloads/Minecraft_Java_Server.bat %cd%\Server.bat > nul
 if exist Server.bat (
 call :colorEcho 0a "[DONE] "
 echo Server.bat instalado
@@ -70,7 +70,7 @@ call :colorEcho 0a "[ENDED] "
 echo : Ended.
 pause > nul
 cls
-start Minecraft_Server_Menu_Installer.bat
+start Minecraft_Server_Menu_Installer.exe
 exit
 
 :colorEcho
