@@ -20,8 +20,8 @@ del "LICENSE"
 cls
 call :colorEcho 03 "[LOGS]"
 echo :
-call :colorEcho 0e "[EM FILA] :"
-echo ,iniciando download de Minecraft Server Menu Instaler...
+call :colorEcho 0e "[EM FILA] "
+echo : iniciando download de Minecraft Server Menu Instaler...
 bitsadmin.exe /transfer "Minecraft Server Menu Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %cd%\Minecraft_Server_Menu_Installer.bat > nul
 if exist Minecraft_Server_Menu_Installer.bat (
 call :colorEcho 0a "[DONE] "
@@ -58,7 +58,7 @@ echo : iniciando download de Server.bat
 bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %mypath%\Server.bat > nul
 if exist Server.bat (
 call :colorEcho 0a "[DONE] "
-echo Server.bat instalado
+echo ,Server.bat instalado
 ) else ( 
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! 
