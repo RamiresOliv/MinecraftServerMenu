@@ -62,7 +62,7 @@ call :colorEcho 03 "[LOGS]"
 echo :
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de LICENSE
-bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath:~0,-1%\LICENSE > nul
+bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath%\LICENSE > nul
 if exist LICENSE (
 call :colorEcho 0a "[DONE] "
 echo LICENSE instalado
@@ -72,7 +72,7 @@ echo : Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde!
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de pacote de versoes...
-bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath:~0,-1%\versionidlocal.txt > nul
+bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
 call :colorEcho 0a "[DONE] "
@@ -83,7 +83,7 @@ echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tar
 )
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Server.bat
-bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %mypath:~0,-1%\Server.bat > nul
+bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Server_Menu_Installer.bat %mypath%\Server.bat > nul
 if exist Server.bat (
 call :colorEcho 0a "[DONE] "
 echo Server.bat instalado
@@ -120,7 +120,7 @@ goto menu
 cls
 echo um momento...
 echo lembre-se isso pode demorar um pouco...
-bitsadmin.exe /transfer "JobName" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath:~0,-1%\VersionId.txt > nul
+bitsadmin.exe /transfer "JobName" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\VersionId.txt > nul
 if errorlevel 1 ( 
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro na atualizacao tente novamente mais tarde! 
@@ -164,7 +164,7 @@ echo (seja paciente pode demorar)
 echo quando iniciar a atualização ira aparecer em outra tela
 echo qundo a atualização terminar
 echo voce sera redirecionado para a pagina normalmente.
-bitsadmin.exe /transfer "Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Atualizador.bat %mypath:~0,-1%\Atualizador_TEMP_FILE.bat > nul
+bitsadmin.exe /transfer "Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Atualizador.bat %mypath%\Atualizador_TEMP_FILE.bat > nul
 start Atualizador_TEMP_FILE.bat
 exit
 
