@@ -15,19 +15,19 @@ permalink: /Thanks
         e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
 
-        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.exe'>here</a> to re-install</p>
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
         `
     } else if (type == "") {
         e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
 
-        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.exe'>here</a> to re-install</p>
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
         `
     } else if (type == "bii") {
         e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
 
-        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.exe'>here</a> to re-install</p>
+        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
         `
     } else if (type == "bini") {
         e.innerHTML = `
