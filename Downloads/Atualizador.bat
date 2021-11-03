@@ -14,6 +14,7 @@ attrib -H versionidlocal.txt
 del "versionidlocal.txt"
 del "Server.bat"
 del "Minecraft_Server_Menu_Installer.exe"
+del "Main.bat"
 del "LICENSE"
 cls
 call :colorEcho 03 "[LOGS]"
