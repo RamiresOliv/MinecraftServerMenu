@@ -9,5 +9,5 @@
 - <a href="">Get Started</a>
 - <a href="Updates.md#updates">Uptades</a>
 ##### Versions:
-- <a href="Versions.md#01">0.1</a>
-- <a href="Versions.md#02">0.2</a> <i style="color: red;">- new!</i>
+- <a href="Versions.md#10">1.0</a>
+- <a href="Versions.md#20">2.0</a> <i style="color: red;">- new!</i>
