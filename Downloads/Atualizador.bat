@@ -33,7 +33,7 @@ echo : Ocorreu um erro ao instalar a Minecraft_Server_Menu_Installer.bat tente n
 
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de LICENSE
-bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/LICENSE.txt %mypath%\LICENSE > nul
+bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/master/LICENSE %mypath%\LICENSE > nul
 if exist LICENSE (
 call :colorEcho 0a "[DONE] "
 echo ,LICENSE instalado
