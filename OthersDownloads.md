@@ -1,3 +1,8 @@
+---
+Permalink: OthersDownloads
+Layout: Page
+---
+
 <h1>Hello!</h1>
 
 > this is the Others download page
