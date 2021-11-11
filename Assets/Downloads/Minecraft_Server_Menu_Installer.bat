@@ -154,6 +154,25 @@ echo ATUALIZADOR RUNNED [feito em %time%] >> "Installer\Logs\latest.log"
 echo [%time%] [ATUALIZADOR/STARTED]: Runned Atualizador... >> "Installer\Logs\latest.log"
 echo. >> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify...
+Ping www.google.nl -n 1 -w 1000
+cls
+if exist "versionidlocal.txt" ( echo. ) else (
+  msg * [FATAL ERROR]: arquivo de atualizacao conhecido como "versionidlocal.txt" foi removido ou renomeado!
+  msg * recriando arquivo...
+  cls
+  echo Re-criando "versionidlocal.txt"
+  bitsadmin.exe /transfer "version_verify" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
+  echo end.
+  msg * [DONE]: file re-istalada
+  goto menu
+)
+if errorlevel 1 (set internet=false) else (set internet=true)
+if %internet% == false (
+msg * Desculpe mas nao foi possivel conectar com o servidor do site porfavor tente novamente mais tarde ouverifique ou sua rede wifi.
+echo. >> "Installer\Logs\latest.log"
+echo [%time%] [WIFI ERROR/Atualizador]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
+goto menu
+)
 if exist Server.bat (
 echo exist Server.bat
 ) else (
