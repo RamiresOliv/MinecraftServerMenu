@@ -197,7 +197,7 @@ goto naopendente
 ) else goto pendente
 
 :naopendente
-echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
+echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %WebVersionId%]>> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify... / Ended
 echo Tudo certo nao a nenhuma atualizacao pendente!
 echo aperte qualquer coisa para voltar...
@@ -205,7 +205,7 @@ pause > nul
 goto menu
 
 :pendente
-echo [%time%] [ATUALIZADOR/WAITING...]: achamos uma atualizacao pendente! [WATING THE PERMITION] [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
+echo [%time%] [ATUALIZADOR/WAITING...]: achamos uma atualizacao pendente! [WATING THE PERMITION] [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %WebVersionId%]>> "Installer\Logs\latest.log"
 del "VersionId.txt"
 attrib +H versionidlocal.txt
 cls
