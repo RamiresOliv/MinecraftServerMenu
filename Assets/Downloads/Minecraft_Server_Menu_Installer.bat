@@ -18,7 +18,7 @@ if exist "Installer\Logs\latest.log" (
   if exist Atualizador_TEMP_FILE.bat ( echo. ) else del Installer\Logs\latest.log
   del Installer\Logs\job\logsreadytozip.temp
 ) else (
-  echo [%time%][LOG/STARTED/NEW]: Minecraft_Server_Menu_Instaler Logs > Installer\Logs\latest.log
+  echo [%date%-%time%][LOG/STARTED/NEW]: Minecraft_Server_Menu_Instaler Logs > Installer\Logs\latest.log
 )
 
 :menu
@@ -63,13 +63,13 @@ if errorlevel 1 (set internet=false) else (set internet=true)
 if %internet% == false ( 
 msg * Desculpe mas nao foi possivel conectar com o servidor do site porfavor tente novamente mais tarde ouverifique ou sua rede wifi.
 echo. >> "Installer\Logs\latest.log"
-echo [%time%] [WIFI ERROR/Installation]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [WIFI ERROR/Installation]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
 goto menu
 )
 if exist Server.bat (
 echo.
 echo. >> "Installer\Logs\latest.log"
-echo [%time%] [Installation]: tentativa falha ao tentar instalar os aquivos pois o arquivo Server.bat ja exist é nessesario remove-lo para continuar... >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [Installation]: tentativa falha ao tentar instalar os aquivos pois o arquivo Server.bat ja exist é nessesario remove-lo para continuar... >> "Installer\Logs\latest.log"
 msg * Um problema aconteceu: Parece que o arquivo Server.bat ja existe para atualizar ele primeiro remova-o!
 goto menu
 ) else (
@@ -87,43 +87,43 @@ md "Server"
 md "Client"
 call :colorEcho 03 "[LOGS]"
 echo :
-echo [%time%] [EM FILA]: iniciando download de LICENSE >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [EM FILA]: iniciando download de LICENSE >> "Installer\Logs\latest.log"
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de LICENSE
 bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/master/LICENSE %mypath%\LICENSE > nul
 if exist LICENSE (
-echo [%time%] [DONE]: LICENSE instalado >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [DONE]: LICENSE instalado >> "Installer\Logs\latest.log"
 call :colorEcho 0a "[DONE] "
 echo LICENSE instalado
 ) else (
-echo [%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! 
 )
-echo [%time%] [EM FILA]: iniciando download de pacote de versoes... >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [EM FILA]: iniciando download de pacote de versoes... >> "Installer\Logs\latest.log"
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de pacote de versoes...
 bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
 call :colorEcho 0a "[DONE] "
-echo [%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
 echo pacote de versoes instalado
 ) else (
-echo [%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! 
 )
-echo [%time%] [EM FILA]: iniciando download de Server.bat >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [EM FILA]: iniciando download de Server.bat >> "Installer\Logs\latest.log"
 call :colorEcho 0e "[EM FILA] "
 echo : iniciando download de Server.bat
 bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Java_Server.bat %mypath%\Server.bat > nul
 if exist Server.bat (
-echo [%time%] [DONE]: Server.bat instalado >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [DONE]: Server.bat instalado >> "Installer\Logs\latest.log"
 call :colorEcho 0a "[DONE] "
 echo Server.bat instalado
 ) else ( 
-echo [%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! 
 )
@@ -151,7 +151,7 @@ goto menu
 :atualizacao
 echo. >> "Installer\Logs\latest.log"
 echo ATUALIZADOR RUNNED [feito em %time%] >> "Installer\Logs\latest.log"
-echo [%time%] [ATUALIZADOR/STARTED]: Runned Atualizador... >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [ATUALIZADOR/STARTED]: Runned Atualizador... >> "Installer\Logs\latest.log"
 echo. >> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify...
 Ping www.google.nl -n 1 -w 1000
@@ -159,7 +159,7 @@ if errorlevel 1 (set internet=false) else (set internet=true)
 if %internet% == false (
 msg * Desculpe mas nao foi possivel conectar com o servidor do site porfavor tente novamente mais tarde ouverifique ou sua rede wifi.
 echo. >> "Installer\Logs\latest.log"
-echo [%time%] [WIFI ERROR/Atualizador]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [WIFI ERROR/Atualizador]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
 goto menu
 )
 if exist "versionidlocal.txt" ( echo. ) else (
@@ -175,7 +175,7 @@ if exist "versionidlocal.txt" ( echo. ) else (
 if exist Server.bat (
 echo.
 ) else (
-echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Porfavor faca Download do Server.bat primeiro antes de atualizar! >> "Installer\Logs\latest.log"
+echo [%date%-%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Porfavor faca Download do Server.bat primeiro antes de atualizar! >> "Installer\Logs\latest.log"
 msg * Porfavor faca Download do Server.bat primeiro antes de atualizar!
 goto menu
 )
@@ -197,7 +197,7 @@ goto naopendente
 ) else goto pendente
 
 :naopendente
-echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
+echo [%date%-%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify... / Ended
 echo Tudo certo nao a nenhuma atualizacao pendente!
 echo aperte qualquer coisa para voltar...
@@ -205,7 +205,7 @@ pause > nul
 goto menu
 
 :pendente
-echo [%time%] [ATUALIZADOR/WAITING...]: achamos uma atualizacao pendente! [WATING THE PERMITION] [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
+echo [%date%-%time%] [ATUALIZADOR/WAITING...]: achamos uma atualizacao pendente! [WATING THE PERMITION] [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
 del "VersionId.txt"
 attrib +H versionidlocal.txt
 cls
@@ -218,18 +218,18 @@ if %opcao% equ s goto comecaratualizacao
 if %opcao% equ S goto comecaratualizacao
 
 if %opcao% equ n (
-  echo [%time%] [ATUALIZADOR/ENDED]: %username% cancel the atualiacao [RETURNED TO MENU]>> "Installer\Logs\latest.log"
+  echo [%date%-%time%] [ATUALIZADOR/ENDED]: %username% cancel the atualiacao [RETURNED TO MENU]>> "Installer\Logs\latest.log"
   goto menu
 )
 if %opcao% equ N (
-  echo [%time%] [ATUALIZADOR/ENDED]: %username% cancel the atualiacao [RETURNED TO MENU]>> "Installer\Logs\latest.log"
+  echo [%date%-%time%] [ATUALIZADOR/ENDED]: %username% cancel the atualiacao [RETURNED TO MENU]>> "Installer\Logs\latest.log"
   goto menu
 )
 
 if %opcao% GEQ 0 goto pendente
 
 :comecaratualizacao
-echo [%time%] [ATUALIZADOR/ACCEPTED]: %username% accepepted the atualiacao [STARTING ATUALIZADOR MODULE]>> "Installer\Logs\latest.log"
+echo [%date%-%time%] [ATUALIZADOR/ACCEPTED]: %username% accepepted the atualiacao [STARTING ATUALIZADOR MODULE]>> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify / Updating...
 cls
 echo porfavor espere estamos fazendo preparando a atualizacao...
@@ -273,7 +273,7 @@ if %opcaoremovertype% GEQ 0 goto removertype
 
 :remover
 if exist Server.bat ( echo Removendo... ) else (
-  echo [%time%] [REMOVER]: O Arquivo Server.bat nao foi encontrado porfavor instale primeiro antes de usar essa opcao. >> "Installer\Logs\latest.log"
+  echo [%date%-%time%] [REMOVER]: O Arquivo Server.bat nao foi encontrado porfavor instale primeiro antes de usar essa opcao. >> "Installer\Logs\latest.log"
   msg * O Arquivo Server.bat nao foi encontrado porfavor instale primeiro antes de usar essa opcao.
   goto menu
 )
