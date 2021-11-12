@@ -155,7 +155,13 @@ echo [%time%] [ATUALIZADOR/STARTED]: Runned Atualizador... >> "Installer\Logs\la
 echo. >> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify...
 Ping www.google.nl -n 1 -w 1000
-cls
+if errorlevel 1 (set internet=false) else (set internet=true)
+if %internet% == false (
+msg * Desculpe mas nao foi possivel conectar com o servidor do site porfavor tente novamente mais tarde ouverifique ou sua rede wifi.
+echo. >> "Installer\Logs\latest.log"
+echo [%time%] [WIFI ERROR/Atualizador]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
+goto menu
+)
 if exist "versionidlocal.txt" ( echo. ) else (
   msg * [FATAL ERROR]: arquivo de atualizacao conhecido como "versionidlocal.txt" foi removido ou renomeado!
   msg * recriando arquivo...
@@ -166,15 +172,8 @@ if exist "versionidlocal.txt" ( echo. ) else (
   msg * [DONE]: file re-istalada
   goto menu
 )
-if errorlevel 1 (set internet=false) else (set internet=true)
-if %internet% == false (
-msg * Desculpe mas nao foi possivel conectar com o servidor do site porfavor tente novamente mais tarde ouverifique ou sua rede wifi.
-echo. >> "Installer\Logs\latest.log"
-echo [%time%] [WIFI ERROR/Atualizador]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
-goto menu
-)
 if exist Server.bat (
-echo exist Server.bat
+echo.
 ) else (
 echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Porfavor faca Download do Server.bat primeiro antes de atualizar! >> "Installer\Logs\latest.log"
 msg * Porfavor faca Download do Server.bat primeiro antes de atualizar!
@@ -195,7 +194,7 @@ if %WebVersionId% == %LocalVersionId% (
 del "VersionId.txt"
 attrib +H versionidlocal.txt
 goto naopendente
-)
+) else goto pendente
 
 :naopendente
 echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
