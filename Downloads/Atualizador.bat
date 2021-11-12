@@ -18,6 +18,10 @@ del "Server.bat"
 del "Minecraft_Server_Menu_Installer.bat"
 del "Main.bat"
 del "LICENSE"
+del /q "Installer\Logs\cache\*"
+del /q "Server\Logs\*"
+del /q "Client\Errors\*"
+del /q "Client\Logs\*"
 cls
 call :colorEcho 03 "[LOGS]"
 echo :
