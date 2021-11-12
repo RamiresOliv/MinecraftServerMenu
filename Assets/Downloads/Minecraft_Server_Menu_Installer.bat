@@ -15,7 +15,7 @@ echo Inicializando...
 echo compactando arquivos LOGS
 if exist "Installer\Logs\latest.log" (
   powershell Compress-Archive -Path %mypath%\Installer\Logs\latest.log -DestinationPath %mypath%\Installer\Logs\cache\%random%-Log_latest.zip > nul
-  del Installer\Logs\latest.log
+  if exist Atualizador_TEMP_FILE.bat ( echo. ) else del Installer\Logs\latest.log
   del Installer\Logs\job\logsreadytozip.temp
 ) else (
   echo [%time%][LOG/STARTED/NEW]: Minecraft_Server_Menu_Instaler Logs > Installer\Logs\latest.log
@@ -197,7 +197,7 @@ goto naopendente
 ) else goto pendente
 
 :naopendente
-echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %WebVersionId%]>> "Installer\Logs\latest.log"
+echo [%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Tudo certo nao a nenhuma atualizacao pendente! [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
 title Minecraft Server Menu Instaler / Update Verify... / Ended
 echo Tudo certo nao a nenhuma atualizacao pendente!
 echo aperte qualquer coisa para voltar...
@@ -205,7 +205,7 @@ pause > nul
 goto menu
 
 :pendente
-echo [%time%] [ATUALIZADOR/WAITING...]: achamos uma atualizacao pendente! [WATING THE PERMITION] [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %WebVersionId%]>> "Installer\Logs\latest.log"
+echo [%time%] [ATUALIZADOR/WAITING...]: achamos uma atualizacao pendente! [WATING THE PERMITION] [VERSION ID DETECTED IN THE GITHUB REPOSITORY: %LocalVersionId%]>> "Installer\Logs\latest.log"
 del "VersionId.txt"
 attrib +H versionidlocal.txt
 cls
@@ -235,6 +235,7 @@ cls
 echo porfavor espere estamos fazendo preparando a atualizacao...
 echo (seja paciente pode demorar)
 bitsadmin.exe /transfer "Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Atualizador.bat %mypath%\Atualizador_TEMP_FILE.bat > nul
+attrib +H Atualizador_TEMP_FILE.bat
 start Atualizador_TEMP_FILE.bat
 exit
 
