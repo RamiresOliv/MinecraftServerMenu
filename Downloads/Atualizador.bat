@@ -5,8 +5,9 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
   set "DEL=%%a"
 )
 
-:comecaratualizacao
-echo [%time%] [ATUALIZADOR_MODULE/STARTED]: STARTING MODULE AND MORE>> "Installer\Logs\latest.log"
+:Main
+echo.
+echo [%date%-%time%] [ATUALIZADOR_MODULE/STARTED]: STARTING MODULE AND MORE>> "Installer\Logs\latest.log"
 title Inicializando...
 cls
 echo arrumando o quarto...
