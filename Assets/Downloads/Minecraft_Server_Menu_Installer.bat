@@ -26,7 +26,7 @@ title Minecraft Server Menu Instaler
 cls
 if exist Atualizador_TEMP_FILE.bat (
   echo codex; %random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%> "Installer\Logs\job\logsreadytozip.temp"
-  attrib +H Atualizador_TEMP_FILE.bat
+  attrib -H Atualizador_TEMP_FILE.bat
   del "Atualizador_TEMP_FILE.bat"
   call :colorEcho 06 "[WARN] "
   echo : um tipo de programa redirecionou voce para o menu novamente provavelmente foi a atualizacao ou outra coisa.
