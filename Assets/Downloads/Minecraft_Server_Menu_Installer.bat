@@ -26,6 +26,7 @@ title Minecraft Server Menu Instaler
 cls
 if exist Atualizador_TEMP_FILE.bat (
   echo codex; %random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%> "Installer\Logs\job\logsreadytozip.temp"
+  attrib +H Atualizador_TEMP_FILE.bat
   del "Atualizador_TEMP_FILE.bat"
   call :colorEcho 06 "[WARN] "
   echo : um tipo de programa redirecionou voce para o menu novamente provavelmente foi a atualizacao ou outra coisa.
@@ -106,8 +107,8 @@ echo : iniciando download de pacote de versoes...
 bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
-call :colorEcho 0a "[DONE] "
 echo [%date%-%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
+call :colorEcho 0a "[DONE] "
 echo pacote de versoes instalado
 ) else (
 echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
