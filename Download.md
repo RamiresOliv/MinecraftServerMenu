@@ -17,6 +17,6 @@ Download using <a onclick="Thanks('bii')" href="Assets/Downloads/Minecraft_Serve
     function Thanks(protocol) {
         setTimeout(function() {
             window.location.href = `Thanks?tp=${protocol}`
-        }, 3000);
+        }, 1000);
     }
 </script>
