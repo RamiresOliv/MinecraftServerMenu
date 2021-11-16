@@ -107,80 +107,9 @@ echo Verifys:
                     echo server.jar> Server\Data\versioninit.key
                 )
 :conectando
-echo NOT BY MOJANG! > LICENSE
-echo MINECRAFT SERVER MENU LICENSE! >> LICENSE
-echo. >> LICENSE
-echo Copyright (c) 2021 Gabriel Ramires Oliv >> LICENSE
-echo.  >> LICENSE
-echo  Permission is hereby granted, free of charge, to any person obtaining a copy >> LICENSE
-echo  of this software and associated documentation files (the "Software"), to deal >> LICENSE
-echo  in the Software without restriction, including without limitation the rights >> LICENSE
-echo  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell >> LICENSE
-echo  copies of the Software, and to permit persons to whom the Software is >> LICENSE
-echo  furnished to do so, subject to the following conditions: >> LICENSE
-echo. >> LICENSE
-echo  The above copyright notice and this permission notice shall be included in >> LICENSE
-echo  all copies or substantial portions of the Software. >> LICENSE
-echo. >> LICENSE
-echo  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR >> LICENSE
-echo  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, >> LICENSE
-echo  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE >> LICENSE
-echo  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER >> LICENSE
-echo  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, >> LICENSE
-echo  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN >> LICENSE
-echo  THE SOFTWARE. >> LICENSE
-
 cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere.
-echo.
-echo                     preparando cafe...
-timeout /t 3 /nobreak > nul
-cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere..
-echo.
-echo                     ligando para a mojang...
-timeout /t 2 /nobreak > nul
-cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere...
-echo.
-echo                     malhando...
-timeout /t 2 /nobreak > nul
-cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere....
-echo.
-echo                     verificando a eula...
-timeout /t 3 /nobreak > nul
-cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere.....
-echo.
-echo                     olhando pela janela...
-timeout /t 2 /nobreak > nul
-cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere......
-echo.
-echo                     ligando as luzes
-timeout /t 2 /nobreak > nul
-cls
-echo conectando o terminal...
-echo conectando server.jar...
-echo porfavor espere.......
-echo.
-echo                     preparando (999...)
-timeout /t 2 /nobreak > nul
-cls
-echo iniciando menu ;)
+echo iniciando menu!
+echo muito obrigado por usar o menu :D
 timeout /t 3 /nobreak > nul
 goto concordar
 
@@ -288,10 +217,26 @@ if %AoN% equ n goto versionmenu
 if %AoN% GEQ 0 goto addbukkit
 
 :ativarbukkit
+set /p bukkitstatus=<Server\Data\versionbukkit.key
+if %bukkitstatus% == "ativado" (
+    cls
+    echo Bukkit Support já esta ativado.
+    echo.
+    pause
+    goto versionmenu
+)
 cls
 echo ativando...
 timeout /t 3 /nobreak > nul
-echo ativado > Server\Data\versionbukkit.key
+cls
+echo coloque agora uma versao para o forge que voce esta usando. Exemplo: "1.17" (depois voce podera atualizar essa opcao)
+set /p versionnumadd2= digite a versao:
+echo -%versionnumadd2%> Server/Data/versionnum.key
+
+echo craftbukkit-%versionnumadd2%.jar> Server\Data\versioninit.key
+echo ativado> Server\Data\versionbukkit.key
+echo bukkit> Server\Data\versionname.key
+
 cls
 echo ativado.
 echo aperte qualquer coisa para voutar
@@ -306,7 +251,10 @@ if %bukkitstatus% == ativado (
     echo desativando...
     timeout /t 3 /nobreak > nul
     cls
-    echo desativado > Server\Data\bukkit.key
+    echo vanila> Server\Data\versionname.key
+    echo *> Server\Data\versionnum.key
+    echo server.jar> Server\Data\versioninit.key
+    echo desativado> Server\Data\bukkit.key
     echo desativado e redirecionando.
     timeout /t 3 /nobreak > nul
     goto versionmenu
@@ -739,8 +687,8 @@ if %bukkitstatus% == ativado (
 )
 
 :evb
-    if exist craftbukkit-%versionnum%.jar ( goto iniciarbukkit ) else (
-        msg * o forge com o nome craftbukkit-%versionnum% nao existe ou foi renomeado...
+    if exist craftbukkit%versionnum%.jar ( goto iniciarbukkit ) else (
+        msg * o bukkit com o nome craftbukkit%versionnum%.jar nao existe ou foi renomeado...
         goto menu
     )
 
@@ -767,7 +715,7 @@ cls
 echo [%data%/%hora%] [MAIN/START/INFO/BUKKIT]: Servidor Foi iniciado normalmente >> Client\Logs\latest.log
 echo Console/Chat/Logs:
 echo.
-java -Xmx1024M -Xms1024M -jar craftbukkit-%versionnum%.jar nogui
+java -Xmx1024M -Xms1024M -jar craftbukkit%versionnum%.jar nogui
 goto gerenciamento
 
 :iniciarforge
