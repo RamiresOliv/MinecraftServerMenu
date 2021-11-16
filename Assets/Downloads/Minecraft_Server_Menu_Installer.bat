@@ -84,8 +84,23 @@ echo Fazendo Download..
 echo Isso pode demorar um pouco.
 echo voce sabia que esse sistema de download foi criado para ajudar na hora da atualizacao porque, e so voce remover o Server.bat e voutar aqui sabia?
 echo.
-md "Server"
-md "Client"
+if exist "Server" (
+call :colorEcho 03 "[INESPERADO]"
+  echo : A pasta 'Server' Já existe.
+) else (
+  md "Server"
+  call :colorEcho 03 "[DONE]"
+  echo : A pasta 'Server' Foi Criada.
+)
+if exist "Client" (
+call :colorEcho 03 "[INESPERADO]"
+  echo : A pasta 'Client' Já existe.
+) else (
+  md "Client"
+  call :colorEcho 03 "[DONE]"
+  echo : A pasta 'Client' Foi Criada.
+)
+echo.
 call :colorEcho 03 "[LOGS]"
 echo :
 echo [%date%-%time%] [EM FILA]: iniciando download de LICENSE >> "Installer\Logs\latest.log"
@@ -107,8 +122,8 @@ echo : iniciando download de pacote de versoes...
 bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
-echo [%date%-%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
 call :colorEcho 0a "[DONE] "
+echo [%date%-%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
 echo pacote de versoes instalado
 ) else (
 echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
