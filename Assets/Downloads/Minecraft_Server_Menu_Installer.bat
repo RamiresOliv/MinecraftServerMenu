@@ -153,6 +153,13 @@ echo. >> "Installer\Logs\latest.log"
 echo [%date%-%time%] [WIFI ERROR/Atualizador]: tentativa falha ao tentar conectar com o website... >> "Installer\Logs\latest.log"
 goto menu
 )
+if exist Server.bat (
+echo.
+) else (
+echo [%date%-%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Porfavor faca Download do Server.bat primeiro antes de atualizar! >> "Installer\Logs\latest.log"
+msg * Porfavor faca Download do Server.bat primeiro antes de atualizar!
+goto menu
+)
 if exist "versionidlocal.txt" ( echo. ) else (
   msg * [FATAL ERROR]: arquivo de atualizacao conhecido como "versionidlocal.txt" foi removido ou renomeado!
   msg * recriando arquivo...
@@ -162,13 +169,6 @@ if exist "versionidlocal.txt" ( echo. ) else (
   echo end.
   msg * [DONE]: file re-istalada
   goto menu
-)
-if exist Server.bat (
-echo.
-) else (
-echo [%date%-%time%] [ATUALIZADOR/ENDED]: Runned Ended Motive: Porfavor faca Download do Server.bat primeiro antes de atualizar! >> "Installer\Logs\latest.log"
-msg * Porfavor faca Download do Server.bat primeiro antes de atualizar!
-goto menu
 )
 cls
 echo um momento...
