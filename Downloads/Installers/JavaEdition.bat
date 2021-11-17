@@ -1,10 +1,6 @@
 @echo off
 SET mypath=%cd%
 
-for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do     rem"') do (
-  set "DEL=%%a"
-)
-
 md "Installer"
 md "Installer\Logs"
 md "Installer\Logs\cache"
@@ -28,8 +24,7 @@ if exist Atualizador_TEMP_FILE.bat (
   echo codex; %random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%-%random%> "Installer\Logs\job\logsreadytozip.temp"
   attrib -H Atualizador_TEMP_FILE.bat
   del "Atualizador_TEMP_FILE.bat"
-  call :colorEcho 06 "[WARN] "
-  echo : um tipo de programa redirecionou voce para o menu novamente provavelmente foi a atualizacao ou outra coisa.
+  echo [WARN]: um tipo de programa redirecionou voce para o menu novamente provavelmente foi a atualizacao ou outra coisa.
   echo.
 )
 echo (os problemas de escrita ficara assim para que nao ocorra erros como esse: não, é, olá)
@@ -85,79 +80,59 @@ echo Isso pode demorar um pouco.
 echo voce sabia que esse sistema de download foi criado para ajudar na hora da atualizacao porque, e so voce remover o Server.bat e voutar aqui sabia?
 echo.
 if exist "Server" (
-call :colorEcho 03 "[INESPERADO]"
-  echo : A pasta 'Server' Já existe.
+  echo [INESPERADO]: A pasta 'Server' Já existe.
 ) else (
   md "Server"
-  call :colorEcho 03 "[DONE]"
-  echo : A pasta 'Server' Foi Criada.
+  echo [DONE]: A pasta 'Server' Foi Criada.
 )
 if exist "Client" (
-call :colorEcho 03 "[INESPERADO]"
-  echo : A pasta 'Client' Já existe.
+  echo [INESPERADO]: A pasta 'Client' Já existe.
 ) else (
   md "Client"
-  call :colorEcho 03 "[DONE]"
-  echo : A pasta 'Client' Foi Criada.
+  echo [DONE]: A pasta 'Client' Foi Criada.
 )
 echo.
-call :colorEcho 03 "[LOGS]"
-echo :
+echo [LOG]:
 echo [%date%-%time%] [EM FILA]: iniciando download de LICENSE >> "Installer\Logs\latest.log"
-call :colorEcho 0e "[EM FILA] "
-echo : iniciando download de LICENSE
+echo [EM FILA]: iniciando download de LICENSE
 bitsadmin.exe /transfer "LICENSE" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/master/LICENSE %mypath%\LICENSE > nul
 if exist LICENSE (
 echo [%date%-%time%] [DONE]: LICENSE instalado >> "Installer\Logs\latest.log"
-call :colorEcho 0a "[DONE] "
-echo LICENSE instalado
+echo [DONE]: LICENSE instalado
 ) else (
 echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
-call :colorEcho 04 "[FATAL ERROR] "
-echo : Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! 
+echo [FATAL ERROR]: Ocorreu um erro ao instalar a LICENSE tente novamente mais tarde! 
 )
 echo [%date%-%time%] [EM FILA]: iniciando download de pacote de versoes... >> "Installer\Logs\latest.log"
-call :colorEcho 0e "[EM FILA] "
-echo : iniciando download de pacote de versoes...
+echo [EM FILA]: iniciando download de pacote de versoes...
 bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
-call :colorEcho 0a "[DONE] "
 echo [%date%-%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
-echo pacote de versoes instalado
+echo [DONE]: pacote de versoes instalado
 ) else (
 echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
-call :colorEcho 04 "[FATAL ERROR] "
-echo : Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! 
+echo [FATAL ERROR]: Ocorreu um erro ao instalar a versionidlocal.txt tente novamente mais tarde! 
 )
 echo [%date%-%time%] [EM FILA]: iniciando download de Server.bat >> "Installer\Logs\latest.log"
-call :colorEcho 0e "[EM FILA] "
-echo : iniciando download de Server.bat
+echo [EM FILA]: iniciando download de Server.bat
 bitsadmin.exe /transfer "Server.bat" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Website/Assets/Downloads/Minecraft_Java_Server.bat %mypath%\Server.bat > nul
 if exist Server.bat (
 echo [%date%-%time%] [DONE]: Server.bat instalado >> "Installer\Logs\latest.log"
-call :colorEcho 0a "[DONE] "
-echo Server.bat instalado
+echo [DONE]: Server.bat instalado
 ) else ( 
 echo [%date%-%time%] [FATAL ERROR]: Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! [FORMAS DE RECUPERAÇÃO FEITAS MANUALMENTE: EM CASO DE ERRROS NA INSTALAÇÃO DE PROGRAMAS TENTE RENOMEAR O DIRETORIO PAI] >> "Installer\Logs\latest.log"
-call :colorEcho 04 "[FATAL ERROR] "
-echo : Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! 
+echo [FATAL ERROR]: Ocorreu um erro ao instalar a Server.bat tente novamente mais tarde! 
 )
 echo [HTTPS]: conectando...
 timeout /t 2 /nobreak > nul
-call :colorEcho 0a "[DONE] "
-echo : Done.
-call :colorEcho 03 "[LOG]"
-echo : Incrivel!
-call :colorEcho 0e "[WARN]"
-echo : Oops, ocorreu algum erro inesperado? va ate a pasta Installer e abra os Logs para ver os registros [NESSE BAT AS FUNCOES SAO GRAVADAS EM ARQUIVOS LOGS]
+echo [DONE]: Done.
+echo [LOG]: Incrivel!
+echo [WARN]: Oops, ocorreu algum erro inesperado? va ate a pasta Installer e abra os Logs para ver os registros [NESSE BAT AS FUNCOES SAO GRAVADAS EM ARQUIVOS LOGS]
 echo.
-call :colorEcho 03 "[LOG]"
-echo : Tudo certo verifique se tudo foi instalado corretamente agora e so executar um arquivo com o nome de Server.bat
-call :colorEcho 03 "[LOG]"
-echo : Lembre-se: se voce estiver com duvidas de updates e so voutar para a pagina principal do Bat istalador e apertar "a" ele ira te mostrar se a alguma atualizacao pendente.
-call :colorEcho 03 "[LOG] "
-echo : aperte qualquer coisa para voltar...
+echo [LOG]: Tudo certo verifique se tudo foi instalado corretamente agora e so executar um arquivo com o nome de Server.bat
+echo [LOG]: Lembre-se: se voce estiver com duvidas de updates e so voutar para a pagina principal do Bat istalador e apertar "a" ele ira te mostrar se a alguma atualizacao pendente.
+echo [LOG]: aperte qualquer coisa para voltar...
 title Minecraft Server Menu Instaler / Download / Ended
 pause > nul
 cls
@@ -325,54 +300,36 @@ if %opcao% equ Limpa ( @RD /s /q "world" )
 if %opcao% equ Limpa ( @RD /s /q "Backup" )
 cls
 echo Removeds:
-call :colorEcho 04 "[Removed] "
-echo : Server.bat [File]
-call :colorEcho 04 "[Removed] "
-echo : Server\ [Folder]
-call :colorEcho 04 "[Removed] "
-echo : versionidlocal.txt [File]
-call :colorEcho 04 "[Removed] "
-echo : whitelist.json [File]
-call :colorEcho 04 "[Removed] "
-echo : usercache.json [File]
-call :colorEcho 04 "[Removed] "
-echo : server.properties [File]
-call :colorEcho 04 "[Removed] "
-echo : logs\ [Folder]
-call :colorEcho 04 "[Removed] "
-echo : crash-reports\ [Folder]
-call :colorEcho 04 "[Removed] "
-echo : Client\ [Folder]
-call :colorEcho 04 "[Removed] "
-echo : ops.json [File]
-call :colorEcho 04 "[Removed] "
-echo : eula.txt [File]
-call :colorEcho 04 "[Removed] "
-echo : banned-ips.json [File]
-call :colorEcho 04 "[Removed] "
-echo : banned-players.json [File]
+echo [Removed]: Server.bat [File]
+echo [Removed]: Server\ [Folder]
+echo [Removed]: versionidlocal.txt [File]
+echo [Removed]: whitelist.json [File]
+echo [Removed]: usercache.json [File]
+echo [Removed]: server.properties [File]
+echo [Removed]: logs\ [Folder]
+echo [Removed]: crash-reports\ [Folder]
+echo [Removed]: Client\ [Folder]
+echo [Removed]: ops.json [File]
+echo [Removed]: eula.txt [File]
+echo [Removed]: banned-ips.json [File]
+echo [Removed]: banned-players.json [File]
 if %opcao% equ Limpa (
-call :colorEcho 04 "[Removed] "
-echo : world\ [Folder]
+echo [Removed/ALERT]: world\ [Folder]
 )
 if %opcao% equ Limpa (
 call :colorEcho 04 "[Removed] "
-echo : backups\ [Folder]
+echo [Removed/ALERT]: backups\ [Folder]
 )
 if %opcao% equ Limpa (
-call :colorEcho 04 "[Removed] "
-echo : server.jar [File]
+echo [Removed/ALERT]: server.jar [File]
 )
-call :colorEcho 03 "[Ended] "
-echo : Stoping...
-call :colorEcho 03 "[Log] "
+echo [Ended]: Stoping...
 if %opcao% equ Limpa (
-echo : Tudo foi removido.
+echo [Log]: Tudo foi removido.
 ) else ( 
-echo : Tudo foi removido menos os arquivos word, server.jar, backups, LICENSE, Minecraft_Server_Menu_Instaler.bat se quizer salva-lo
+echo [Log]: Tudo foi removido menos os arquivos word, server.jar, backups, LICENSE, Minecraft_Server_Menu_Instaler.bat se quizer salva-lo
 )
-call :colorEcho 03 "[Log] "
-echo : aperte qualquer coisa para voutar ao menu...
+echo [Log]: aperte qualquer coisa para voutar ao menu...
 title Minecraft Server Menu Instaler / Unistalling / Ended
 pause > nul
 cls
