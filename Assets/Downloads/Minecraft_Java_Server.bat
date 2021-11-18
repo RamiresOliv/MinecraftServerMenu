@@ -6,8 +6,41 @@ set hora=%time:~0,2%-%time:~3,2%
 set /p datainfos=<Client\data\projectname.key
 
 :verify
-if exist server.jar (
+md Server\Data
+if exist Server\Data\StartSystemIdJarFile.key (
+goto StartVerify34234
+) else (
+cls
+echo Ola poderia informar seu arquivo inicializador?
+echo Essa verificacao e muito importante para iniciar o servidor corretamente!
+echo APENAS O NOME! 
+echo Exemplo: "server"
+echo nao digite "server.jar"
+echo SEM ESPACOS! (se tiver espacos re-nomeie agora)
 
+set /p ServerJarName= porfavor digite o nome do arquivo '.jar' : 
+echo %ServerJarName%>Server\Data\StartSystemIdJarFile.key
+goto StartVerify34234
+)
+
+:StartVerify34234
+set /p ServerJarNameFromFile=<Server\Data\StartSystemIdJarFile.key
+if "%ServerJarNameFromFile%" equ "" (
+    start https://www.minecraft.net/pt-br/download/server
+     msg * arquivo principal nao encontrado!
+     exit
+) else ( 
+    if exist %ServerJarNameFromFile% (
+        start https://www.minecraft.net/pt-br/download/server
+         msg * arquivo principal nao encontrado!
+         exit
+    ) else (
+        echo Found
+        goto ExistStartJarFile
+    )
+) 
+
+:ExistStartJarFile
 "C:\Program Files\WinRar\Rar.exe" a "Client\Logs\%data%_%random%.gz" "Client\Logs\latest.log" > nul
 
 md "Client"
@@ -45,37 +78,41 @@ if exist "eula.txt" (
 
     ) else (
         md Client\Errors
-        start server.jar
-        msg * O arquivo eula.txt nao existe mas acabamos de fazer um para voce! (recomendado: voce verificar a eula agora antes de ligar o servidor va para a pasta onde esta o servidor e aceite a eula que essta localizada em um arquivo eula.txt)
+        if "%ServerJarNameFromFile%" equ "" (
+            msg * O arquivo principal com o nome do servidor foi re-nomeado ou excluido ignorando Eula Verify...
+            ) else (
+            start %ServerJarNameFromFile%.jar
+            msg * O arquivo eula.txt nao existe mas acabamos de fazer um para voce! (recomendado: voce verificar a eula agora antes de ligar o servidor va para a pasta onde esta o servidor e aceite a eula que essta localizada em um arquivo eula.txt)
+        )
         echo ERRO: Eula.txt nÃ£o existe mas foi recriada mas, %username% foi lembrado "https://account.mojang.com/documents/minecraft_eula" > Client\Errors\Eula_Error[%random%]%data%.error.txt
-        goto conectando
+        goto startverifys
     )
-
-) else (
-     start https://www.minecraft.net/pt-br/download/server
-     msg * arquivo principal nao encontrado porfavor renomeie para server.jar
-     exit
-)
 
 
 
 :startverifys
 echo Verifys:
+        if exist Client\Data\StartFromFirstTime.key (
+            echo StartFromFirstTime
+
+            if exist Ebaa.txt del Ebaa.txt
+            goto projectnameverify
+        ) else (
+            echo Todos os arquivos foram Instalados agora e so comecar a usar! > Ebaa.txt
+		    echo Muito Obrigado por instalar nosso Script %username%!! com amor Ramires Oliv >> Ebaa.txt
+		    echo. >> Ebaa.txt
+		    echo nota: este arquivo .txt sera removido ao executar o script novamente se preferir você mesmo pode ir remove-lo >> Ebaa.txt
+		    start Ebaa.txt
+
+            echo Yes>Client\Data\StartFromFirstTime.key
+            echo And thx you>>Client\Data\StartFromFirstTime.key
+        )
+
+        :projectnameverify
         if exist Client\data\projectname.key (
             echo projectname.key
         ) else (
 		echo Meu Server de Minecraft! > Client\data\projectname.key
-
-	            msg * Ocorreu um erro: o server foi obrigado a desligar pelo seguinte motivo: No comeco da instalacao e obrigatario a renicializacao para que evite alguns erros de Data
-		        msg * essa mensagem  so ira aparecer uma vez esse erro e so mente para avisar nao e preciso alteracoes em script e outros
-		        start Server.bat
-
-                echo Todos os arquivos foram Instalados agora e so comecar a usar! > Ebaa.txt
-		        echo Muito Obrigado por instalar nosso Script %username%!! com amor Ramires Oliv >> Ebaa.txt
-		        echo. >> Ebaa.txt
-		        echo nota: este arquivo .txt sera removido ao executar o script novamente se preferir você mesmo pode ir remove-lo >> Ebaa.txt
-		        start Ebaa.txt
-		        exit
         )
 
         :versionnumverify
@@ -186,7 +223,7 @@ echo * addforge. adicionar suporte para forge (qualquer versao)                 
 echo * addbukkit. adicionar suporte para plugins (caso seja selecionada nao tera como ativar mods.) *
 echo * removebukkit. remover o suporte para plugins                                                 *
 echo * removeforge. remover o suporte para forge (ira voutar para Vanila)                           *
-echo * renameversion. renomeara a versao tanto para valina e forge                                  *
+echo * renameversion. renomeara a versao tanto para bukkit e forge                                  *
 echo * back. voutar ao menu                                                                         *
 echo ===============================================================================================
 
@@ -374,7 +411,7 @@ if exist Server\forge_versions_ids\data\recomendado\!versionnumadd!.txt (
     set /p vnvrm=<Server\forge_versions_ids\data\recomendado\!versionnumadd!.txt
     echo forge> Server\Data\versionname.key
     echo forge-!versionnumadd!-!vnvrm!.jar> Server\data\versioninit.key
-    echo !vnvrm!, !versionnumadd!
+    echo status: "!vnvrm!, !versionnumadd!" [ignore]
     pause > nul
     goto afend
 ) else (
@@ -386,16 +423,11 @@ cls
 echo Oops :( nao foi posivel achar essa versao! tente:
 echo caso voce colocou a "versao recomendado" tente colocar "versao recente"
 echo se nao uma dessas opcoes esta versao nao existe ou foi nomeada incorretamente!
+echo vanila> Server\Data\versionname.key
+echo server.jar> Server\data\versioninit.key
+echo *> Server/Data/versionnum.key
 pause 
-goto rorrv
-
-:aferrorv
-cls
-echo Oops :( nao foi posivel achar essa versao! tente:
-echo caso voce colocou a "versao recomendado" tente colocar "versao recente"
-echo se nao uma dessas opcoes esta versao nao existe ou foi nomeada incorretamente!
-pause 
-goto afav
+goto versionmenu
 
 :recenteversion
 if exist Server\forge_versions_ids\data\recente\!versionnumadd!.txt (
@@ -420,6 +452,13 @@ goto versionmenu
 
 :removeforge
 cls
+if %versaoatual% == "vanila" (
+    echo oops! parece que o Forge nao foi ativado ainda
+    echo para proceguir porfavor adicione o suporte para forge
+    echo.
+    pause
+    goto versionmenu
+)
 echo ok.. estamos desativando os carros e outras coisas do muuuuuuuuuuuuuuuito longe.
 echo e voutando para casa...
 timeout /t 8 /nobreak > nul
