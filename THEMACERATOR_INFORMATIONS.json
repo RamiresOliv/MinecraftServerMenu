@@ -9,6 +9,11 @@
   "How": {
    "call": "require(7815958787).HELPME('[PLAYERNAME]', '[SECURITYCODE]')"
   },
+  "main": {
+   "Function": {
+    "Name": "HELPME"
+   }
+  }
   "url": "https://web.roblox.com/library/7815958787",
   "SECURITYCODE": "By ashjdgsl",
   "Name": "The Hard Work",
