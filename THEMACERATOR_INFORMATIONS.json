@@ -6,13 +6,13 @@
         }
     },
     "Product": {
-        "How": { 
+        "main": {
+            "Function": {
+                "Name": "HELPME"
+            }
+        },
+        "How": {
             "call":"require(7815958787).HELPME('[PLAYERNAME]', '[SECURITYCODE]')"
-        }
-    },
-    "main": {
-        "Function": {
-            "Name": "HELPME"
         }
     },
      
@@ -24,3 +24,4 @@
         "id": "7815958787"
     }
 }
+   
