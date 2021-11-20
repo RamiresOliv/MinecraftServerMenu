@@ -3,7 +3,8 @@
   "Name": "ashjdgsl",
   "informations": {
    "id": "1601452844"
-  },
+  }
+ },
  "Product": {
   "How": {
    "call": "require(7815958787).HELPME('[PLAYERNAME]', '[SECURITYCODE]')"
