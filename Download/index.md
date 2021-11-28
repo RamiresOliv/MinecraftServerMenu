@@ -1,5 +1,6 @@
 ---
 layout: page
+permlink: /Download
 title: Download
 ---
 
