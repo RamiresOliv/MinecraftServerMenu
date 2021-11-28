@@ -5,14 +5,14 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.9)
-    em-websocket (0.5.2)
+    em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
-      http_parser.rb (~> 0.6.0)
+      http_parser.rb (~> 0)
     eventmachine (1.2.7-x64-mingw32)
     ffi (1.15.4-x64-mingw32)
     forwardable-extended (2.6.0)
-    http_parser.rb (0.6.0)
-    i18n (1.8.10)
+    http_parser.rb (0.8.0)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     jekyll (4.2.1)
       addressable (~> 2.4)
@@ -70,6 +70,7 @@ GEM
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     wdm (0.1.1)
+    webrick (1.7.0)
 
 PLATFORMS
   x64-mingw32
@@ -81,6 +82,7 @@ DEPENDENCIES
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.30
+   2.2.31
