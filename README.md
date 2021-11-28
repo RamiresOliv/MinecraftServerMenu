@@ -4,8 +4,8 @@
 
 ## neh no ideas '-'
 
-*OldWebsite:* [See](https://minecraftservermenu.ramiresoliv.repl.co) *(NOT WORKING)* \
-*Website:* [Visit](https://gabrielramires.github.io/MinecraftServerMenu) *(WORKING)*
+*OldWebsite:* *[See](WebsiteClosed) (NOT WORKING)* \
+*Website:*  *[Visit](Website) (WORKING)*
 
 hm...
 only me use the in md files:
@@ -17,3 +17,6 @@ lol\
 wait why i use he?.....
 
 bruh any way bye i gona sleep and... for your face... *(omg...)* you need sleep too.. then GO SLEEP NOW
+
+[WebsiteClosed]: (https://minecraftservermenu.ramiresoliv.repl.co)
+[Website]: (https://gabrielramires.github.io/MinecraftServerMenu)
