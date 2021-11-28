@@ -50,7 +50,7 @@ title: Home
 {% if site.url contains 'localhost' %}
 
 <h3><b>⚠ DISCLAIMER: ⚠</b></h3>
-- <p style="color: red;"><b>THIS WEBSITE IS RUNNING IN A LOCALHOST THE PAGE CONTROLS HAS BEEN CHANGED FOR NO GET ERRORS</b></p>
+- <p style="color: red;"><b>maybe some things on the site don't work directly because of it running on LocalHost</b></p>
 - <p style="color: green;"><b>Cool: the Disigne of the Website not changed.</b></p>
 <i><small>(ignore this message just a warning. for developers and etc.)</small></i>
 {% endif %}
