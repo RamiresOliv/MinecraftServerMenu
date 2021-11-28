@@ -5,8 +5,8 @@ description: >-
   <3 thx for support!
 
 # url system:
-baseurl: 'MinecraftServerMenu'
-url: ''
+baseurl: "MinecraftServerMenu"
+url: ""
 
 # others:
 github_username: gabrielramires

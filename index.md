@@ -3,7 +3,7 @@ layout: home
 title: Home
 ---
 
-<p><i>this is the best batch you will ever see! does not contain viruses or anything that will advance beyond System32, Windowns and others.</i></p>
+<p><i>This is mine... Minecraft Server Menu doesn't have anything about mojang here the project is totally mine in the end this file is not a virus it just starts the server as the User configures.</i></p>
 
 <a href="https://github.com/gabrielramires/MinecraftServerMenu/blob/master/LICENSE"><i>GNU General Public License v2.0</i> License</a>
 

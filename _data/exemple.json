@@ -1,0 +1,22 @@
+{
+    "Creator": {
+        "Name": "ashjdgsl",
+        "id": "1601452844"
+    },
+    "Product": {
+        "main": {
+            "Function": {
+                "Name": "HELPME"
+            }
+        },
+        "How": {
+            "call":"require(7815958787).HELPME('[PLAYERNAME]', '[SECURITYCODE]')"
+        },
+     
+        "url": "https://web.roblox.com/library/7815958787",
+        "SECURITYCODE": "By ashjdgsl",
+        "Name": "The Hard Work",
+        "RealName": "The Macerator",
+        "id": "7815958787"
+    }
+}
