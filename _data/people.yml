@@ -1,3 +1,9 @@
-GabrielRamires:
-  name: GabrielRamires
-  github: gabrielramires
+members:
+  - name: Gabriel Ramires
+    cretor: true
+    github: gabrielramires
+
+  - name: Arthur Ft
+    cretor: false
+    github: ArthurFt
+    note: "(Test User)"
