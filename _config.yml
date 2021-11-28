@@ -5,7 +5,7 @@ description: >-
   <3 thx for support!
 
 # url system:
-baseurl: "MinecraftServerMenu" # MinecraftServerMenu
+baseurl: "" # MinecraftServerMenu
 url: ""
 
 # others:
