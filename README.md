@@ -18,5 +18,5 @@ wait why i use he?.....
 
 bruh any way bye i gona sleep and... for your face... *(omg...)* you need sleep too.. then GO SLEEP NOW
 
-[WebsiteClosed]: (https://minecraftservermenu.ramiresoliv.repl.co)
-[Website]: (https://gabrielramires.github.io/MinecraftServerMenu)
+[WebsiteClosed]:(https://minecraftservermenu.ramiresoliv.repl.co)
+[Website]:(https://gabrielramires.github.io/MinecraftServerMenu)
