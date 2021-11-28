@@ -5,6 +5,12 @@ permalink: /MyCodesFromRoblox
 
 hmmmm system not working?:
 
+<h2>aboout to me:<h2>
+
+- My <a href="https://web.roblox.com/users/1601452844/profile">Profile<a> in Roblox
+- My <a href="https://web.roblox.com/library/7815958787">Hard Work<a> or better THE MACERATOR in Roblox (call in console: `require(7815958787).HELPME("Yourname", "By ashjdgsl")`)
+- My <a href="https://web.roblox.com/library/7632296994">Hard Work<a> or better THE MACERATOR in Roblox (call in console: `require(7632296994).ashjdgsl_ThePan("Yourname")`)
+
 <h3 style="color: red;"><strong>ONLY WORK IN ROBLOX SERVER SCRIPT! [lua]</strong></h3>
 
 ```lua
@@ -166,3 +172,7 @@ script.Parent.ProximityPrompt.Triggered:Connect(function(LocalPlayer)
 end)
 
 ```
+
+## Lol the cool its here xd
+
+## u know i created mutch trash in roblox too! look this: link to lear more
