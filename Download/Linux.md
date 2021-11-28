@@ -1,5 +1,5 @@
 ---
-permalink: /Linux
+permalink: Download/Linux
 layout: default
 ---
 
@@ -7,4 +7,4 @@ layout: default
 
 I Am sorry linux user the Minecraft Server Menu not disponible to Linux :(
 
-<h3><a href="{% if site.url contains 'localhost' %} ./Download {% else %} .. {% endif %}">Back</a><h3>
+<h3><a href=".">Back</a><h3>
