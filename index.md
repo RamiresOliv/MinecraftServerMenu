@@ -20,7 +20,7 @@ title: Home
     {% if member.github == nil %}
     <a target="_blank" href="https://twitter.com/{{ member.twitter }}">
       {{ member.name }} </a>
-        {% if member.cretor == false %} Not Creator {% elsif member.cretor == true %} Valid Creator {% else %} Creator its null! {% endif %}
+        {% if member.creator == false %} Not Creator {% elsif member.creator == true %} Valid Creator {% else %} Creator its null! {% endif %}
         {{ member.note }}
 
         {% if member.note == nil %}
@@ -31,7 +31,7 @@ title: Home
     {% elsif member.twitter == nil %}
     <a target="_blank" href="https://github.com/{{ member.github }}">
         {{ member.name }} </a>
-        {% if member.cretor == false %} Not Creator {% elsif member.cretor == true %} Valid Creator {% else %} Creator its null! {% endif %}
+        {% if member.creator == false %} Not Creator {% elsif member.creator == true %} Valid Creator {% else %} Creator its null! {% endif %}
         {{ member.note }}
     {% else %}
     <p>Invalid value</p>
@@ -50,9 +50,9 @@ title: Home
 {% if site.url contains 'localhost' %}
 
 <h3><b><span style="color: yellow;">⚠</span> DISCLAIMER: <span style="color: yellow;">⚠</span></b></h3>
-- <p style="color: red;"><b>maybe some things on the site don't work directly because of it running on LocalHost</b></p>
-- <p style="color: green;"><b>Cool: the Disigne of the Website not changed.</b></p>
-- <p style="color: green;"><b>Visit the Github <a href="https://gabrielramires.github.io/MinecraftServerMenu">Website Original</a></b></p>
+<li><b style="color: red;">maybe some things on the site don't work directly because of it running on LocalHost</b></li>
+<li><b style="color: green;">Cool: the Disigne of the Website not changed.</b></li>
+<li><b style="color: green;">Visit on Github the <a href="https://gabrielramires.github.io/MinecraftServerMenu">Original Website</a></b></li>
 <i><small>(ignore this message just a warning. for developers and etc.)</small></i>
 {% endif %}
 
@@ -71,11 +71,11 @@ title: Home
             document.getElementById("ShowCreditsPeople").innerHTML = `
             {% highlight yml %}members:
     - name: Gabriel Ramires
-      cretor: true
+      creator: true
       github: gabrielramires
 
     - name: Arthur Ft
-      cretor: false
+      creator: false
       github: ArthurFt
       note: "(Test User)"{% endhighlight %}
     
