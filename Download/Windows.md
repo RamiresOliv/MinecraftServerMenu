@@ -3,7 +3,12 @@ permalink: Download/Windows
 layout: default
 ---
 
-<h1>Download/Windows</h1>
+<lu id="Credits"> <!-- Need Create a Data Folder and Create a Data File -->
+{% assign DataFileName = "Creditos" %} <!-- Define here the Data File Name -->
+{% for Usuario in site.data[DataFileName].Usuarios %} {% if Usuario.github != nil %} <li><a target="_blank" href="https://github.com/{{ Usuario.github }}">{{ Usuario.name }}</a></li> {% elsif Usuario.twitter != nil %} <li><a target="_blank" href="https://twitter.com/{{ Usuario.twitter }}">{{ Usuario.name }}</a></li> {% else %} <script> console.warn("Can't add {{ Usuario.name }} to Credits Page You need define a Twitter or a Github.") </script> {% endif %} {% endfor %}
+</lu>
+
+<h1 id="oohhmagod">Download/Windows</h1>
 
 <h3>Types:</h3>
 
