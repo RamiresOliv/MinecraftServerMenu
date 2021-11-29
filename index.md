@@ -53,6 +53,8 @@ title: Home
 - <p style="color: red;"><b>maybe some things on the site don't work directly because of it running on LocalHost</b></p>
 - <p style="color: green;"><b>Cool: the Disigne of the Website not changed.</b></p>
 <i><small>(ignore this message just a warning. for developers and etc.)</small></i>
+- <p style="color: green;"><b>Cool: the Disigne of the Website not changed.</b></p>
+<i><small>Visit the Github <a href="https://gabrielramires.github.io/MinecraftServerMenu">Website Original</a></small></i>
 {% endif %}
 
 <script>
