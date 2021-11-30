@@ -1,10 +1,10 @@
 ---
 layout: default
-permalink: /Errors
+permalink: Docs/Errors
 date: 2021-10-30 10:54:11 -0300
 ---
 
-<h3><a href="./Docs">Back</a></h3>
+<h3><a href=".">Back</a></h3>
 
 ## Summary:
 

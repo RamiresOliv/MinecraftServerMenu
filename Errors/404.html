@@ -4,7 +4,7 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
-  .container {
+  #container {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
@@ -17,10 +17,18 @@ layout: default
   }
 </style>
 
-<div class="container">
+<div id="container">
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
-  <p>Try again later or try go to <a href=".">Main Page</a></p>
+  <p>Try again later or try go to <a href="{{ site.url }}">Main Page</a></p>
+  <br><br><br>
+  
+  <p>Here informations to eror 404</p>
+
+  <div id="informations"></div>
+  <p> In try access the url invalid "{{ window }}"
+  </p>
+
 </div>
