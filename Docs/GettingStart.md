@@ -25,7 +25,7 @@ Olá desenvolvedores!\
 Sumario:\
 <a href="#sobre-criação-de-sites">Sobre Criação de sites</a>\
 <a href="#sobre-jekyll">Sobre Jekyll</a>\
-<a href="#introdução-com-jekyll-&-criação-de-website">Usando Jekyll</a>
+<a href="#começando-com-jekyll">Usando Jekyll</a>
 
 ---
 
@@ -47,13 +47,13 @@ Bem como o mundo não é um mar de rosas os lugares que hospedam os Websites Pre
 
 # Sobre Jekyll
 
-Uma feramenta que eu uso para criar os meus websites usando o <a target="_blank" href="https://pages.github.com">Github</a> para Hospeda-los
+Uma feramenta que eu uso para criar os meus websites usando o <a target="_blank" href="https://pages.github.com">Github</a> para Hospeda-los e criado em base de Ruby.
 
 Verifique as informações de <a target="_blank" href="#começar-a-usar-o-jekyll">Começar a usar o Jekyll</a>
 
 <br><br>
 
-# Introdução com Jekyll & Criação de Website
+# Começando com Jekyll
 
 ---
 
