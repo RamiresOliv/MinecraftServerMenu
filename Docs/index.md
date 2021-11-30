@@ -1,9 +1,10 @@
 ---
 layout: page
+title: Docs
 permalink: /Docs
 ---
 
-# Documentations from Minecraft Server Menu
+<small>Documentations from Minecraft Server Menu</small>
 
 Lines:
 
