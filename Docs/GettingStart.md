@@ -70,7 +70,7 @@ Na pagina de <a target="_blank" href="https://rubyinstaller.org/downloads">Insta
 
 1. Intalando Jekyll em Ruby
 
-   - <line id="scriptline"><line style="color: yellow;">rum</line> install Jekyll</line><br>
+   - <line id="scriptline"><line style="color: yellow;">gem</line> install Jekyll</line><br>
 
 2. Construindo um Projeto em Jekyll
 
