@@ -4,6 +4,8 @@ title: Docs
 permalink: /Docs
 ---
 
+# Docs\
+
 <small>Documentations from Minecraft Server Menu</small>
 
 Lines:
