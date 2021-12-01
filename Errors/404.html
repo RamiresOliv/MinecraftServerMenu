@@ -9,26 +9,40 @@ layout: default
     max-width: 600px;
     text-align: center;
   }
+  #titles {
+    background-color: rgb(231, 231, 231);
+    padding: 2px;
+    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+    border-radius: 10px;
+  }
   h1 {
     margin: 30px 0;
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  body {
+    background-color: rgb(red, green, blue);
+  }
 </style>
 
 <div id="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-  <p>Try again later or try go to <a href="{{ site.url }}">Main Page</a></p>
-  <br><br><br>
+  <div id="titles">
+    <h1>404</h1>  
+    <p><strong>Page not found :(</strong></p>
+    <p>The requested page could not be found.</p>
+    <p>Try again later or try go to <a href="{{ site.url }}">Main Page</a></p>
+    <br>
+  </div>
+  <br><br>
+  <details>
+    <summary style="color: blue; cursor: pointer;">Show Informations</summary>
+    <p>Here informations from error 404</p>
   
-  <p>Here informations to eror 404</p>
-
-  <div id="informations"></div>
-  <p> Page Removed, Error in try find he or url not valid.</p>
-  <p>Error Type: <color style="color: green;">Super Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">NOT NORMAL</color>)</i></p>
+    <div id="informations"></div>
+    <p>Can... <strong>Page Removed, Error in try find he or invalid url.</strong></p>
+    <p>Error Type: <strong><color style="color: green;">Super Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">NOT NORMAL</color>)</i></strong></p>
+  </details>
 
 </div>
