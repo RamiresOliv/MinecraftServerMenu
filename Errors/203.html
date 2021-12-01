@@ -28,6 +28,7 @@ layout: default
   }
 </style>
 
+
 <div id="container">
   <img src="{{ site.url }}/Assets/Images/error203Img.png" alt="Error 'error203Img.png' not loadded (MSG error not loadded)">
   <div id="titles">
@@ -42,14 +43,17 @@ layout: default
     <p>Here informations from error 203</p>
   
     <p id="descripition"></p>
-    <p>Can... <strong>invalid url. (Client Side)</strong></p>
+    <p id="can">Can... <strong>invalid url. (Client Side)</strong></p>
     <p>Error Type: <strong><color style="color: red;">Not Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">REALLY NOT NORMAL!!</color>)</i></strong></p>
 
     <p>Infos:</p>
     <p>The server successfully processed a request, but is returning information that might be from another source.</p>
   </details>
-
 </div>
+
+
+
+
 
 <script>
   const queryString = window.location.search;
@@ -57,6 +61,13 @@ layout: default
   const codeid = urlParams.get('codeid')
   const informations = urlParams.get('problem')
   const descripition = urlParams.get('descripition')
+  const can = urlParams.get('can')
+
+  if (descripition == null) {
+    document.getElementById("can").innerHTML = "Null"
+  } else {
+    document.getElementById("can").innerHTML = can
+  }
 
   if (descripition == null) {
     document.getElementById("descripition").innerHTML = "Null"
@@ -65,7 +76,7 @@ layout: default
   }
 
   if (informations == null) {
-    document.getElementById("ErrorMsg_SubTitle").innerHTML = "Stopped"
+    document.getElementById("ErrorMsg_SubTitle").innerHTML = "Can't Access!!"
   } else {
     document.getElementById("ErrorMsg_SubTitle").innerHTML = informations
   }
@@ -74,7 +85,7 @@ layout: default
       window.location.href = "{{ site.url }}"
   } else if (codeid == "") {
       window.location.href = "{{ site.url }}"
-  } else if (codeid != "SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-\\\\\_ER") {
+  } else if (codeid != "SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-_ER") {
       window.location.href = "{{ site.url }}"
   }
 </script>

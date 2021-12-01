@@ -9,8 +9,6 @@ baseurl: "MinecraftServerMenu" # MinecraftServerMenu
 url: ""
 
 # others:
-default_port: "4000" # define here the Port from your "jekyll s"
-
 github_username: gabrielramires
 
 # Theme:
