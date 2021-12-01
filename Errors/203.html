@@ -1,0 +1,80 @@
+---
+permalink: /203.html
+layout: default
+---
+
+<style type="text/css" media="screen">
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  #titles {
+    background-color: rgb(231, 231, 231);
+    padding: 2px;
+    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+    border-radius: 10px;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div id="container">
+  <img src="{{ site.url }}/Assets/Images/error203Img.png" alt="Error 'error203Img.png' not loadded (MSG error not loadded)">
+  <div id="titles">
+    <h1>203</h1>
+    <p><strong id="ErrorMsg_SubTitle">Hm, something is not right.</strong></p>
+    <p>Pls see the informations for see intructions to help you.</p>
+    <br>
+  </div>
+  <br><br>
+  <details>
+    <summary style="color: blue; cursor: pointer;">Show Informations</summary>
+    <p>Here informations from error 203</p>
+  
+    <p id="descripition"></p>
+    <p>Can... <strong>invalid url. (Client Side)</strong></p>
+    <p>Error Type: <strong><color style="color: red;">Not Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">REALLY NOT NORMAL!!</color>)</i></strong></p>
+
+    <p>Infos:</p>
+    <p>The server successfully processed a request, but is returning information that might be from another source.</p>
+  </details>
+
+</div>
+
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const codeid = urlParams.get('codeid')
+  const informations = urlParams.get('problem')
+  const descripition = urlParams.get('descripition')
+
+  if (descripition == null) {
+    document.getElementById("descripition").innerHTML = "Null"
+  } else {
+    document.getElementById("descripition").innerHTML = descripition
+  }
+
+  if (informations == null) {
+    document.getElementById("ErrorMsg_SubTitle").innerHTML = "Stopped"
+  } else {
+    document.getElementById("ErrorMsg_SubTitle").innerHTML = informations
+  }
+
+  if (codeid == null) {
+      window.location.href = "{{ site.url }}"
+  } else if (codeid == "") {
+      window.location.href = "{{ site.url }}"
+  } else if (codeid != "SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-\\\\\_ER") {
+      window.location.href = "{{ site.url }}"
+  }
+</script>
