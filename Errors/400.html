@@ -1,0 +1,65 @@
+---
+permalink: /400.html
+layout: default
+---
+
+<style type="text/css" media="screen">
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  #titles {
+    background-color: rgb(231, 231, 231);
+    padding: 2px;
+    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+    border-radius: 10px;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div id="container">
+  <img src="{{ site.url }}/Assets/Images/error400Img.png" alt="Error 'error400Img.png' not loadded (MSG error not loadded)">
+  <div id="titles">
+    <h1>400</h1>
+    <p><strong id="ErrorMsg_SubTitle">Hm, something is not right.</strong></p>
+    <p>The requested page has some unknown error.</p>
+    <p>Try again later or try go to <a href="{{ site.url }}">Main Page</a></p>
+    <br>
+  </div>
+  <br><br>
+  <details>
+    <summary style="color: blue; cursor: pointer;">Show Informations</summary>
+    <p>Here informations from error 400</p>
+  
+    <div id="informations"></div>
+    <p>Can... <strong>invalid url. (Client Side)</strong></p>
+    <p>Error Type: <strong><color style="color: red;">Not Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">REALLY NOT NORMAL!!</color>)</i></strong></p>
+
+    <p>Infos:</p>
+    <p>The HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that was perceived as a client error (eg, malformed request syntax, invalid request message framing or misleading routing request).</p>
+  </details>
+
+</div>
+
+<script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const infos = urlParams.get('infos')
+
+  if (infos == null) {
+      window.location.href = "{{ site.url }}"
+  } else if (infos == "") {
+      window.location.href = "{{ site.url }}"
+  }
+</script>

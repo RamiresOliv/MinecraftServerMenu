@@ -97,3 +97,13 @@ Na pagina de <a target="_blank" href="https://rubyinstaller.org/downloads">Insta
 
    Bem... A parte de Hospedagem terei que deixar em branco talvez você use o Github? ou outro lugar em fim aqui algumas documentações sobre hospedagem no github pelo Jekyll:\
    <a target="_blank" href="https://jekyllrb.com/docs/continuous-integration/github-actions/#build-and-deploy">Build And Deploy</a>
+
+{% if site.url contains 'localhost' %}
+<br>
+
+<h3><strong>Good Job!</strong><h3>
+ <li><strong style="color: green;">Nice! it looks like you can run this website in Jekyll!</strong></li>
+<small>If this message is appearing it means that you are running the website on a localhost <i>(in jekyll)</i></small><br>
+
+<small>if you really running u can change anything, let free for change anything</small>
+{% endif %}

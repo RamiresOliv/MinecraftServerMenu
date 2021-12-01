@@ -12,11 +12,11 @@ permalink: /Redirect
     console.log("Url for Redirect: ", page)
 
     if (page == null) {
-        window.location.href = "RequestError?code=page for redirect not found"
+        window.location.href = "400?infos=page for redirect not found"
     } else if (page == "") {
-        window.location.href = "RequestError?code=The param 'page' no have success"
+        window.location.href = "400?infos=The param 'page' no have success"
     } else if (page == "lol") {
-        window.location.href = "RequestError?code=lol xd"
+        window.location.href = "400?infos=lol xd"
     }
 
     function Return() {

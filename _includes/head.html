@@ -4,7 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png">
+  {% if site.url contains "localhost" %}
+  <title name="HeadTitlea3323"></title>
+  <script>
+    const Title = document.head.getElementsByTagName("HeadTitlea3323");
+
+    setTimeout(function() {
+      Title.innerHTML += " | localhost in use"
+    }, 2000)
+  </script>
+  {% endif %}
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}

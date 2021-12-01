@@ -1,0 +1,62 @@
+---
+layout: default
+permalink: Errors/(NOT USABLE) RequestError.html
+---
+
+<style>
+    #container {
+      margin: 10px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+    #titles {
+      background-color: rgb(231, 231, 231);
+      padding: 2px;
+      box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+      border-radius: 10px;
+    }
+    h1 {
+      margin: 30px 0;
+      font-size: 4em;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+</style>
+
+<div id="container">
+    <div id="titles">
+        <h1>Request Error</h1>
+        <p>We can't access this page...</p>
+        <p>an unexpected error occurred while trying to access the page please try again later or <a href="{{ site.url }}">Back</a> to Home :/</p>
+    </div>
+
+    <details>
+        <summary style="color: blue; cursor: pointer;">Show Informations</summary>
+
+        <p id="code">Error Type: </p>
+
+        <p>Requested From: </p>
+        <p id="from"></p>
+    </details>
+</div>
+
+<br><br>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const code = urlParams.get('code')
+    const from = urlParams.get('from')
+
+    document.getElementById("code").innerHTML += `<code class="language-plaintext highlighter-rouge">code</code>`;
+    document.getElementById("from").innerHTML = `<code class="language-plaintext highlighter-rouge">${from}</code>`;
+
+    if (code == null) {
+        alert("error: Code calling null value")
+        window.location.href = "{{ site.url }}"
+    } else if (code == "") {
+        alert("error: The param 'code' no have success")
+        window.location.href = "{{ site.url }}"
+    }
+</script>

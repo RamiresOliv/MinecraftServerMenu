@@ -4,6 +4,11 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
   #container {
     margin: 10px auto;
     max-width: 600px;
@@ -21,15 +26,13 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
-
-  body {
-    background-color: rgb(red, green, blue);
-  }
 </style>
 
 <div id="container">
+  <img src="{{ site.url }}/Assets/Images/error404Img.png" alt="Error 'error404Img.png' not loadded (MSG error not loadded)">
+  <br>
   <div id="titles">
-    <h1>404</h1>  
+    <h1>404</h1>
     <p><strong>Page not found :(</strong></p>
     <p>The requested page could not be found.</p>
     <p>Try again later or try go to <a href="{{ site.url }}">Main Page</a></p>

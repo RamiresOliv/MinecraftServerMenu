@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /Thanks
+permalink: /Download/Thanks
 ---
 
 <script>
@@ -12,17 +12,9 @@ permalink: /Thanks
     const e = document.createElement('div');
 
     if (type == null) {
-        e.innerHTML = `
-        <p>Thank you for installing our Installer!</p>
-
-        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
-        `
+        window.location.href = "../400?infos=Can't Run the Thanks Page from the param 'tp' its null"
     } else if (type == "") {
-        e.innerHTML = `
-        <p>Thank you for installing our Installer!</p>
-
-        <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Server_Menu_Installer.bat'>here</a> to re-install</p>
-        `
+        window.location.href = "../400?infos=Can't Run the Thanks Page from the param 'tp' its null"
     } else if (type == "bii") {
         e.innerHTML = `
         <p>Thank you for installing our Installer!</p>
@@ -35,6 +27,8 @@ permalink: /Thanks
 
         <p>Oh no... the installation didn't start? press <a href='Assets/Downloads/Minecraft_Java_Server.bat'>here</a> to re-install</p>
         `
+    } else {
+        window.location.href = "../400?infos=Can't Run the Thanks Page from the param 'tp' have invalid argment"
     }
 
     title.innerHTML = "Thanks!"
@@ -43,5 +37,5 @@ permalink: /Thanks
     document.getElementsByClassName("page-content")[0].getElementsByClassName("wrapper")[0].getElementsByClassName("post")[0].getElementsByClassName("post-content")[0].appendChild(e);
 </script>
 <br>
-<p><strong><a href=".">Home</a></strong></p>
-<p><strong><a href="./Download">Download</a></strong></p>
+<p><strong><a href="{{ site.url }}">Home</a></strong></p>
+<p><strong><a href=".">Download</a></strong></p>

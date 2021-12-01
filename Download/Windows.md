@@ -22,7 +22,7 @@ Download using <a onclick="Thanks('bii')" href="../Assets/Downloads/Minecraft_Se
 <script>
     function Thanks(protocol) {
         setTimeout(function() {
-            window.location.href = `../Thanks?tp=${protocol}`
+            window.location.href = `./Thanks?tp=${protocol}`
         }, 1000);
     }
 </script>

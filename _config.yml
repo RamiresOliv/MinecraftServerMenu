@@ -9,6 +9,9 @@ baseurl: "MinecraftServerMenu" # MinecraftServerMenu
 url: ""
 
 # others:
+include:
+  - _Pages
+
 github_username: gabrielramires
 
 # Theme:
