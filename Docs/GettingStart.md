@@ -102,8 +102,12 @@ Na pagina de <a target="_blank" href="https://rubyinstaller.org/downloads">Insta
 <br>
 
 <h3><strong>Good Job!</strong><h3>
- <li><strong style="color: green;">Nice! it looks like you can run this website in Jekyll!</strong></li>
+ <li><strong style="color: green;">Nice! it looks like you can run this website in Jekyll!</strong></li><br>
 <small>If this message is appearing it means that you are running the website on a localhost <i>(in jekyll)</i></small><br>
 
-<small>if you really running u can change anything, let free for change anything</small>
-{% endif %}
+<small>if you really running u can change anything, let free for change anything</small><br>
+
+<small><b>Not sure how to get started after starting the server?</b></small><br>
+
+<li><small>See this <a href="./Beginning">document</a> it can help you</small></li>
+  {% endif %}

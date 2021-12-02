@@ -1,0 +1,59 @@
+---
+permalink: /204.html
+layout: default
+---
+
+<style type="text/css" media="screen">
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    #container {
+      margin: 10px auto;
+      max-width: 600px;
+      text-align: center;
+      animation-name: container_anim;
+      animation-duration: 1s;
+    }
+    h1 {
+      margin: 30px 0;
+      font-size: 4em;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    #titles {
+      background-color: rgb(231, 231, 231);
+      padding: 2px;
+      box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+      border-radius: 10px;
+    }
+  
+    @keyframes container_anim {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+  
+  <div id="container">
+    <img src="{{ site.url }}/Assets/Images/error204Gif.gif" alt="Error '{{ site.url }}/Assets/Images/error204Gif.gif' not loadded (MSG error not loadded)">
+    <div class="TitlesC" id="titles">
+      <h1>204</h1>
+      <p><strong id="ErrorMsg_SubTitle">Oops! We Tried But, No content.</strong></p>
+      <p>The requested page has some unknown error.</p>
+      <p>Try again later or try go to <a href="{{ site.url }}">Main Page</a></p>
+      <br>
+    </div>
+    <br><br>
+    <details>
+      <summary style="color: blue; cursor: pointer;">Show Informations</summary>
+      <p>Here informations from error 204</p>
+    
+      <div id="informations"></div>
+      <p>Can... <strong>Page in developening, Page Null (Server Side)</strong></p>
+      <p>Error Type: <strong><color style="color: red;">Not Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">Not Normal.</color>)</i></strong></p>
+  
+      <p>Infos:<br>
+      The server successfully processes the request, but no response is required :(</p>
+  
+    </details>
+  </div>

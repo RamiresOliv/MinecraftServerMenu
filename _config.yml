@@ -5,11 +5,14 @@ description: >-
   <3 thx for support!
 
 # url system:
-baseurl: "MinecraftServerMenu" # MinecraftServerMenu
+default_port: "4000" # define here the Port from your "jekyll server"
+baseurl: "MinecraftServerMenu" # MinecraftServerMenu if you gona run he in localhost remember to define null or use "$ jekyll server --baseurl=''"
 url: ""
 
 # others:
+
 github_username: gabrielramires
+youtube_username: GabrielRamires
 
 # Theme:
 theme: minima
