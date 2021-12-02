@@ -6,7 +6,7 @@ date: 2021-10-30 10:54:11 -0300
 
 <h3><a href=".">Back</a></h3>
 
-<small>This page Updated in {{ page.modified_time }}</small>
+<small>Page Last Update in {{ page.modified_time }}</small>
 
 ## Summary:
 
