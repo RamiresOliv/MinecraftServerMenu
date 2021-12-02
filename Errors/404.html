@@ -4,10 +4,6 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
-  img {
-    width: 200px;
-    height: 200px;
-  }
   #container {
     margin: 10px auto;
     max-width: 600px;
@@ -35,7 +31,7 @@ layout: default
 </style>
 
 <div id="container">
-  <img src="{{ site.url }}/Assets/Images/error404Img.png" alt="Error 'error404Img.png' not loadded (MSG error not loadded)">
+  {% include figures.html type="404" %}
   <br>
   <div id="titles">
     <h1>404</h1>

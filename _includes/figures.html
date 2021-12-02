@@ -1,0 +1,38 @@
+<style>
+    img {
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+{% if include.type != "" %}
+    {% if include.type == "404" %}
+        {% if site.url contains "localhost" %}
+            <img src="{{ site.url }}/Assets/Images/error404Img.png" alt="Error '{{ site.url }}/Assets/Images/error404Img.png' not loadded (MSG error not loadded)">
+        {% else %}
+            <img src="{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error404Img.png" alt="Error '{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error404Img.png' not loadded (MSG error not loadded)">
+        {% endif %}
+    {% elsif include.type == "203" %}
+        {% if site.url contains "localhost" %}
+            <img src="{{ site.url }}/Assets/Images/error203Img.png" alt="Error '{{ site.url }}/Assets/Images/error203Img.png' not loadded (MSG error not loadded)">
+        {% else %}
+            <img src="{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error203Img.png" alt="Error '{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error203Img.png' not loadded (MSG error not loadded)">
+        {% endif %}
+    {% elsif include.type == "204" %}
+        {% if site.url contains "localhost" %}
+            <img src="{{ site.url }}/Assets/Images/error204Gif.gif" alt="Error '{{ site.url }}/Assets/Images/error204Gif.gif' not loadded (MSG error not loadded)">
+        {% else %}
+            <img src="{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error203Img.png" alt="Error '{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error203Img.png' not loadded (MSG error not loadded)">
+        {% endif %}
+    {% elsif include.type == "400" %}
+        {% if site.url contains "localhost" %}
+            <img src="{{ site.url }}/Assets/Images/error400Img.png" alt="Error '{{ site.url }}/Assets/Images/error400Img.png' not loadded (MSG error not loadded)">
+        {% else %}
+            <img src="{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error203Img.png" alt="Error '{{ site.url }}/{% if site.baseurl %}/{{ site.baseurl }}{% endif %}/Assets/Images/error203Img.png' not loadded (MSG error not loadded)">
+        {% endif %}
+    {% endif %}
+{% else %}
+    <script>
+        console.warn("Can't Run the image name '{{ include.type }}' not exists")
+    </script>
+{% endif %}
