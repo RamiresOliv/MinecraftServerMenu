@@ -8,17 +8,10 @@ layout: default
     width: 200px;
     height: 200px;
   }
-
   #container {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
-  }
-  #titles {
-    background-color: rgb(231, 231, 231);
-    padding: 2px;
-    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
-    border-radius: 10px;
   }
   h1 {
     margin: 30px 0;
@@ -26,15 +19,27 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
-</style>
+  #titles {
+    background-color: rgb(231, 231, 231);;
+    padding: 2px;
+    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+    border-radius: 10px;
+    animation-name: titles_anim;
+    animation-duration: 1s;
+  }
 
+  @keyframes titles_anim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
 
 <div id="container">
   <img src="{{ site.url }}/Assets/Images/error203Img.png" alt="Error 'error203Img.png' not loadded (MSG error not loadded)">
   <div id="titles">
     <h1>203</h1>
     <p><strong id="ErrorMsg_SubTitle">Hm, something is not right.</strong></p>
-    <p>Pls see the informations for see intructions to help you.</p>
+    <p>Pls see the informations for we try help you.</p>
     <br>
   </div>
   <br><br>
@@ -43,8 +48,8 @@ layout: default
     <p>Here informations from error 203</p>
   
     <p id="descripition"></p>
-    <p id="can">Can... <strong>invalid url. (Client Side)</strong></p>
-    <p>Error Type: <strong><color style="color: red;">Not Normal</color> <i>(if this error starting in try get the home page its <color style="color: red;">REALLY NOT NORMAL!!</color>)</i></strong></p>
+    <p>Can... <strong id="can"></strong></p>
+    <p>Error Type: Like... <strong><color style="color: yellow;">Not Normal</color></strong></p>
 
     <p>Infos:</p>
     <p>The server successfully processed a request, but is returning information that might be from another source.</p>
@@ -82,10 +87,23 @@ layout: default
   }
 
   if (codeid == null) {
-      window.location.href = "{{ site.url }}"
+      window.location.href = "{{ site.url }}/400?infos=Hm, Can't access this page from a url not working."
   } else if (codeid == "") {
-      window.location.href = "{{ site.url }}"
+      window.location.href = "{{ site.url }}/400?infos=Hm, Can't access this page from a url not working."
   } else if (codeid != "SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-_ER") {
-      window.location.href = "{{ site.url }}"
+      window.location.href = "{{ site.url }}/400?infos=Hm, Can't access this page from a url not working."
   }
 </script>
+
+<!--
+    var element = document.getElementById("titles");
+    element.addEventListener("animationend", listener, false);
+    function listener(event) {
+        switch(event.type) {
+            case "animationend":
+                console.log(`Animation in ` + element + ` Ended Time Elapsed: ${event.elapsedTime}`)
+                document.getElementById("titles").style = "opacity: 1"
+                break;
+        }
+    }
+-->

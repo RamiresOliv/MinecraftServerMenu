@@ -50,13 +50,27 @@ title: Home
 {% if site.url contains 'localhost' %}
 <br>
 
-<h3><b><span style="color: yellow;">⚠</span> DISCLAIMER: <span style="color: yellow;">⚠</span></b></h3>
-<li><b style="color: red;">maybe some things on the site don't work directly because of it running on LocalHost</b></li>
-<li><b style="color: green;">ULTRA COOL: if you really running u can change anything, let free for change anything</b></li>
-<li><b style="color: green;">Cool: the Disigne of the Website not changed.</b></li>
-<li><b style="color: green;">Visit on Github the <a href="https://gabrielramires.github.io/MinecraftServerMenu">Original Website</a></b></li>
-<i><small>(ignore this message just a warning. for developers and etc.)</small></i>
+<div id="localhost_disclaimer_style">
+  <h3><b><span style="color: yellow;">⚠</span> DISCLAIMER: <span style="color: yellow;">⚠</span></b></h3>
+  <li><b style="color: red;">maybe some things on the site don't work directly because of it running on LocalHost</b></li>
+  <li><b style="color: green;">ULTRA COOL: if you really running u can change anything, let free for change anything</b></li>
+  <li><b style="color: green;">Cool: the Disigne of the Website not changed.</b></li>
+  <li><b style="color: green;">Visit on Github the <a href="https://gabrielramires.github.io/MinecraftServerMenu">Original Website</a></b></li>
+  <i><small>(ignore this message just a warning. for developers and etc.)</small></i>
+</div>
 {% endif %}
+
+<style type="text/css" media="screen">
+  #localhost_disclaimer_style {
+    animation-name: container_anim;
+    animation-duration: 1s;
+  }
+
+  @keyframes container_anim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
 
 <script>
     var peoplefileopenned = false

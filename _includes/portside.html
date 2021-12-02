@@ -1,4 +1,4 @@
-{% assign msg = "codeid=SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-_ER&problem=Sorry you ussing {{ site.port }} port, pls change to {{ site.data.web_configs.yml.default_port }} normal port&descripition=If you need use the port {{site.port}} change NOW the port in _data/webconfigs.yml&can=Problem in Port" %}
+{% assign msg = "" %}
 
-{% if site.url contains "localhost" and site.port != site.data.web_configs.yml.default_port and site.port != 4000 and page.name != "203.html" %} <script>window.location.href = "{{ site.url }}/203?{{assign}}"</script> {% endif %}
-{% if page.name == "203.html" and site.port == site.data.web_configs.yml.default_port %} <script>window.location.href = "{{ site.url }}" </script> {% endif %}
+{% if site.url contains "localhost" and site.port != site.data.web_configs.default_port and page.name != "203.html" %} <script>window.location.href = "{{ site.url }}/203?codeid=SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-_ER&problem=Sorry you ussing {{ site.port }} port, pls change to {{ site.data.web_configs.default_port }} normal port&descripition=If you need use the port {{site.port}} you can change in the data/web_configs.yml&can=Problem in Port"</script> {% endif %}
+{% if page.name == "203.html" and site.port == site.data.web_configs.default_port %} <script>window.location.href = "{{ site.url }}"</script> {% endif %}
