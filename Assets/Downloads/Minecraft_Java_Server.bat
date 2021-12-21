@@ -19,7 +19,7 @@ echo nao digite "server.jar"
 echo SEM ESPACOS! (se tiver espacos re-nomeie agora)
 
 set /p ServerJarName= porfavor digite o nome do arquivo '.jar' : 
-echo %ServerJarName%>Server\Data\StartSystemIdJarFile.key
+echo %ServerJarName%.jar>Server\Data\StartSystemIdJarFile.key
 goto StartVerify34234
 )
 
