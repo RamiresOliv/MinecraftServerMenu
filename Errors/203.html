@@ -3,6 +3,8 @@ permalink: /203.html
 layout: default
 ---
 
+{% if site.port == site.data.web_configs.default_port %} <script> window.location.href = "{{ site.url }}" </script> {% endif %}
+
 <style type="text/css" media="screen">
     #container {
       margin: 10px auto;
