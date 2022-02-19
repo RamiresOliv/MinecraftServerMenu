@@ -1,0 +1,150 @@
+I"�<style>
+#scriptline {
+    padding: 5.1px;
+    color: white;
+    background-color: black;
+    box-shadow: 2px 3px 7px 2px rgb(0 0 0 / 2%);
+    border-radius: 5px;
+}
+</style>
+
+<h1>Hello My name its Gabriel Ramires</h1>
+<p><small style="color: red;">ATTENTION: THIS PAGE IS IN PT-BR please, translate if you looking to a create Websites.</small></p>
+
+<p>Olá desenvolvedores!<br />
+… esse sera meu ponto de vista sobre o Jekyll e como eu começei a criar um Website!</p>
+
+<h3><a href=".">Back</a></h3>
+
+<p>Sumario:<br />
+<a href="#sobre-criação-de-sites">Sobre Criação de sites</a><br />
+<a href="#sobre-jekyll">Sobre Jekyll</a><br />
+<a href="#começando-com-jekyll">Usando Jekyll</a></p>
+
+<hr />
+
+<h1 id="sobre-criação-de-sites">Sobre Criação de Sites</h1>
+
+<h2 id="sobre--ferramentas">Sobre &amp; Ferramentas</h2>
+
+<p>Bem, a parte de Criação de Websites é a parte que eu gosto e uma das mais “simples” entre aspas em fim, a criação de um Website é necesario aprender Sobre JavaScript, Html, Php e etc Caso queira entrar nesse universo de Websites é necesario saber essas linguagems. Se você prefere mais Html e JavaScript não é necesario saber Php ou ao contrario.</p>
+
+<p>Mas uma coisa legal de Websites é que existe MUITAS ferramentas de desenvolvemento de Websites como exemplo <a target="_blank" href="https://jekyllrb.com">Jekyll</a>, <a target="_blank" href="https://jekyllrb.com">Jekyll</a> é uma ferramenta utilizada para criação de sites simples usando Ruby como linguagem de base, mas não existe só mente <a target="_blank" href="https://jekyllrb.com">Jekyll</a> Existe <a target="_blank" href="https://rubyonrails.org">Ruby On Rails</a> que também é um metodo de criação de site mais complexa</p>
+
+<h2 id="hospedagem">Hospedagem</h2>
+
+<p>O sistema de Hospedagem é utilizado como o nome fala Hospedar a aplicação existe também muitos lugares para fazer isso como uma delas o proprio <a target="_blank" href="https://github.com">Githib</a> com o <a target="_blank" href="https://pages.github.com">Github Pages</a> Tem como você criar um site pelo <a target="_blank" href="https://github.com">Github</a> usando <a target="_blank" href="https://pages.github.com">Github Pages</a> ou Hospedar um Site neles também existe outros metodos pagos e de graça para hospedar o seu Site como VPS <em>(Servidor Virtual Privado)</em>, Cloud <em>(Hospedagem na nuvem)</em>, <a target="_blank" href="https://www.godaddy.com/pt-br">GoDaddy</a>, <a target="_blank" href="https://umbler.com/br">Umbler</a>, <a target="_blank" href="www.heroku.com">Heroku</a> e muito mais <em>(NOTA: algumas de graça ou pagas)</em>.</p>
+
+<h2 id="dominio--dominio-proprio">Dominio &amp; Dominio Proprio</h2>
+
+<p>Bem como o mundo não é um mar de rosas os lugares que hospedam os Websites Precisão de um Proprio dominio como esse: <a target="_blank" href="https://gabrielramires.github.io/MinecraftServerMenu">https://gabrielramires.github.io/MinecraftServerMenu</a> isso é um dominio NÃO PROPRIO sendo assim um dominio que ira aparecer seu nome e o lugar <em>github.io</em>. Mas existe um metodo de conseguir mudar esse dominio comprando um dominio exemplos: .com, .org, .co e etc.</p>
+
+<h1 id="sobre-jekyll">Sobre Jekyll</h1>
+
+<p>Uma feramenta que eu uso para criar os meus websites usando o <a target="_blank" href="https://pages.github.com">Github</a> para Hospeda-los e criado em base de Ruby.</p>
+
+<p>Verifique as informações de <a target="_blank" href="#começar-a-usar-o-jekyll">Começar a usar o Jekyll</a></p>
+
+<p><br /><br /></p>
+
+<h1 id="começando-com-jekyll">Começando com Jekyll</h1>
+
+<hr />
+
+<h2 id="instalação-de-ruby"><b>Instalação de Ruby</b></h2>
+
+<p>Na pagina de <a target="_blank" href="https://rubyinstaller.org/downloads">Instalação de Ruby</a> você precisarra instalar a verção mais recente de preferencia a versão com WITH DEVKIT <em>(COM DEVKID)</em></p>
+
+<p><a target="_blank" href="../Assets/Images/RubyInstallScreamShoot.png"><img src="../Assets/Images/RubyInstallScreamShoot.png" alt="RubyInstallScreamShoot.png (NO LOADDED)" /></a></p>
+
+<hr />
+
+<p><br /><br /></p>
+
+<h2 id="usando-cmd-ou-power-shell"><b>Usando CMD ou Power Shell</b></h2>
+
+<ol>
+  <li>
+    <p>Intalando Jekyll em Ruby</p>
+
+    <ul>
+      <li>
+        <line id="scriptline"><line style="color: yellow;">gem</line> install Jekyll</line>
+        <p><br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Construindo um Projeto em Jekyll</p>
+
+    <ul>
+      <li>
+        <line id="scriptline"><line style="color: yellow;">jekyll</line> new <line style="color: rgb(0, 162, 255);">"CoolWebsite"</line></line>
+        <p><br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Abrindo o Projeto no CMD ou Power Shell</p>
+
+    <ul>
+      <li>
+        <line id="scriptline">cd CoolWebsite</line>
+        <p><br /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Executando um Servidor Local com Jekyll</p>
+
+    <ul>
+      <li>
+        <p>Execuções:</p>
+
+        <ol>
+          <li>
+            <p>Normal:</p>
+
+            <ul>
+              <li>
+                <line id="scriptline"><line style="color: rgb(216, 219, 0);">jekyll</line> server</line>
+                <p><br /></p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Com alguma informação a mais:</p>
+            <ul>
+              <li>
+                <line id="scriptline"><line style="color: yellow;">jekyll</line> server <line style="color: rgb(46, 46, 46);">--baseurl=''</line></line>
+                <p><br />
+<small><em>(por exemplo <code class="language-plaintext highlighter-rouge">baseurl</code> caso você tenha o projeto no Github você tera que alterar o <code class="language-plaintext highlighter-rouge">baseurl</code> para não gerar erros)</em></small></p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Hospedagem</p>
+
+    <p>Bem… A parte de Hospedagem terei que deixar em branco talvez você use o Github? ou outro lugar em fim aqui algumas documentações sobre hospedagem no github pelo Jekyll:<br />
+<a target="_blank" href="https://jekyllrb.com/docs/continuous-integration/github-actions/#build-and-deploy">Build And Deploy</a></p>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<h3><strong>Good Job!</strong><h3>
+ <li><strong style="color: green;">Nice! it looks like you can run this website in Jekyll!</strong></li><br />
+<small>If this message is appearing it means that you are running the website on a localhost <i>(in jekyll)</i></small><br />
+
+<small>if you really running u can change anything, let free for change anything</small><br />
+
+<small><b>Not sure how to get started after starting the server?</b></small><br />
+
+<li><small>See this <a href="./Beginning">document</a> it can help you</small></li>
+  
+</h3></h3>
+:ET

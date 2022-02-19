@@ -1,0 +1,25 @@
+I"ï<h1>Download/Windows</h1>
+
+<h3>Types:</h3>
+
+<p>Download using <a onclick="Thanks('bini')" href="../Assets/Downloads/Minecraft_Java_Server.bat">Direct Download</a><br />
+Download using <a onclick="Thanks('bii')" href="../Assets/Downloads/Minecraft_Server_Menu_Installer.bat"><span style="color: red;">Updated!</span> Batch <em>Command Prompt</em> Installer</a> â€“ <i style="color: green;">update and remove system <b>[RECOMMENDED]</b></i></p>
+
+<h3><a href=".">Back</a><h3>
+
+<i><h6>FOR WINDOWS 11, 10, 8, 7, 0 OR POTATO EDITION.</h6></i>
+
+<!-- Notes gona stay here: --!>
+
+<!-- Download using <a onclick="Thanks('bii')" href="Assets/Downloads/Minecraft_Server_Menu_Installer.bat"><span style="color: red;">NEW!</span> exe _Executer_ Installer</a> -- <i style="color: green;">update and remove system <b>[RECOMMENDED]</b></i>
+-->
+
+<script>
+    function Thanks(protocol) {
+        setTimeout(function() {
+            window.location.href = `./Thanks?tp=${protocol}`
+        }, 1000);
+    }
+</script>
+</h3></h3>
+:ET

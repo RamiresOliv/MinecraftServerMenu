@@ -1,0 +1,17 @@
+I"Â<style>
+    code1 {
+        background-color:  dimgray; 
+        color: white;
+    }
+    args {
+        color: green;
+    }
+</style>
+
+<p>Ended hello world you using the another site url try use a <a href="http://localhost:4001/TestingZone/urltesting.html"><args>http://localhost:4000</args></a></p>
+
+<p><br /><br /></p>
+
+<h3>About:</h3>
+<p>This exists for test the infos from the Page or Site Exemple <code1>{ site.url }</code1> 2x like this: {}</p>
+:ET

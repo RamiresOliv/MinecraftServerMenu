@@ -1,0 +1,77 @@
+I"�<h3><a href=".">Back</a></h3>
+
+<p><small>Page Last Update in </small></p>
+
+<h2 id="summary">Summary:</h2>
+
+<ol>
+  <li>
+    <p><a href="#types-of-errors">TYPES OF ERRORS:</a><br />
+<a href="#606-fatal-error-ocorreu-um-erro-ao-instalar-a-filename-tente-novamente-mais-tarde">606</a>,<br />
+<a href="#eula-you-need-to-agree-to-the-eula-in-order-to-run-the-server-go-to-eluatxt-for-more-info">EULA</a>,<br />
+<em>(pergunta)</em> <a href="#fatal-error-o-arquivo-de-instalação-não-esta-funcionando">Bat Intaller not Installing the files</a></p>
+  </li>
+  <li>
+    <p>Comming soon :)</p>
+  </li>
+</ol>
+
+<h2 id="types-of-errors">TYPES OF ERRORS:</h2>
+
+<h3 id="606-fatal-error-ocorreu-um-erro-ao-instalar-a-filename-tente-novamente-mais-tarde">606 [FATAL ERROR]: Ocorreu um erro ao instalar a [filename] tente novamente mais tarde!</h3>
+
+<blockquote>
+  <p>Este error é comum ele aparecera quando não for possivel instalar tal arquivo do nosso site</p>
+</blockquote>
+
+<p>oque pode ter cido:</p>
+
+<ol>
+  <li>
+    <p>error em HTTPS</p>
+  </li>
+  <li>
+    <p>Site em manutenção</p>
+  </li>
+  <li>
+    <p>A conecção do site cai</p>
+  </li>
+  <li>
+    <p>Sem Wifi</p>
+  </li>
+</ol>
+
+<h3 id="eula-you-need-to-agree-to-the-eula-in-order-to-run-the-server-go-to-eluatxt-for-more-info">EULA, You need to agree to the EULA in order to run the server. Go to elua.txt for more info.</h3>
+
+<blockquote>
+  <p>Este error é muito comum ele aparecera quando a EULA estiver desativada para ativala vá até o arquivo EULA.txt e troque a terceira linh por “eula=true”</p>
+</blockquote>
+
+<h1 id="FATALERROR"> FATAL ERROR, o arquivo de instalação não esta funcionando! </h1>
+<blockquote>
+  <p>vamos supor que o nome de sua pasta é: “jorge caudio server” tente mudala para:</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>JorgeCaudioServer</p>
+  </li>
+  <li>
+    <p>jorge-caudio-server</p>
+  </li>
+  <li>
+    <p>jorge_caudio_server</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>esse erro ocorre ao tentar criar a file e acontece um erro ao tentar procurar o Diretorio Mãe</p>
+</blockquote>
+
+<h4 id="tentando-não-deixar-espaços-para-que-não-ocorra-mais-erros">tentando não deixar espaços para que não ocorra mais erros.</h4>
+
+<!-- Calling JS file: -->
+<script>
+</script>
+
+:ET

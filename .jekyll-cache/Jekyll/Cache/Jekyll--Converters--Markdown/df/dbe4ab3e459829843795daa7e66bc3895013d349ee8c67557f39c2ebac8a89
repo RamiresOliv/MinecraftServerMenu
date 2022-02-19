@@ -1,0 +1,98 @@
+I"�<p><i>This is mine... Minecraft Server Menu doesn't have anything about mojang here the project is totally mine in the end this file is not a virus it just starts the server as the User configures.</i></p>
+
+<p><a href="https://github.com/gabrielramires/MinecraftServerMenu/blob/master/LICENSE"><i>GNU General Public License v2.0</i> License</a></p>
+
+<h2>Pages:</h2>
+
+<p><a href="Download">Download</a><br />
+<a href="Docs">Docs</a><br />
+<a href="Redirect?page=https://github.com/gabrielramires/MinecraftServerMenu/wiki">This menu can give me virus?</a> <i>-wiki page</i></p>
+
+<h3>Credits:</h3>
+<ul>
+
+  <li>
+    
+    <a target="_blank" href="https://github.com/gabrielramires">
+        Gabriel Ramires </a>
+         Valid Creator 
+        
+    
+
+  </li>
+
+  <li>
+    
+    <a target="_blank" href="https://github.com/ArthurFt">
+        Arthur Ft </a>
+         Not Creator 
+        (Test User)
+    
+
+  </li>
+
+<small>This Credits Menu has been created from the <a id="Button" onclick="peoplefileopen()" style="cursor: pointer;">people.yml</a></small>
+<small id="ShowCreditsPeople"></small>
+</ul>
+
+<!--
+      LocalHost Disclaimer to work
+-->
+
+<p><br /></p>
+
+<div id="localhost_disclaimer_style">
+  <h3><b><span style="color: yellow;">⚠</span> DISCLAIMER: <span style="color: yellow;">⚠</span></b></h3>
+  <li><b style="color: red;">maybe some things on the site don't work directly because of it running on LocalHost</b></li>
+  <li><b style="color: green;">ULTRA COOL: if you really running u can change anything, let free for change anything</b></li>
+  <li><b style="color: green;">Cool: the Disigne of the Website not changed.</b></li>
+  <li><b style="color: green;">Visit on Github the <a href="https://gabrielramires.github.io/MinecraftServerMenu">Original Website</a></b></li>
+  <i><small>(ignore this message just a warning. for developers and etc.)</small></i>
+</div>
+
+<style type="text/css" media="screen">
+  #localhost_disclaimer_style {
+    animation-name: container_anim;
+    animation-duration: 1s;
+  }
+
+  @keyframes container_anim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
+
+<script>
+    var peoplefileopenned = false
+
+    var sel = document.getElementById("Button").getSelection();
+    sel.removeAllRanges();
+    
+    function peoplefileopen() {
+        if (peoplefileopenned == true) {
+            peoplefileopenned = false;
+            document.getElementById("ShowCreditsPeople").innerHTML = ""
+        } else {
+            peoplefileopenned = true;
+            document.getElementById("ShowCreditsPeople").innerHTML = `
+            
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="na">members</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Gabriel Ramires</span>
+      <span class="na">creator</span><span class="pi">:</span> <span class="no">true</span>
+      <span class="na">github</span><span class="pi">:</span> <span class="s">gabrielramires</span>
+
+    <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Arthur Ft</span>
+      <span class="na">creator</span><span class="pi">:</span> <span class="no">false</span>
+      <span class="na">github</span><span class="pi">:</span> <span class="s">ArthurFt</span>
+      <span class="na">note</span><span class="pi">:</span> <span class="s2">"</span><span class="s">(Test</span><span class="nv"> </span><span class="s">User)"</span></code></pre></figure>
+
+    
+    <a target="_blank" href="Assets/Images/CodeScreamShoot1.png"><img src="Assets/Images/CodeScreamShoot1.png" alt="Code Scream Shoot (UNLOADED)"></a>
+    <small>See this <a href="https://gist.github.com/gabrielramires/22652461638c32cfcb7f138140494800">Code</a> in Github</small>`
+
+            
+        }
+    }
+</script>
+
+:ET
