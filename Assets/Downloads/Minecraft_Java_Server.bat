@@ -30,13 +30,14 @@ if "%ServerJarNameFromFile%" equ "" (
      msg * arquivo principal nao encontrado!
      exit
 ) else ( 
-    if exist %ServerJarNameFromFile% (
+msg * %ServerJarNameFromFile%.jar
+    if exist %ServerJarNameFromFile%.jar (
+        echo Found
+        goto ExistStartJarFile
+    ) else (
         start https://www.minecraft.net/pt-br/download/server
          msg * arquivo principal nao encontrado!
          exit
-    ) else (
-        echo Found
-        goto ExistStartJarFile
     )
 ) 
 
