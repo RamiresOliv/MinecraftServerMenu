@@ -7,7 +7,6 @@ description: >-
 # url system:
 baseurl: "MinecraftServerMenu" # MinecraftServerMenu
 url: ""
-port: 2000
 
 # others:
 github_username: RamiresOliv
@@ -17,5 +16,3 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-default_port: "2000" # define here the Port from your "jekyll server"

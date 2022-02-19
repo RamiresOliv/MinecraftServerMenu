@@ -38,13 +38,13 @@ oque pode ter cido:
 > Este error é muito comum ele aparecera quando a EULA estiver desativada para ativala vá até o arquivo EULA.txt e troque a terceira linh por "eula=true"
 
 <h1 id="FATALERROR"> FATAL ERROR, o arquivo de instalação não esta funcionando! </h1>
-> vamos supor que o nome de sua pasta é: "jorge caudio server" tente mudala para:
+> vamos supor que o nome de sua pasta é: "jorge claudio server" tente mudala para:
 
-1. JorgeCaudioServer
+1. JorgeClaudioServer
 
-2. jorge-caudio-server
+2. jorge-claudio-server
 
-3. jorge_caudio_server
+3. jorge_claudio_server
 
 > esse erro ocorre ao tentar criar a file e acontece um erro ao tentar procurar o Diretorio Mãe
 

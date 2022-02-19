@@ -4,6 +4,6 @@
 
 Any way go way :>
 
-you need make download? ok. <a href="https://gabrielramires.github.io/MinecraftServerMenu/Download">Press here for goto the Download Page</a>
+you need make download? ok. <a href="https://RamiresOliv.github.io/MinecraftServerMenu/Download">Press here for goto the Download Page</a>
 
 <strong>Now using Jekyll!</strong> yay
