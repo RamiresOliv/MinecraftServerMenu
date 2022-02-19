@@ -1,9 +1,5 @@
-<h1 align="center"> MinecraftServerMenu/Website </h1>
+<h1 align="center"> MinecraftServerMenu/Files </h1>
 
-> Here its a Main of Website.
+> Here have IMPORTANT FILES for the Menu Works. exemple: Version, Installer, Updater and more.
 
-Any way go way :>
-
-you need make download? ok. <a href="https://RamiresOliv.github.io/MinecraftServerMenu/Download">Press here for goto the Download Page</a>
-
-<strong>Now using Jekyll!</strong> yay
+Website: [Visit](https://RamiresOliv.github.io/MinecraftServerMenu) (WORKING)
