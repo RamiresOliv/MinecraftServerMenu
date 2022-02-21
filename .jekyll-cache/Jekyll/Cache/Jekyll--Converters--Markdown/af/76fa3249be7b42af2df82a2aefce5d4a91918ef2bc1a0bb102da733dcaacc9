@@ -1,0 +1,19 @@
+I"½<style>
+    code1 {
+        background-color:  dimgray; 
+        color: white;
+    }
+    args {
+        color: green;
+    }
+</style>
+
+<p> oh hello you using a localhost? lets see.. you suing the: <a href="http://localhost:4000/TestingZone/urltesting.html"><args>http://localhost:4000</args></a>
+
+
+<br /><br />
+
+<h3>About:</h3>
+<p>This exists for test the infos from the Page or Site Exemple <code1>{ site.url }</code1> 2x like this: {}</p>
+</p>
+:ET

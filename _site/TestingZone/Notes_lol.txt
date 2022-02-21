@@ -1,0 +1,1 @@
+what, in this folder there are a lot of testing things that I'm going to do because I'm still a beginner and I'm learning how to use JavaScript.
