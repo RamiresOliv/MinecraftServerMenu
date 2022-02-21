@@ -84,11 +84,12 @@ layout: default
     document.getElementById("ErrorMsg_SubTitle").innerHTML = informations
   }
 
+  const code = "{{ site.data.web_configs.PortSecurityCode }}"
   if (codeid == null) {
       window.location.href = "{{ site.url }}/400?infos=Hm, Can't access this page from a url not working."
   } else if (codeid == "") {
       window.location.href = "{{ site.url }}/400?infos=Hm, Can't access this page from a url not working."
-  } else if (codeid != "SCGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-_ER") {
+  } else if (codeid != code) {
       window.location.href = "{{ site.url }}/400?infos=Hm, Can't access this page from a url not working."
   }
 </script>

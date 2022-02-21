@@ -1,1 +1,6 @@
 default_port: "4000" # define here the Port from your "jekyll server"
+
+# Port Security Code
+# About: this code does not need to be changed because it is used in port error page.
+# Don't put !, @, #, etc...
+PortSecurityCode: CGHSFGAFGAEGREGDSVFHRGFBVDGXCVDFVCTDGFRT646355643235463447367HSDGFHTRGFDV___HDGF-HGF__GFDGFDFG5RGRYTE6RGFT6EYRGF667ERYRTYER74767_6564565464354-_ER63fefytGIK4K44_43DFGGV

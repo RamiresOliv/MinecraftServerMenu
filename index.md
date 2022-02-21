@@ -61,7 +61,7 @@ title: Home
 <style type="text/css" media="screen">
   #localhost_disclaimer_style {
     animation-name: container_anim;
-    animation-duration: 1s;
+    animation-duration: 10s;
   }
 
   @keyframes container_anim {
@@ -84,19 +84,17 @@ title: Home
             peoplefileopenned = true;
             document.getElementById("ShowCreditsPeople").innerHTML = `
             {% highlight yml %}members:
-    - name: Gabriel Ramires
-      creator: true
-      github: gabrielramires
+  - name: Ramires
+    creator: true
+    github: RamiresOliv
+    note: Scripter
 
-    - name: Arthur Ft
-      creator: false
-      github: ArthurFt
-      note: "(Test User)"{% endhighlight %}
+  - name: Felps
+    twitter: feeeelps
+{% endhighlight %}
     
     <a target="_blank" href="Assets/Images/CodeScreamShoot1.png"><img src="Assets/Images/CodeScreamShoot1.png" alt="Code Scream Shoot (UNLOADED)"></a>
-    <small>See this <a href="https://gist.github.com/{{ site.github_username }}/22652461638c32cfcb7f138140494800">Code</a> in Github</small>`
-
-            
+    <small>See this <a href="https://gist.github.com/{{ site.github_username }}/22652461638c32cfcb7f138140494800">Code</a> in Github <i style="color: green">UPDATED</i></small>`
         }
     }
 </script>

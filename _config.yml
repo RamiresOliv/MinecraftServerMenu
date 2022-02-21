@@ -8,11 +8,11 @@ description: >-
 baseurl: "MinecraftServerMenu" # MinecraftServerMenu
 url: ""
 
-# others:
-github_username: RamiresOliv
-
 # Theme:
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Others
+github_username: RamiresOliv
