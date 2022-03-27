@@ -1,9 +1,0 @@
-version: "2.1"
-jobs:
-  build_deploy:
-    steps:
-      - run: echo hi  sussy
-workflows:
-  Build and Deploy:
-    jobs:
-      - build_deploy
