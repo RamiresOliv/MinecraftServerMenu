@@ -1,6 +1,6 @@
 version: "2.1"
 orbs:
-  gh-pages: sugarshin/gh-pages@x.y.z
+  gh-pages: sugarshin/gh-pages@1.0.0
 jobs:
   build_deploy:
     executor: gh-pages/default
