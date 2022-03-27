@@ -7,17 +7,12 @@ orbs:
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  build_deploy:
-    executor: gh-pages/default
-    steps:
-      - checkout
-      - run: dir && ./build.sh
-      - gh-pages/deploy:
-          setup-git: true
-          ssh-fingerprints: <fingerprint>
 
 workflows:
   Build and Deploy:
     jobs:
-      - build_deploy
+      - build
+      - gh-pages/deploy:
+          requires:
+            - build
+          ssh-fingerprints: <fingerprint>
