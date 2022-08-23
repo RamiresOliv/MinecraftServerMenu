@@ -105,7 +105,7 @@ echo [FATAL ERROR]: Ocorreu um erro ao instalar a LICENSE tente novamente mais t
 )
 echo [%date%-%time%] [EM FILA]: iniciando download de pacote de versoes... >> "Installer\Logs\latest.log"
 echo [EM FILA]: iniciando download de pacote de versoes...
-bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
+bitsadmin.exe /transfer "Menu id" https://raw.githubusercontent.com/RamiresOliv/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
 if exist versionidlocal.txt (
 attrib +H versionidlocal.txt
 echo [%date%-%time%] [DONE]: pacote de versoes instalado >> "Installer\Logs\latest.log"
@@ -165,7 +165,7 @@ if exist "versionidlocal.txt" ( echo. ) else (
   msg * recriando arquivo...
   cls
   echo Re-criando "versionidlocal.txt"
-  bitsadmin.exe /transfer "version_verify" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
+  bitsadmin.exe /transfer "version_verify" https://raw.githubusercontent.com/RamiresOliv/MinecraftServerMenu/Files/version.txt %mypath%\versionidlocal.txt > nul
   echo end.
   msg * [DONE]: file re-istalada
   goto menu
@@ -173,7 +173,7 @@ if exist "versionidlocal.txt" ( echo. ) else (
 cls
 echo um momento...
 echo lembre-se isso pode demorar um pouco...
-bitsadmin.exe /transfer "version_verify" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/version.txt %mypath%\VersionId.txt > nul
+bitsadmin.exe /transfer "version_verify" https://raw.githubusercontent.com/RamiresOliv/MinecraftServerMenu/Files/version.txt %mypath%\VersionId.txt > nul
 if errorlevel 1 ( 
 call :colorEcho 04 "[FATAL ERROR] "
 echo : Ocorreu um erro na atualizacao tente novamente mais tarde! 
@@ -225,7 +225,7 @@ title Minecraft Server Menu Instaler / Update Verify / Updating...
 cls
 echo porfavor espere estamos fazendo preparando a atualizacao...
 echo (seja paciente pode demorar)
-bitsadmin.exe /transfer "Instaler" https://raw.githubusercontent.com/gabrielramires/MinecraftServerMenu/Files/Downloads/Atualizador.bat %mypath%\Atualizador_TEMP_FILE.bat > nul
+bitsadmin.exe /transfer "Instaler" https://raw.githubusercontent.com/RamiresOliv/MinecraftServerMenu/Files/Downloads/Atualizador.bat %mypath%\Atualizador_TEMP_FILE.bat > nul
 attrib +H Atualizador_TEMP_FILE.bat
 start Atualizador_TEMP_FILE.bat
 exit
